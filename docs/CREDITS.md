@@ -26,8 +26,8 @@ removes brand names from titles.
 
 ## Voices
 
-- Narration: ElevenLabs premade voice `nPczCjzI2devNBz1zQrb`, model `eleven_multilingual_v2`.
-- Kip: ElevenLabs premade voice `bIHbv24MWmeRgasZH58o`, model `eleven_multilingual_v2`.
+- Narration: ElevenLabs premade voice `cgSgspJ2msm6clMCkdW9` (Jessica), model `eleven_multilingual_v2`.
+- Kip: ElevenLabs premade voice `bIHbv24MWmeRgasZH58o` (Will), model `eleven_multilingual_v2`.
 - There is no music in the video.
 
 ## Fonts (bundled through Fontsource, SIL Open Font License 1.1)

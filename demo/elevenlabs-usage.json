@@ -1,6 +1,6 @@
 {
  "budget": 15000,
- "total": 2599,
+ "total": 4443,
  "items": [
   {
    "file": "public/audio/kip-hello.mp3",
@@ -162,6 +162,90 @@
    "voice": "nPczCjzI2devNBz1zQrb",
    "hash": "667da3a439c006c6",
    "at": "2026-11-10T16:26:20.745Z"
+  },
+  {
+   "file": "demo/raw/audio/n01.mp3",
+   "chars": 170,
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "hash": "3c52bb26b4e96839",
+   "at": "2026-11-10T18:30:57.200Z"
+  },
+  {
+   "file": "demo/raw/audio/n02.mp3",
+   "chars": 179,
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "hash": "e03ea3c0807aa331",
+   "at": "2026-11-10T18:30:58.011Z"
+  },
+  {
+   "file": "demo/raw/audio/n03.mp3",
+   "chars": 136,
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "hash": "7e0e22e916760dee",
+   "at": "2026-11-10T18:30:58.817Z"
+  },
+  {
+   "file": "demo/raw/audio/n04.mp3",
+   "chars": 260,
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "hash": "fc6656c00a7238e6",
+   "at": "2026-11-10T18:31:00.070Z"
+  },
+  {
+   "file": "demo/raw/audio/n05a.mp3",
+   "chars": 207,
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "hash": "adead351151f3e91",
+   "at": "2026-11-10T18:31:01.123Z"
+  },
+  {
+   "file": "demo/raw/audio/n05b.mp3",
+   "chars": 44,
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "hash": "9f31675772a376d0",
+   "at": "2026-11-10T18:31:01.463Z"
+  },
+  {
+   "file": "demo/raw/audio/n06.mp3",
+   "chars": 194,
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "hash": "d5a918d812df214a",
+   "at": "2026-11-10T18:31:02.372Z"
+  },
+  {
+   "file": "demo/raw/audio/n07.mp3",
+   "chars": 103,
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "hash": "21a27ddce1d1240c",
+   "at": "2026-11-10T18:31:03.028Z"
+  },
+  {
+   "file": "demo/raw/audio/n08.mp3",
+   "chars": 183,
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "hash": "3a87d9cc3c76918e",
+   "at": "2026-11-10T18:31:03.954Z"
+  },
+  {
+   "file": "demo/raw/audio/n09.mp3",
+   "chars": 161,
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "hash": "c8a8c871db867fe7",
+   "at": "2026-11-10T18:31:04.729Z"
+  },
+  {
+   "file": "demo/raw/audio/n10.mp3",
+   "chars": 158,
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "hash": "b9e8e043669f5ead",
+   "at": "2026-11-10T18:31:05.495Z"
+  },
+  {
+   "file": "demo/raw/audio/n11.mp3",
+   "chars": 49,
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "hash": "cd7eff20235da97a",
+   "at": "2026-11-10T18:31:05.950Z"
   }
  ]
 }

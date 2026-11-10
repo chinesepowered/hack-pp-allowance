@@ -10,8 +10,9 @@ import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
-export const NARRATOR_VOICE = "nPczCjzI2devNBz1zQrb";
-/** Kip: a relaxed, young premade voice, different from the narrator. */
+/** Narrator: Jessica, a young female premade voice. */
+export const NARRATOR_VOICE = "cgSgspJ2msm6clMCkdW9";
+/** Kip: Will, a relaxed young male premade voice, clearly different from the narrator. */
 export const KIP_VOICE = "bIHbv24MWmeRgasZH58o";
 export const MODEL = "eleven_multilingual_v2";
 export const BUDGET = 15000;

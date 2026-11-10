@@ -1,6 +1,6 @@
 Allowance: demo video narration
-Narrator: ElevenLabs premade voice nPczCjzI2devNBz1zQrb, model eleven_multilingual_v2.
-Kip: ElevenLabs premade voice bIHbv24MWmeRgasZH58o (the same pre-rendered lines the app plays).
+Narrator: ElevenLabs premade voice cgSgspJ2msm6clMCkdW9 (Jessica), model eleven_multilingual_v2.
+Kip: ElevenLabs premade voice bIHbv24MWmeRgasZH58o (Will), model eleven_multilingual_v2. These are the same pre-rendered lines the app plays.
 No music.
 
 [01-problem] Cold open: the problem
@@ -39,4 +39,4 @@ NARRATOR: One honest limit. In this prototype, Allowance charges the family's Pa
 [11-end] End card
 NARRATOR: Allowance. An agent that pays, inside your rules.
 
-ElevenLabs characters used by this build so far: 2599 of 15000.
+ElevenLabs characters used by this build so far: 4443 of 15000.

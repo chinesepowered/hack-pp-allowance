@@ -13,11 +13,11 @@
  * No music. Kip's lines are the pre-rendered files in public/audio/.
  */
 import "../lib/load-env";
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { chromium } from "playwright";
-import { NARRATOR_VOICE, readUsage, speak } from "../lib/tts";
+import { KIP_VOICE, MODEL, NARRATOR_VOICE, readUsage, speak } from "../lib/tts";
 
 const ROOT = process.cwd();
 const RAW = path.join(ROOT, "demo", "raw");
@@ -32,7 +32,7 @@ const P = marks.popup;
 
 type Line = { id: string; text: string; voice: "narrator" } | { id: string; text: string; voice: "kip"; file: string };
 type Part =
-  | { type: "card"; png: string; fixed?: number }
+  | { type: "card"; png: string; fixed?: number; untilSentence?: { line: string; n: number } }
   | { type: "clip"; from: number; to: number; maxSpeed?: number }
   | { type: "popup"; from: number; to: number; speed: number; bgAt: number };
 type Scene = { id: string; title: string; parts: Part[]; audio: Line[]; lead?: number; tail?: number };
@@ -45,7 +45,8 @@ const SCENES: Scene[] = [
     id: "01-problem",
     title: "Cold open: the problem",
     parts: [
-      { type: "card", png: "problem-1.png", fixed: 4.3 },
+      // Shown until the narrator starts the fifth sentence ("Today a parent ...").
+      { type: "card", png: "problem-1.png", fixed: 4.3, untilSentence: { line: "n01", n: 5 } },
       { type: "card", png: "problem-2.png" },
     ],
     audio: [say("n01", "A teenager needs things. Notebooks. Sneakers. A calculator. Today a parent has two bad options: hand over a card with no limits, or be asked before every single purchase.")],
@@ -128,6 +129,32 @@ function duration(file: string): number {
   return Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", file]).toString().trim());
 }
 
+/** Runs ffmpeg and returns what it wrote to stderr (where its analysis filters report). */
+function probe(args: string[]): string {
+  const r = spawnSync("ffmpeg", ["-hide_banner", "-nostats", ...args, "-f", "null", "-"], { encoding: "utf8" });
+  return r.stderr ?? "";
+}
+
+/** The pauses inside a spoken line: where each one starts and ends, in seconds. */
+function pauses(file: string): { start: number; end: number }[] {
+  const log = probe(["-i", file, "-af", "silencedetect=noise=-34dB:d=0.22"]);
+  const starts = [...log.matchAll(/silence_start: ([\d.]+)/g)].map((m) => Number(m[1]));
+  const ends = [...log.matchAll(/silence_end: ([\d.]+)/g)].map((m) => Number(m[1]));
+  return starts.map((start, i) => ({ start, end: ends[i] ?? start })).filter((p) => p.start > 0.15 && p.end > p.start);
+}
+
+/** Mean level in dB of one stretch of an audio or video file. */
+function level(file: string, from: number, length: number): number {
+  const log = probe(["-ss", Math.max(0, from).toFixed(3), "-t", length.toFixed(3), "-i", file, "-vn", "-af", "volumedetect"]);
+  const m = log.match(/mean_volume: (-?[\d.]+) dB/);
+  return m ? Number(m[1]) : -120;
+}
+
+function peak(file: string): number {
+  const m = probe(["-i", file, "-vn", "-af", "volumedetect"]).match(/max_volume: (-?[\d.]+) dB/);
+  return m ? Number(m[1]) : 0;
+}
+
 /** Where PayPal's login pages show the email, in window pixels. */
 const EMAIL_BAND = { x: 16, y: 194, w: 536, h: 82 };
 
@@ -203,19 +230,33 @@ async function main() {
     }
   }
 
+  // Cards that wait for a sentence get their length from the audio itself,
+  // so the picture stays in step whichever voice reads the line.
+  for (const scene of SCENES) {
+    for (const part of scene.parts) {
+      if (part.type !== "card" || !part.untilSentence) continue;
+      const found = pauses(audioFile.get(part.untilSentence.line)!);
+      const gap = found[part.untilSentence.n - 2];
+      if (gap) {
+        part.fixed = (scene.lead ?? 0.4) + gap.end - 0.12;
+        console.log(`${part.png} is shown for ${part.fixed.toFixed(2)} s (sentence ${part.untilSentence.n} of ${part.untilSentence.line} starts at ${gap.end.toFixed(2)} s)`);
+      } else console.log(`${part.png}: could not find sentence ${part.untilSentence.n}, keeping ${part.fixed} s`);
+    }
+  }
+
   /* 2. scenes */
   const sceneFiles: string[] = [];
-  const cues: { file: string; at: number; volume: number }[] = [];
+  const cues: { file: string; at: number; volume: number; id: string; sceneEnd: number }[] = [];
   const report: string[] = [];
   let t = 0;
   for (const scene of SCENES) {
     const lead = scene.lead ?? 0.4;
     const tail = scene.tail ?? 0.55;
     let cursor = lead;
-    const local: { file: string; at: number; volume: number }[] = [];
+    const local: { file: string; at: number; volume: number; id: string }[] = [];
     for (const line of scene.audio) {
       const file = audioFile.get(line.id)!;
-      local.push({ file, at: cursor, volume: line.voice === "kip" ? 0.95 : 1 });
+      local.push({ file, at: cursor, volume: line.voice === "kip" ? 0.95 : 1, id: line.id });
       cursor += duration(file) + (line.voice === "kip" ? 0.3 : 0.25);
     }
     const audioNeed = cursor + tail;
@@ -246,7 +287,7 @@ async function main() {
     writeFileSync(list, partFiles.map((f) => `file '${f}'`).join("\n") + "\n");
     ff(["-f", "concat", "-safe", "0", "-i", list, "-c", "copy", sceneFile]);
     const real = duration(sceneFile);
-    for (const cue of local) cues.push({ ...cue, at: t + cue.at });
+    for (const cue of local) cues.push({ ...cue, at: t + cue.at, sceneEnd: t + real });
     report.push(`${scene.id.padEnd(22)} ${t.toFixed(1).padStart(6)}s  +${real.toFixed(1)}s  speed ${speed.toFixed(2)}  hold ${hold.toFixed(1)}s`);
     sceneFiles.push(sceneFile);
     t += real;
@@ -284,12 +325,36 @@ async function main() {
   console.log(`demo/video.mp4: ${duration(out).toFixed(1)} s, ${mb.toFixed(1)} MB`);
   if (mb >= 50) throw new Error("The video is over 50 MB. Re-run with VIDEO_CRF=26.");
 
-  /* 6. the narration as text */
+  /* 6. check that every spoken line is whole */
+  const total = duration(out);
+  const problems: string[] = [];
+  let previousEnd = 0;
+  for (const cue of cues) {
+    const length = duration(cue.file);
+    const end = cue.at + length;
+    // The source file must fade out on its own, not stop mid-word.
+    if (level(cue.file, Math.max(0, length - 0.06), 0.06) > -32) problems.push(`${cue.id}: the generated audio ends abruptly`);
+    if (cue.at < previousEnd - 0.01) problems.push(`${cue.id}: starts before the previous line has finished`);
+    if (end > cue.sceneEnd - 0.2) problems.push(`${cue.id}: runs past the end of its scene`);
+    if (end > total - 0.2) problems.push(`${cue.id}: runs past the end of the video`);
+    // The last half second of the line must be audible in the finished mix.
+    const tailInSource = level(cue.file, Math.max(0, length - 0.7), 0.5);
+    const tailInVideo = level(out, Math.max(0, end - 0.7), 0.5);
+    if (tailInSource > -45 && tailInVideo < tailInSource - 14) problems.push(`${cue.id}: its ending is missing from the mix (${tailInVideo.toFixed(1)} dB against ${tailInSource.toFixed(1)} dB)`);
+    previousEnd = end;
+  }
+  const top = peak(out);
+  if (top > -1) problems.push(`the mix peaks at ${top.toFixed(1)} dB, which risks clipping`);
+  if (total >= 180) problems.push(`the video is ${total.toFixed(1)} s, not under three minutes`);
+  if (problems.length > 0) throw new Error("Audio check failed:\n  " + problems.join("\n  "));
+  console.log(`audio check: all ${cues.length} lines are complete, none overlap, peak ${top.toFixed(1)} dB, last line ends ${(total - previousEnd).toFixed(1)} s before the end`);
+
+  /* 7. the narration as text */
   const usage = readUsage();
   const text = [
     "Allowance: demo video narration",
-    "Narrator: ElevenLabs premade voice nPczCjzI2devNBz1zQrb, model eleven_multilingual_v2.",
-    "Kip: ElevenLabs premade voice bIHbv24MWmeRgasZH58o (the same pre-rendered lines the app plays).",
+    `Narrator: ElevenLabs premade voice ${NARRATOR_VOICE} (Jessica), model ${MODEL}.`,
+    `Kip: ElevenLabs premade voice ${KIP_VOICE} (Will), model ${MODEL}. These are the same pre-rendered lines the app plays.`,
     "No music.",
     "",
     ...SCENES.flatMap((s) => [`[${s.id}] ${s.title}`, ...s.audio.map((l) => `${l.voice === "kip" ? "KIP" : "NARRATOR"}: ${l.text}`), ""]),

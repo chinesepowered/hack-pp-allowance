@@ -262,7 +262,7 @@ Six different builds from the same team share these rules. Stay inside this buil
    - Record real runs of the app with Playwright (headless Chromium, `recordVideo`). Render title and caption cards
      from HTML. Compose with ffmpeg.
    - Narrate with ElevenLabs (`ELEVENLABS_API_KEY`, model `eleven_multilingual_v2` or newer, narrator voice
-     `nPczCjzI2devNBz1zQrb`). The mascot may speak short lines in a different premade voice.
+     `cgSgspJ2msm6clMCkdW9`). The mascot may speak short lines in a different premade voice.
    - Structure: a 10-second cold open on the problem; who it's for; the flow end to end with money visibly moving in
      PayPal; the AI doing work a person would otherwise do; PayPal APIs named on screen as they're used; the sponsor
      tool on screen; one honest limitation; an end card with the name.
