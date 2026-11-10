@@ -1,0 +1,189 @@
+{
+ "at": "2026-11-10T15:14:40.326Z",
+ "endpoint": "GET /v1/products/{id}",
+ "request": {
+  "product_id": "GZi677M",
+  "country": "US",
+  "currency": "USD"
+ },
+ "products": [
+  {
+   "id": "GZi677M",
+   "title": "TI-30XS MultiView Scientific Calculator",
+   "description": "The Texas Instruments TI-30XS MultiView is a scientific calculator designed for students in general math, Pre-Algebra, Algebra 1 and 2, Geometry, Statistics, general science, Biology, and Chemistry. It features a MultiView display that supports up to four lines, allowing users to view multiple calculations simultaneously and compare results. The calculator displays math expressions, symbols, and stacked fractions exactly as they appear in textbooks, eliminating the need for technical syntax. Additionally, it provides scientific notation output with proper superscripted exponents and an (x,y) table of values for function exploration.",
+   "brands": [
+    {
+     "id": "13LJ",
+     "name": "Texas Instruments"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/8be33e77-5ddd-418e-aee6-75b13054cd4a?aid=01M730D2Z471A0JHHBHNW04GVS&mid=gn9k",
+     "cleaned_url": "https://cdn.trychannel3.com/64e29f39-b0ba-4067-badc-2475a4ac6708?aid=01M730D2Z471A0JHHBHNW04GVS&mid=gn9k",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Blue and white Texas Instruments TI-30XS MultiView scientific calculator."
+    }
+   ],
+   "category": {
+    "slug": "scientific-calculators",
+    "title": "Scientific Calculators",
+    "path": [
+     {
+      "slug": "office-supplies",
+      "title": "Office Supplies"
+     },
+     {
+      "slug": "office-equipment",
+      "title": "Office Equipment"
+     },
+     {
+      "slug": "calculators",
+      "title": "Calculators"
+     },
+     {
+      "slug": "scientific-calculators",
+      "title": "Scientific Calculators"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "plastic"
+   ],
+   "key_features": [
+    "16-digit four-line LCD display",
+    "MathPrint entry and output mode",
+    "Solar cell and battery powered",
+    "Up to seven memory variables",
+    "Review and edit previous entries",
+    "Negation key",
+    "Menu settings and central MODE menu",
+    "Fraction calculations and conversions",
+    "Hyperbolic functions",
+    "Random number and random integer generator"
+   ],
+   "colors": [
+    {
+     "hex": "#688496",
+     "percentage": 0.6491
+    },
+    {
+     "hex": "#a8b6b1",
+     "percentage": 0.1461
+    },
+    {
+     "hex": "#e4eae7",
+     "percentage": 0.1025
+    },
+    {
+     "hex": "#2b3b46",
+     "percentage": 0.1023
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/GZi677M-gn9k-4ecE2h?o=01M5D84GMS2V7C6AJ0RBBKSA33&aid=01M730D2Z471A0JHHBHNW04GVS",
+     "domain": "vinted.com",
+     "price": {
+      "price": 5,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "used",
+     "max_commission_rate": 0,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/GZi677M-Z87s-4ecE2h?o=01M3NVJW97J45S9TMVT0ZYS90Z&aid=01M730D2Z471A0JHHBHNW04GVS",
+     "domain": "kohls.com",
+     "price": {
+      "price": 16.99,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.021,
+     "dimensions": {
+      "length": {
+       "number": 16,
+       "unit": "cm"
+      },
+      "width": {
+       "number": 10,
+       "unit": "cm"
+      },
+      "height": {
+       "number": 2,
+       "unit": "cm"
+      },
+      "weight": null
+     }
+    },
+    {
+     "url": "https://buy.trychannel3.com/GZi677M-LFnL-4ecE2h?o=01KPCJXQNMHFAR13498NGGWF0A&aid=01M730D2Z471A0JHHBHNW04GVS",
+     "domain": "staples.com",
+     "price": {
+      "price": 21.49,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.03,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/GZi677M-p1PB-4ecE2h?o=01KY1NS3CDD0BNYM2NA9K0MDA3&aid=01M730D2Z471A0JHHBHNW04GVS",
+     "domain": "bestbuy.com",
+     "price": {
+      "price": 34.5,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.005,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/GZi677M-TgS4-4ecE2h?o=01M4SVWK6A5J014PMKE8AKZEQ8&aid=01M730D2Z471A0JHHBHNW04GVS",
+     "domain": "cdw.com",
+     "price": {
+      "price": 169.99,
+      "compare_at_price": 226,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "calculator-features": [
+     "Fraction calculation",
+     "LCD display",
+     "Statistical analysis",
+     "Statistical calculation",
+     "Trigonometric function",
+     "Basic arithmetic",
+     "Logarithmic function",
+     "Numeric keypad",
+     "Equation solving"
+    ]
+   },
+   "ratings": {
+    "value": 4.63,
+    "count": 431,
+    "source_count": 3
+   }
+  }
+ ]
+}

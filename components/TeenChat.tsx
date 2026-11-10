@@ -90,6 +90,15 @@ function ProductTile({ p, card, onAsk, disabled }: { p: ProductCard; card: Produ
       </p>
       {!safe && p.brand ? <p className="text-xs text-[var(--color-ink-3)]">{p.brand}</p> : null}
       {p.keyFeatures[0] ? <p className="mt-1 line-clamp-2 text-xs text-[var(--color-ink-2)]">{safeText(p.keyFeatures[0])}</p> : null}
+      {p.offers.length > 1 ? (
+        <p className="mt-1 text-xs text-[var(--color-ink-2)]" data-testid="offers">
+          <span className="font-semibold">Offers:</span>{" "}
+          {p.offers
+            .slice(0, 3)
+            .map((o) => `${safeText(o.domain)} ${usd(o.price)}${o.condition && o.condition !== "new" ? ` (${o.condition})` : ""}`)
+            .join(" · ")}
+        </p>
+      ) : null}
       <div className="mt-2 flex flex-1 flex-col justify-end gap-2">
         {policy ? <OutcomeBadge outcome={policy.outcome} label={policy.label} /> : null}
         {policy && policy.outcome !== "blocked" ? (
@@ -161,6 +170,18 @@ function ReceiptBlock({ ledgerId, state }: { ledgerId: string; state: ClientStat
         <dd>
           {safeText(e.product.merchant)} <span className="rounded bg-white/70 px-1 font-semibold">retailer order simulated</span>
         </dd>
+        {e.retailerHandoff.buyUrl ? (
+          <>
+            <dt>Handoff</dt>
+            <dd>
+              <a href={e.retailerHandoff.buyUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-[var(--color-pond-deep)] underline" data-testid="buy-link">
+                Channel3 buy link
+                <span className="sr-only"> (opens the retailer in a new tab)</span>
+              </a>{" "}
+              to the retailer
+            </dd>
+          </>
+        ) : null}
       </dl>
     </section>
   );

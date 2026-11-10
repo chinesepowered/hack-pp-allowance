@@ -1,0 +1,1603 @@
+{
+ "at": "2026-11-10T15:15:43.373Z",
+ "endpoint": "POST /v1/similar",
+ "request": {
+  "product_id": "uEQbicn",
+  "limit": 6,
+  "filters": {
+   "availability": [
+    "InStock"
+   ],
+   "conditions": [
+    "new"
+   ],
+   "price": {
+    "max_price": 36.75
+   }
+  },
+  "config": {
+   "country": "US",
+   "currency": "USD",
+   "language": "en"
+  }
+ },
+ "products": [
+  {
+   "id": "3DiXsHB",
+   "title": "Authentic Casual Shoe",
+   "description": "The Vans Authentic Casual Shoe is a timeless classic, first introduced in 1966. This iconic low-top sneaker features a breathable canvas upper with secure lace-up closure and metal eyelets. It's designed for versatile use, perfect for skating, dancing, or everyday wear. The signature rubber waffle outsole provides excellent traction on various surfaces, ensuring grip on sidewalks, tiles, and blacktop. The shoe comes in a clean True White colorway.",
+   "brands": [
+    {
+     "id": "zv3U",
+     "name": "Vans"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/2f8d23d4-6f21-4317-a58b-480731195844?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/2f8d23d4-6f21-4317-a58b-480731195844?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "White Vans shoe viewed from the side, showing the overall silhouette."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/7d591194-ebda-433a-8e98-6a4fdc5d8c09?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/7d591194-ebda-433a-8e98-6a4fdc5d8c09?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans shoe viewed from the top, showing the laces and interior."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/e04cbe49-c6df-452e-a228-2ce16c551df4?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/e04cbe49-c6df-452e-a228-2ce16c551df4?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans shoe viewed from the side, showing the overall shape."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/76aebc6c-6956-49e9-927a-dbcb24a8d7cd?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/76aebc6c-6956-49e9-927a-dbcb24a8d7cd?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans shoe viewed from the side, showing the sole and upper."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/92beaba3-8b1b-41a8-aee0-c51bc3813838?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of the white Vans shoe interior and sole."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/c212c4af-99de-4135-b845-b3b47f1e59ce?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/c212c4af-99de-4135-b845-b3b47f1e59ce?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of the white waffle pattern rubber sole."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/4d99d51c-0aa5-4898-9772-431ba7f30690?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/4d99d51c-0aa5-4898-9772-431ba7f30690?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white Vans shoes with Vans Off The Wall branding on the heel."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/a805bedd-8fb7-4b4f-86f6-dc013e16ddfc?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/a805bedd-8fb7-4b4f-86f6-dc013e16ddfc?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=JtqL",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white Vans shoes shown from the front view."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": "adult",
+   "materials": [
+    "canvas",
+    "rubber"
+   ],
+   "key_features": [
+    "Classic shoe can be worn skating or around town",
+    "Rubber waffle grip ensures solid traction on pavement",
+    "Low-top design",
+    "Vulcanized construction"
+   ],
+   "colors": [
+    {
+     "hex": "#b1b0bb",
+     "percentage": 0.5194
+    },
+    {
+     "hex": "#8c8c96",
+     "percentage": 0.4031
+    },
+    {
+     "hex": "#686773",
+     "percentage": 0.0775
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/3DiXsHB-JtqL-4ecE2h?o=01M714C3RH36VXNVPB2YZS1ESZ&aid=01M730F0FFWC13ZZQKT0YEKC0F",
+     "domain": "steepandcheap.com",
+     "price": {
+      "price": 35.72,
+      "compare_at_price": 54.95,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.02,
+     "dimensions": {
+      "length": null,
+      "width": null,
+      "height": null,
+      "weight": {
+       "number": 14.5,
+       "unit": "oz"
+      }
+     }
+    }
+   ],
+   "variants": {
+    "options": [
+     {
+      "name": "Color",
+      "values": [
+       {
+        "label": "Black",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/cdcce38e-39c9-4b9f-b11d-eba1733ba19c",
+        "product_id": "OTcfHRx"
+       },
+       {
+        "label": "Navy",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/97abf5aa-2220-4f69-9271-9c30807ef0d4",
+        "product_id": "GokunEq"
+       },
+       {
+        "label": "True White",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/2f8d23d4-6f21-4317-a58b-480731195844",
+        "product_id": "3DiXsHB"
+       }
+      ]
+     },
+     {
+      "name": "Size",
+      "values": [
+       {
+        "label": "W 4.5 / M 3.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 5 / M 4",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 6 / M 4.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 6.5 / M 5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 7 / M 5.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 7.5 / M 6",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 8 / M 6.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 8.5 / M 7",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 9 / M 7.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 9.5 / M 8",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 10 / M 8.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 10.5 / M 9",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 10.5 / M 9.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 11 / M 10",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 11.5 / M 10.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 12 / M 11",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 12.5 / M 11.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 13 / M 12",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 13.5 / M 12.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 14 / M 13",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 14.5 / M 13.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "M 14.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       }
+      ]
+     }
+    ],
+    "selected": [
+     {
+      "name": "Color",
+      "label": "True White"
+     }
+    ]
+   },
+   "structured_attributes": {
+    "heel-height-type": [
+     "Flat"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "shoe-fit": [
+     "Regular"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "shoe-features": [
+     "Breathable design",
+     "Slip resistant"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Rubber"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "activity": [
+     "Skateboarding",
+     "Walking"
+    ],
+    "footwear-construction-method": [
+     "Vulcanized"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "ankle-collar-style": [
+     "Low cut"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ]
+   },
+   "ratings": {
+    "value": 4.42,
+    "count": 1811,
+    "source_count": 2
+   }
+  },
+  {
+   "id": "PmEx1th",
+   "title": "Vans Authentic Lite Canvas",
+   "description": "A classic Vans shoe re-imagined with a Lite approach. These Authentic Lite Canvas sneakers in White/True White offer the iconic Vans look with enhanced comfort and a lighter feel. Perfect for everyday wear, these shoes combine durable canvas uppers with a streamlined design for a fresh take on a timeless favorite.",
+   "brands": [
+    {
+     "id": "zv3U",
+     "name": "Vans"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/7bcd6617-e825-409d-ba3d-22e976b0b389?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=fFUX",
+     "cleaned_url": "https://cdn.trychannel3.com/1e6c2a44-3d1d-4d92-be5f-36dd3031a80f?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=fFUX",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "White Vans Authentic Lite Canvas shoes shown from the side."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "male",
+   "age": "adult",
+   "materials": [],
+   "key_features": [],
+   "colors": [
+    {
+     "hex": "#d6d6db",
+     "percentage": 0.9201
+    },
+    {
+     "hex": "#6c6266",
+     "percentage": 0.0799
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/PmEx1th-fFUX-4ecE2h?o=01KNVQBVH9YJPTE6XD7WB4640R&aid=01M730F0FFWC13ZZQKT0YEKC0F",
+     "domain": "stockx.com",
+     "price": {
+      "price": 31,
+      "compare_at_price": 55,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.028,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "toe-style": [
+     "Round"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "ankle-collar-style": [
+     "Low cut"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ],
+    "activity": [
+     "Universal"
+    ],
+    "outsole-stud-type": [
+     "Flat outsole"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "pattern": [
+     "Solid"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "MimGTlm",
+   "title": "Vans Authentic Shoe",
+   "description": "The Vans Authentic is a clean, classic sneaker rooted in Southern California surf and skate style. This specific 'Sidewall Print Marshmallow' edition features a textile upper in an off-white marshmallow hue, accented by a distinct tropical foliage print on the sidewall of the sole. The shoe is designed with a lace-up closure, a round toe, and the signature Vans waffle outsole for durability and grip. It is a unisex style, combining a minimalist aesthetic with a playful detailed print.",
+   "brands": [
+    {
+     "id": "zv3U",
+     "name": "Vans"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/83e77a8d-e6c9-46bc-9014-96ae9d135eac?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=fsxO",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/83e77a8d-e6c9-46bc-9014-96ae9d135eac?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=fsxO",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "White Vans slip-on shoe with a colorful sole trim."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/0a242552-ecf1-43c2-b5f5-75ba8543fae9?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=fsxO",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/0a242552-ecf1-43c2-b5f5-75ba8543fae9?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=fsxO",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Two white Vans slip-on shoes displayed."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/35fab1de-56ec-4f4e-a252-0bfaefabd4b5?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=fsxO",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of white Vans shoe interior and brown sole."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/151fbe82-1bae-4a30-b340-bf12d2f09739?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=fsxO",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/151fbe82-1bae-4a30-b340-bf12d2f09739?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=fsxO",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white Vans slip-on shoes viewed from the back."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": "adult",
+   "materials": [
+    "canvas",
+    "rubber"
+   ],
+   "key_features": [
+    "Original silhouette introduced in 1966",
+    "Tropical floral print sidewall",
+    "Low-top design with unpadded, low-profile cuff",
+    "Canvas upper for a light but durable finish",
+    "Signature rubber waffle outsole for reliable grip",
+    "Vulcanized build",
+    "Lace-up closure with metal eyelets",
+    "Round toe shape"
+   ],
+   "colors": [
+    {
+     "hex": "#cfdeea",
+     "percentage": 0.2753
+    },
+    {
+     "hex": "#366897",
+     "percentage": 0.166
+    },
+    {
+     "hex": "#907c74",
+     "percentage": 0.1536
+    },
+    {
+     "hex": "#819cb3",
+     "percentage": 0.1239
+    },
+    {
+     "hex": "#274763",
+     "percentage": 0.1079
+    },
+    {
+     "hex": "#a9aaa6",
+     "percentage": 0.0951
+    },
+    {
+     "hex": "#5e7181",
+     "percentage": 0.0782
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/MimGTlm-fsxO-4ecE2h?o=01M4CB89G2HRE6VJV3NPZ0PAHN&aid=01M730F0FFWC13ZZQKT0YEKC0F",
+     "domain": "zappos.com",
+     "price": {
+      "price": 32.5,
+      "compare_at_price": 65,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.05,
+     "dimensions": {
+      "length": null,
+      "width": null,
+      "height": null,
+      "weight": {
+       "number": 13,
+       "unit": "oz"
+      }
+     }
+    }
+   ],
+   "variants": {
+    "options": [
+     {
+      "name": "Color",
+      "values": [
+       {
+        "label": "Black",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/a17b5502-2c40-4266-834b-abcdf0290e57",
+        "product_id": "ZT71nk1"
+       },
+       {
+        "label": "Black/White",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/6c74381b-10e8-4a88-95b4-4a879e1675e9",
+        "product_id": "mfrlWnP"
+       },
+       {
+        "label": "Brown / Red",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/5290746d-0943-462c-afbf-a3c9166adce4",
+        "product_id": "KVtBXZ6"
+       },
+       {
+        "label": "Chipmunk Brown",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/6c8ec064-a49d-4370-9eb0-6ead93497ae9",
+        "product_id": "hbSdWQF"
+       },
+       {
+        "label": "Deep Twilight Blue",
+        "exists": true,
+        "available": "OutOfStock",
+        "thumbnail_url": "https://cdn.trychannel3.com/07ac9b5b-eb84-4e71-8894-04dc4efcf918",
+        "product_id": "eEXPh35"
+       },
+       {
+        "label": "Glacial Slate Blue",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/64f30d83-6251-4355-8137-cb6fb7a50f65",
+        "product_id": "W34kskP"
+       },
+       {
+        "label": "Marshmallow White",
+        "exists": true,
+        "available": "OutOfStock",
+        "thumbnail_url": "https://cdn.trychannel3.com/2dd7edbd-c39f-4f04-86a9-ec2404ce5513",
+        "product_id": "7h4FC7H"
+       },
+       {
+        "label": "Sidewall Print Classic Blue",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/c747c741-e614-47db-b1df-adb344ac904e",
+        "product_id": "uytgW34"
+       },
+       {
+        "label": "Sidewall Print Marshmallow",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/83e77a8d-e6c9-46bc-9014-96ae9d135eac",
+        "product_id": "MimGTlm"
+       },
+       {
+        "label": "Soft Slate Blue",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/6069d2b8-cc25-4068-9d00-ee8cadb9834f",
+        "product_id": "lpmsRm0"
+       }
+      ]
+     },
+     {
+      "name": "Material",
+      "values": [
+       {
+        "label": "Canvas",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/83e77a8d-e6c9-46bc-9014-96ae9d135eac",
+        "product_id": "MimGTlm"
+       },
+       {
+        "label": "Suede",
+        "exists": false,
+        "available": "OutOfStock",
+        "thumbnail_url": "https://cdn.trychannel3.com/2dd7edbd-c39f-4f04-86a9-ec2404ce5513",
+        "product_id": "7h4FC7H"
+       }
+      ]
+     },
+     {
+      "name": "Shoe Size",
+      "values": [
+       {
+        "label": "W 5 / M 3.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 5.5 / M 4",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 6 / M 4.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 6.5 / M 5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 7 / M 5.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 7.5 / M 6",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 8 / M 6.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 8.5 / M 7",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 9 / M 7.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 9.5 / M 8",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 10 / M 8.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 10.5 / M 9",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 11 / M 9.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 11.5 / M 10",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 12 / M 10.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 12.5 / M 11",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 13 / M 11.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 13.5 / M 12",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 14.5 / M 13",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "4.0 Boys = 5.5 Women",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "4.5 Boys = 6.0 Women",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "5.5 Boys = 7.0 Women",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "6 (kids)",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "6.0 Boys = 7.5 Women",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       }
+      ]
+     }
+    ],
+    "selected": [
+     {
+      "name": "Material",
+      "label": "Canvas"
+     },
+     {
+      "name": "Color",
+      "label": "Sidewall Print Marshmallow"
+     }
+    ]
+   },
+   "structured_attributes": {
+    "upper-material": [
+     "Canvas",
+     "Knit"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Textile"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "activity": [
+     "Universal",
+     "Walking"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ],
+    "shoe-features": [
+     "Lightweight"
+    ],
+    "pattern": [
+     "Floral",
+     "Leaves"
+    ],
+    "outsole-material": [
+     "Rubber",
+     "Synthetic"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "ankle-collar-style": [
+     "Low cut"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ],
+    "shoe-fit": [
+     "Regular"
+    ],
+    "lining-material": [
+     "Textile"
+    ]
+   },
+   "ratings": {
+    "value": 5,
+    "count": 3145,
+    "source_count": 2
+   }
+  },
+  {
+   "id": "MPveXUM",
+   "title": "Authentic Shoe",
+   "description": "The Vans Authentic Shoe in True White is a classic low-top sneaker featuring a playful, all-over \"I Love My Vans\" print. Built for everyday wear, it combines a durable canvas upper with a signature rubber waffle outsole for reliable grip and a timeless look.",
+   "brands": [
+    {
+     "id": "zv3U",
+     "name": "Vans"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/792f01e7-48ce-4b65-b926-041627f52e4c?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=vQHY",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/792f01e7-48ce-4b65-b926-041627f52e4c?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=vQHY",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Pair of Vans Authentic shoes with blue and white heart print."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/a1bca64b-002a-446d-9819-fbf38b73fb00?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=vQHY",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/a1bca64b-002a-446d-9819-fbf38b73fb00?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=vQHY",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Side view of a Vans Authentic shoe with blue and white heart print."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/17f199d2-1262-40ff-a76d-88a0190e3b9c?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=vQHY",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of white laces and outsole of a Vans shoe."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/44ef5a34-d1e4-42cd-9710-90476f1b1365?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=vQHY",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/44ef5a34-d1e4-42cd-9710-90476f1b1365?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=vQHY",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Pair of Vans Authentic shoes shown from the front."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": "adult",
+   "materials": [
+    "Canvas",
+    "Rubber"
+   ],
+   "key_features": [
+    "Low-top shoe",
+    "Allover “I Love My Vans” print",
+    "Canvas upper for a durable and classic look",
+    "Unpadded, low-profile cuff for a minimalist fit",
+    "Metal eyelets",
+    "Rubber sidewall with classic foxing stripe",
+    "Lace-up closure",
+    "Signature waffle outsole pattern"
+   ],
+   "colors": [
+    {
+     "hex": "#bb9a64",
+     "percentage": 0.3427
+    },
+    {
+     "hex": "#b9ac91",
+     "percentage": 0.1819
+    },
+    {
+     "hex": "#e2e4f2",
+     "percentage": 0.1608
+    },
+    {
+     "hex": "#debea7",
+     "percentage": 0.1158
+    },
+    {
+     "hex": "#e0d2d1",
+     "percentage": 0.1081
+    },
+    {
+     "hex": "#894862",
+     "percentage": 0.0907
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/MPveXUM-vQHY-4ecE2h?o=01M71J0T79SZ9WCJY9JN9XJTCX&aid=01M730F0FFWC13ZZQKT0YEKC0F",
+     "domain": "vans.com",
+     "price": {
+      "price": 23.99,
+      "compare_at_price": 60,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.015,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "activity": [
+     "Universal"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "pattern": [
+     "Text"
+    ],
+    "shoe-features": [
+     "Lightweight"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "ankle-collar-style": [
+     "Low cut"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Rubber"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ]
+   },
+   "ratings": {
+    "value": 4.6,
+    "count": 20,
+    "source_count": 1
+   }
+  },
+  {
+   "id": "VEpfIgb",
+   "title": "Vans Authentic",
+   "description": "A classic low-top sneaker from Vans, the Authentic in white is a versatile and timeless shoe. Known for its simple design and durable construction, this shoe is perfect for everyday wear and skating. This model is designed for men.",
+   "brands": [
+    {
+     "id": "zv3U",
+     "name": "Vans"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/07f20e0e-8a72-49b1-a3b7-fd38d033aa39?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=fFUX",
+     "cleaned_url": "https://cdn.trychannel3.com/62bb10c2-0699-471d-934b-11bb21b6736a?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=fFUX",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "White authentic Vans men's lace-up low-top sneaker."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "male",
+   "age": "adult",
+   "materials": [
+    "canvas",
+    "rubber"
+   ],
+   "key_features": [
+    "Low-top skate silhouette",
+    "'Off The Wall' heel tab",
+    "Vulcanised sole with blue stripe",
+    "Rubber waffle outsole"
+   ],
+   "colors": [
+    {
+     "hex": "#7f7c80",
+     "percentage": 0.311
+    },
+    {
+     "hex": "#dad9d0",
+     "percentage": 0.2611
+    },
+    {
+     "hex": "#bcb8b0",
+     "percentage": 0.2512
+    },
+    {
+     "hex": "#9d9a9a",
+     "percentage": 0.114
+    },
+    {
+     "hex": "#474651",
+     "percentage": 0.0627
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/VEpfIgb-fFUX-4ecE2h?o=01KNVP6JPARKR32E2FW21ET7H6&aid=01M730F0FFWC13ZZQKT0YEKC0F",
+     "domain": "stockx.com",
+     "price": {
+      "price": 29,
+      "compare_at_price": 36,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.028,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "pattern": [
+     "Solid"
+    ],
+    "sneaker-style": [
+     "Fashion",
+     "Low-top"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "closure-type": [
+     "Lace-up",
+     "Slip-on"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "flat-shoe-style": [
+     "Boat shoe"
+    ],
+    "activity": [
+     "Skateboarding"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "rA67SQL",
+   "title": "Authentic Shoe",
+   "description": "The Vans Authentic is a timeless low-top shoe, first introduced in 1966. This version features a durable canvas upper in a neutral 'Incense' tan color, complemented by a classic white rubber sidewall with a foxing stripe and white laces. Designed for a minimalist fit, it includes an unpadded cuff, metal eyelets, and the signature rubber waffle outsole for reliable grip.",
+   "brands": [
+    {
+     "id": "zv3U",
+     "name": "Vans"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/7ab3f743-36c1-4521-b343-a8cdda6c5c0d?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=vQHY",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/7ab3f743-36c1-4521-b343-a8cdda6c5c0d?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=vQHY",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Pair of tan Vans shoes shown from an angle on a light background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/14d1ec76-747a-4779-8289-17308ad6f5c9?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=vQHY",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/14d1ec76-747a-4779-8289-17308ad6f5c9?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=vQHY",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Single tan Vans shoe shown from the side view on a light background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/f257a520-3501-46f0-b3fe-3d37e1982059?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=vQHY",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Pair of Vans shoes showing the insole and outsole from different angles."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/7eca7cce-90ac-4c73-be7c-f30e2f77a899?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=vQHY",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/7eca7cce-90ac-4c73-be7c-f30e2f77a899?aid=01M730F0FFWC13ZZQKT0YEKC0F&mid=vQHY",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of tan Vans shoes shown from the back view."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": "adult",
+   "materials": [
+    "canvas",
+    "rubber"
+   ],
+   "key_features": [
+    "Low-top shoe",
+    "Unpadded, low-profile cuff for a minimalist fit",
+    "Metal eyelets",
+    "Rubber sidewall with classic foxing stripe",
+    "Lace-up closure for an adjustable fit",
+    "Signature waffle outsole pattern",
+    "Vulcanized build",
+    "Canvas upper for a light but durable finish",
+    "Original Vans silhouette since 1966",
+    "Round toe shape"
+   ],
+   "colors": [
+    {
+     "hex": "#957f64",
+     "percentage": 0.5044
+    },
+    {
+     "hex": "#bca88f",
+     "percentage": 0.4956
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/rA67SQL-vQHY-4ecE2h?o=01M3023M5V2WXCRHXT6HXSTRKE&aid=01M730F0FFWC13ZZQKT0YEKC0F",
+     "domain": "vans.com",
+     "price": {
+      "price": 29.97,
+      "compare_at_price": 60,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.07,
+     "dimensions": null
+    }
+   ],
+   "variants": {
+    "options": [
+     {
+      "name": "Size",
+      "values": [
+       {
+        "label": "W 8 / M 6.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 8.5 / M 7",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 9 / M 7.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 9.5 / M 8",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 10 / M 8.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 10.5 / M 9",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 11 / M 9.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 11.5 / M 10",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 12 / M 10.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 12.5 / M 11",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 13 / M 11.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 13.5 / M 12",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 14.5 / M 13",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "3.5 Boys = 5.0 Women",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "4.0 Boys = 5.5 Women",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "4.5 Boys = 6.0 Women",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "5.0 Boys = 6.5 Women",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "5.5 Boys = 7.0 Women",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "6.0 Boys = 7.5 Women",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       }
+      ]
+     }
+    ],
+    "selected": []
+   },
+   "structured_attributes": {
+    "lining-material": [
+     "Textile"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "outsole-material": [
+     "Rubber",
+     "Synthetic"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "activity": [
+     "Universal",
+     "Walking"
+    ],
+    "sneaker-style": [
+     "Low-top",
+     "Fashion"
+    ],
+    "upper-material": [
+     "Canvas",
+     "Knit"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "shoe-features": [
+     "Lightweight"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Textile",
+     "Rubber",
+     "Suede"
+    ],
+    "outsole-stud-type": [
+     "Flat outsole"
+    ],
+    "ankle-collar-style": [
+     "Low cut"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ],
+    "shoe-fit": [
+     "Regular"
+    ],
+    "footwear-construction-method": [
+     "Vulcanized"
+    ]
+   },
+   "ratings": {
+    "value": 4.99,
+    "count": 3220,
+    "source_count": 2
+   }
+  }
+ ]
+}

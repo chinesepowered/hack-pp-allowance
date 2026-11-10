@@ -1,0 +1,320 @@
+{
+ "at": "2026-11-10T16:23:38.106Z",
+ "endpoint": "GET /v1/products/{id}",
+ "request": {
+  "product_id": "GoE3vLc",
+  "country": "US",
+  "currency": "USD"
+ },
+ "products": [
+  {
+   "id": "GoE3vLc",
+   "title": "Sk8-Hi Canvas 'True White' Unisex Shoes",
+   "description": "These are classic high-top canvas sneakers from Vans. They feature a durable canvas upper, a supportive padded ankle, and Vans' signature vulcanized waffle outsole. The shoes are entirely white, including the laces, overlays, and rubber sole, giving them a clean and versatile look suitable for various casual outfits. They are designed for comfort and style, embodying the iconic skate shoe aesthetic.",
+   "brands": [
+    {
+     "id": "zv3U",
+     "name": "Vans"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/377e2d77-a23a-4667-8d3a-eee28330817b?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/377e2d77-a23a-4667-8d3a-eee28330817b?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Pair of white Vans Sk8-hi shoes resting on a dark surface."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/80a22d5b-d985-4915-a126-a4bbc77a2b36?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "cleaned_url": "https://cdn.trychannel3.com/a8ac1a88-90fb-489f-b5c0-b49d196c586f?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Sk8-hi shoe profile view on a dark surface."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/c389b7c2-5019-4bf3-b178-6b389e64c8f0?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "cleaned_url": "https://cdn.trychannel3.com/750e5ecc-1bba-436c-aeb1-c0c2d8f45693?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Sk8-hi shoe profile, showing side panel, on a dark surface."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/0c30b692-e01c-4db6-a30e-54900d5210c6?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "cleaned_url": "https://cdn.trychannel3.com/dc7f5b22-d41c-4bae-8a8d-0bba1a782123?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white Vans Sk8-hi shoes viewed from the bottom."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/c4de6065-22d0-440c-a013-da51b8abbcfb?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/c4de6065-22d0-440c-a013-da51b8abbcfb?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white Vans Sk8-hi shoes from the side, showing branding."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/3aa94d58-3e75-4505-9a04-89ac63c2dfe5?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/3aa94d58-3e75-4505-9a04-89ac63c2dfe5?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of the white rubber sole of a Vans shoe."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/0215ebec-f653-4264-93aa-65ff6734efde?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Sk8-hi sneaker with laces, shown from a three-quarter angle."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/d90164f1-7d78-46e4-b1bc-a7ec7f604ce5?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/d90164f1-7d78-46e4-b1bc-a7ec7f604ce5?aid=01M734BBKB0FJCWD3W7CFV4GHQ&mid=wscm",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white Vans Sk8-hi shoes from the side with branding visible."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "male",
+   "age": "adult",
+   "materials": [
+    "Canvas",
+    "Rubber",
+    "Fabric"
+   ],
+   "key_features": [
+    "Round toe",
+    "Flat rubber sole",
+    "Lace-up front fastening",
+    "Logo patch at the tongue",
+    "Ankle length",
+    "White Jazz stripe",
+    "Quilted ankle panel",
+    "Tonal stitching",
+    "Classic Sk8-Hi silhouette",
+    "White canvas upper"
+   ],
+   "colors": [
+    {
+     "hex": "#cdcfdd",
+     "percentage": 0.5082
+    },
+    {
+     "hex": "#abaebb",
+     "percentage": 0.2571
+    },
+    {
+     "hex": "#8b8d96",
+     "percentage": 0.2347
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/GoE3vLc-wscm-4ecE2h?o=01M2GS6EMWZKGZP24DDXK51RQ3&aid=01M734BBKB0FJCWD3W7CFV4GHQ",
+     "domain": "stadiumgoods.com",
+     "price": {
+      "price": 46,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.016,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/GoE3vLc-NuBr-4ecE2h?o=01M62EM7P4FZX9V75VXB7CNBE6&aid=01M734BBKB0FJCWD3W7CFV4GHQ",
+     "domain": "farfetch.com",
+     "price": {
+      "price": 46,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/GoE3vLc-hHvi-4ecE2h?o=01M5YTXBK70WWKBTAHTXG36FG4&aid=01M734BBKB0FJCWD3W7CFV4GHQ",
+     "domain": "kickscrew.com",
+     "price": {
+      "price": 79.56,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.04,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/GoE3vLc-2h1y-4ecE2h?o=01M4WB63JEERMHTRADJ1WC3R0Y&aid=01M734BBKB0FJCWD3W7CFV4GHQ",
+     "domain": "tillys.com",
+     "price": {
+      "price": 79.99,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.035,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/GoE3vLc-gb5P-4ecE2h?o=01M0VSW025FVRTENB0D5VBAHEW&aid=01M734BBKB0FJCWD3W7CFV4GHQ",
+     "domain": "anthropologie.com",
+     "price": {
+      "price": 80,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.032,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/GoE3vLc-bKr1-4ecE2h?o=01M2NG0XN9KNHKXJXERZ91WQ98&aid=01M734BBKB0FJCWD3W7CFV4GHQ",
+     "domain": "blauerboardshop.com",
+     "price": {
+      "price": 39.99,
+      "compare_at_price": 74.99,
+      "currency": "USD"
+     },
+     "availability": "OutOfStock",
+     "condition": "new",
+     "max_commission_rate": 0.024,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/GoE3vLc-lMuW-4ecE2h?o=01KZGMPK5BRBN6WZVRN4B0R0KJ&aid=01M734BBKB0FJCWD3W7CFV4GHQ",
+     "domain": "kith.com",
+     "price": {
+      "price": 42,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "OutOfStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/GoE3vLc-tqzD-4ecE2h?o=01M2JVT3ZNYCHZ45DTCC64PY7Z&aid=01M734BBKB0FJCWD3W7CFV4GHQ",
+     "domain": "millenniumshoes.com",
+     "price": {
+      "price": 75,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "OutOfStock",
+     "condition": "new",
+     "max_commission_rate": 0.084,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "closure-type": [
+     "Lace-up"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "sneaker-style": [
+     "High-top"
+    ],
+    "activity": [
+     "Skateboarding",
+     "Training",
+     "Walking",
+     "Universal"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "upper-material": [
+     "Canvas",
+     "Mesh",
+     "Leather"
+    ],
+    "shoe-features": [
+     "Cushioned"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "toe-style": [
+     "Cap",
+     "Round"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Textile",
+     "Rubber",
+     "Leather",
+     "Synthetic"
+    ],
+    "shoe-collar-height": [
+     "High-top"
+    ],
+    "insole-material": [
+     "Memory foam"
+    ],
+    "pronation-support": [
+     "Neutral"
+    ],
+    "sole-construction": [
+     "Two-piece sole"
+    ],
+    "footwear-support-type": [
+     "Neutral"
+    ],
+    "shoe-fit": [
+     "Regular"
+    ],
+    "lining-material": [
+     "Textile",
+     "Leather"
+    ],
+    "footwear-cut": [
+     "High cut"
+    ],
+    "outsole-stud-type": [
+     "Flat outsole"
+    ],
+    "ankle-collar-style": [
+     "High cut"
+    ]
+   },
+   "ratings": {
+    "value": 4.3,
+    "count": 1059,
+    "source_count": 1
+   }
+  }
+ ]
+}

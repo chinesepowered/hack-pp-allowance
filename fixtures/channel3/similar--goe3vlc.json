@@ -1,0 +1,1040 @@
+{
+ "at": "2026-11-10T16:23:38.956Z",
+ "endpoint": "POST /v1/similar",
+ "request": {
+  "product_id": "GoE3vLc",
+  "limit": 6,
+  "filters": {
+   "availability": [
+    "InStock"
+   ],
+   "conditions": [
+    "new"
+   ],
+   "price": {
+    "max_price": 40
+   }
+  },
+  "config": {
+   "country": "US",
+   "currency": "USD",
+   "language": "en"
+  }
+ },
+ "products": [
+  {
+   "id": "13aWFfr",
+   "title": "VANS Sk8-Hi Top Sneakers",
+   "description": "Timelessly classic kicks, these Vans Sk8-Hi sneakers feature a high-top silhouette that effortlessly lace-up. Sturdy rubber sole for ultra comfy wear.",
+   "brands": [
+    {
+     "id": "zv3U",
+     "name": "Vans"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/bb9317d6-462d-4675-9acc-4116f378366e?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": true,
+     "shot_type": "on_model",
+     "alt_text": "White Vans Sk8-Hi Top sneakers worn with blue jeans."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/943b17a7-eebc-43d0-909c-d1f1a6b82124?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Sk8-Hi Top sneaker front view on light surface."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/53611ec0-d6a2-44df-9644-5fbf57d2da1c?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Person wearing Vans sneakers with shorts and hoodie."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/29f8660b-e28a-467c-a7c9-f99b81c6e2b2?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Sk8-Hi Top sneaker from the side."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/ef9d7f85-b9b6-48cc-b215-72c8b35e08e9?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/ef9d7f85-b9b6-48cc-b215-72c8b35e08e9?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Black Vans Sk8-Hi Top sneaker from the side."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/862e7c93-de9c-4f8a-979e-0b5c98706d27?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/862e7c93-de9c-4f8a-979e-0b5c98706d27?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Leopard print Vans Sk8-Hi Top sneaker."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/ead270ff-468f-4aa7-8332-c2259aed1c20?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/ead270ff-468f-4aa7-8332-c2259aed1c20?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Sk8-Hi Top sneaker with grey stripe detail."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/94081bd4-79ff-4e48-829d-6120e989bea9?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Black Vans Sk8-Hi Top sneaker with white stripe."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/addab4a4-fda4-4910-a619-2fc954cacd51?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/addab4a4-fda4-4910-a619-2fc954cacd51?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Dark green Vans Sk8-Hi Top sneaker."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/2b489f36-a353-4586-867b-9458f9f4f996?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/2b489f36-a353-4586-867b-9458f9f4f996?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Dark green Vans Sk8-Hi Top sneaker."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/03bc2c11-f235-4707-9b18-e946ffb1d28b?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Dark green Vans Sk8-Hi Top sneaker with orange stripe."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/1d34152c-7c30-4da0-a199-d3aed89f0174?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "on_model",
+     "alt_text": "Black Vans Sk8-Hi Top sneaker worn with black pants."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/db8cbf98-6385-487f-90e3-6379a98a1f73?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Black Vans Sk8-Hi Top sneaker solo shot."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/b1ee8db2-214c-4b49-8f7e-f7fa8a9fbcae?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/b1ee8db2-214c-4b49-8f7e-f7fa8a9fbcae?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Sk8-Hi Top sneaker with red stripe."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/67570339-79ad-446d-93d3-c6e4452614c5?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Sk8-Hi Top sneaker with grey stripe."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": "adult",
+   "materials": [
+    "Canvas",
+    "Rubber"
+   ],
+   "key_features": [
+    "High-top silhouette",
+    "Lace-up",
+    "Sturdy rubber sole"
+   ],
+   "colors": [
+    {
+     "hex": "#937861",
+     "percentage": 0.2436
+    },
+    {
+     "hex": "#f9f8f7",
+     "percentage": 0.2308
+    },
+    {
+     "hex": "#5d5d5d",
+     "percentage": 0.1514
+    },
+    {
+     "hex": "#ae9c8a",
+     "percentage": 0.1366
+    },
+    {
+     "hex": "#322f2a",
+     "percentage": 0.13
+    },
+    {
+     "hex": "#4c473e",
+     "percentage": 0.1078
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/13aWFfr-ofE4-4ecE2h?o=01M6XANRG759925X7GB8T4QZNB&aid=01M734BCB4Q2CS3XBK5TZSTRTQ",
+     "domain": "endource.com",
+     "price": {
+      "price": 29.95,
+      "compare_at_price": 80,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "footwear-cut": [
+     "High cut"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "activity": [
+     "Universal"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Rubber"
+    ],
+    "ankle-collar-style": [
+     "High cut"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "pattern": [
+     "Solid",
+     "Animal"
+    ],
+    "sneaker-style": [
+     "High-top"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "upper-material": [
+     "Canvas",
+     "Leather"
+    ],
+    "shoe-features": [
+     "Cushioned"
+    ],
+    "shoe-collar-height": [
+     "High-top"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "P7Ohyba",
+   "title": "VANS Sk8-Hi Top Sneakers",
+   "description": "Timelessly classic kicks, these Vans Sk8-Hi sneakers feature a high-top silhouette that effortlessly lace-up. Sturdy rubber sole for ultra comfy wear.",
+   "brands": [
+    {
+     "id": "zv3U",
+     "name": "Vans"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/6cfb31cb-26d5-415a-9c24-bcf147aee542?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": true,
+     "shot_type": "on_model",
+     "alt_text": "Black Vans Sk8-Hi Top Sneakers worn on a person's ankle."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/459563bc-7f7b-4510-b86f-06b10a625b77?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "on_model",
+     "alt_text": "White Vans Sk8-Hi Top Sneakers worn on feet with jeans."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/b97348ba-b56e-4cdc-8d7a-b5a93d874ba3?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/b97348ba-b56e-4cdc-8d7a-b5a93d874ba3?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Off-white Vans Sk8-Hi Top sneaker in green and cream."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/295b51a0-e7a6-4ef6-b489-2556ca3f797d?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/295b51a0-e7a6-4ef6-b489-2556ca3f797d?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Sk8-Hi Top sneaker with red accents."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/8c1c8437-13bb-4f75-9702-60476447a169?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Sk8-Hi Top sneaker with grey accents."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/32346459-63fc-49ed-a93c-fb2d8373f863?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of black Vans Sk8-Hi Top sneakers worn by a person."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/b1234324-b942-4f66-872c-4c874592da48?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Off-white Vans Sk8-Hi Top sneaker with dark grey accents."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/245e01bb-da8c-4ceb-a22f-0c312877a9d9?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/245e01bb-da8c-4ceb-a22f-0c312877a9d9?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Dark green Vans Sk8-Hi Top sneaker with pink laces."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/74cf3fd3-b39f-4581-a6ab-452bbcb989de?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/74cf3fd3-b39f-4581-a6ab-452bbcb989de?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Dark green Vans Sk8-Hi Top sneaker."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/30433618-65d4-4568-994e-346fe9927362?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/30433618-65d4-4568-994e-346fe9927362?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Black Vans Sk8-Hi Top sneaker with white accents."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/ee0fb75e-0181-4271-8172-730c27b527f5?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Black Vans Sk8-Hi Top sneaker with white accents."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/03ecd9f6-d730-4c32-b28c-af46453de1c7?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/03ecd9f6-d730-4c32-b28c-af46453de1c7?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Leopard print Vans Sk8-Hi Top sneaker."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/70bb6020-fd44-4343-a5c7-21e39d201307?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Black Vans Sk8-Hi Top sneaker with white accents."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/fb716280-3efb-4ac3-881c-33c0508cdeb2?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Red Vans Sk8-Hi Top sneaker with black and white accents."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/78d23b77-9d0e-40ff-ad76-0c918d459001?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/78d23b77-9d0e-40ff-ad76-0c918d459001?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=ofE4",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Yellow Vans Sk8-Hi Top sneaker."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": "adult",
+   "materials": [
+    "Canvas",
+    "Rubber"
+   ],
+   "key_features": [
+    "High-top silhouette",
+    "Lace-up",
+    "Sturdy rubber sole"
+   ],
+   "colors": [
+    {
+     "hex": "#c6c1bb",
+     "percentage": 0.6655
+    },
+    {
+     "hex": "#4f4b46",
+     "percentage": 0.1407
+    },
+    {
+     "hex": "#36332d",
+     "percentage": 0.1165
+    },
+    {
+     "hex": "#918b84",
+     "percentage": 0.0773
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/P7Ohyba-ofE4-4ecE2h?o=01M6VK77N30HVK7FJ6KKPCXAFZ&aid=01M734BCB4Q2CS3XBK5TZSTRTQ",
+     "domain": "endource.com",
+     "price": {
+      "price": 29.95,
+      "compare_at_price": 80,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "upper-material": [
+     "Canvas"
+    ],
+    "activity": [
+     "Universal"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Rubber"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "sneaker-style": [
+     "High-top"
+    ],
+    "footwear-cut": [
+     "High cut"
+    ],
+    "ankle-collar-style": [
+     "High cut"
+    ],
+    "shoe-features": [
+     "Cushioned"
+    ],
+    "shoe-collar-height": [
+     "High-top"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "JDulUlt",
+   "title": "SK8-Hi",
+   "description": "A classic high-top sneaker from Vans, featuring a \"Birch\" colorway with \"True White\" accents. These shoes are designed for adults and are made with a durable suede upper, a padded collar for comfort, a secure laced closure, and a grippy rubber sole. Perfect for everyday wear and skateboarding.",
+   "brands": [
+    {
+     "id": "zv3U",
+     "name": "Vans"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/11b7b3f5-c84b-4e9b-9a16-3737e548f8cb?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=fFUX",
+     "cleaned_url": "https://cdn.trychannel3.com/1a5deebd-5305-4bae-862b-93589b32cc8d?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=fFUX",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Vans SK8-HI 'Birch' shoe viewed from the side."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/b6038f53-333e-40b0-abe1-b8b9c0ef206d?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=fFUX",
+     "cleaned_url": "https://cdn.trychannel3.com/64921a93-26be-47f8-b03c-8abff202c8fb?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=fFUX",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Vans SK8-HI 'Birch' shoe viewed from the side."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/b6863878-e90a-4f26-8c2b-a0f664c60def?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=fFUX",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Two pairs of Vans SK8-HI 'Birch' shoes side by side."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/dcf691f7-546b-4552-ad48-bb70c4fd8022?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=fFUX",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Two pairs of Vans SK8-HI 'Birch' shoes with red heel branding."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/455e89ff-2d90-4ced-a8d7-b79235c2013f?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=fFUX",
+     "cleaned_url": "https://cdn.trychannel3.com/e74514da-87d1-47a3-84b2-a37f6dc49ec2?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=fFUX",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Top view of the interior of a Vans SK8-HI shoe."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "male",
+   "age": "adult",
+   "materials": [
+    "suede",
+    "rubber"
+   ],
+   "key_features": [
+    "high-top",
+    "suede upper",
+    "padded collar",
+    "laced closure",
+    "rubber sole"
+   ],
+   "colors": [
+    {
+     "hex": "#e4dfd6",
+     "percentage": 0.9389
+    },
+    {
+     "hex": "#9a9794",
+     "percentage": 0.0611
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/JDulUlt-fFUX-4ecE2h?o=01KNVRZT8WSYTKTB3DGR6GC9KJ&aid=01M734BCB4Q2CS3XBK5TZSTRTQ",
+     "domain": "stockx.com",
+     "price": {
+      "price": 29,
+      "compare_at_price": 41,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.028,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "occasion-style": [
+     "Casual"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Leather",
+     "Rubber"
+    ],
+    "sneaker-style": [
+     "High-top"
+    ],
+    "activity": [
+     "Skateboarding"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "outsole-stud-type": [
+     "Flat outsole"
+    ],
+    "ankle-collar-style": [
+     "High cut"
+    ],
+    "shoe-collar-height": [
+     "High-top"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "lining-material": [
+     "Textile"
+    ],
+    "footwear-cut": [
+     "High cut"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "AQXomhu",
+   "title": "Authentic Hi 2.0 Shoe",
+   "description": "The Vans Authentic Hi 2.0 Shoe is a modern elevation of the brand's original classic silhouette. This high-top sneaker features a sturdy canvas upper, a lace-up closure with cotton laces and metal eyelets, and a deconstructed, unpadded paneling for a lighter, more flexible fit. The shoe maintains the signature waffle outsole for reliable grip and a vulcanized build for the original look and feel. It offers snug ankle support and a durable, classic appearance.",
+   "brands": [
+    {
+     "id": "36LM",
+     "name": "VF CORPORATION"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/4f74a077-0e37-47f9-a977-2ff6aec5a571?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=vQHY",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/4f74a077-0e37-47f9-a977-2ff6aec5a571?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=vQHY",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Pair of cream Vans Hi 2.0 shoes on a light background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/f05f0292-5607-4e4d-9a7f-c5da54200966?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=vQHY",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/f05f0292-5607-4e4d-9a7f-c5da54200966?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=vQHY",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Side view of a cream Vans Hi 2.0 shoe."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/caff9022-def4-4428-b4b5-7a4c076ad135?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=vQHY",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of the sole and inner part of a Vans shoe."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/95c9898d-bab0-4968-89b9-329a55d1770b?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=vQHY",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/95c9898d-bab0-4968-89b9-329a55d1770b?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=vQHY",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "A pair of cream Vans Hi 2.0 shoes displayed together."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": "kids",
+   "materials": [
+    "canvas",
+    "cotton",
+    "rubber"
+   ],
+   "key_features": [
+    "Heritage silhouette with high-top build",
+    "Canvas upper for a durable and classic look",
+    "Deconstructed (unpadded) paneling for a lighter, more flexible fit",
+    "Cotton lace and metal eyelets",
+    "Snug fit around the ankle for added support",
+    "Signature waffle outsole pattern for reliable grip since '66",
+    "Vulcanized build for the original look and feel"
+   ],
+   "colors": [
+    {
+     "hex": "#bfa784",
+     "percentage": 0.54
+    },
+    {
+     "hex": "#6a6a6d",
+     "percentage": 0.1289
+    },
+    {
+     "hex": "#444549",
+     "percentage": 0.1237
+    },
+    {
+     "hex": "#8b8a8c",
+     "percentage": 0.1163
+    },
+    {
+     "hex": "#e4d1b9",
+     "percentage": 0.0911
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/AQXomhu-vQHY-4ecE2h?o=01KXR59QAGV3B45DA7M8Y9XRYH&aid=01M734BCB4Q2CS3XBK5TZSTRTQ",
+     "domain": "vans.com",
+     "price": {
+      "price": 38.97,
+      "compare_at_price": 70,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.07,
+     "dimensions": null
+    }
+   ],
+   "variants": {
+    "options": [],
+    "selected": [
+     {
+      "name": "Color",
+      "label": "Classic White"
+     }
+    ]
+   },
+   "structured_attributes": {
+    "closure-type": [
+     "Lace-up"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "care-instructions": [
+     "Dry clean only"
+    ],
+    "activity": [
+     "Training"
+    ],
+    "shoe-collar-height": [
+     "High-top"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "footwear-cut": [
+     "High cut"
+    ],
+    "footwear-construction-method": [
+     "Vulcanized"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "sole-construction": [
+     "Split sole"
+    ],
+    "sneaker-style": [
+     "Athletic"
+    ]
+   },
+   "ratings": {
+    "value": 3.85,
+    "count": 41,
+    "source_count": 1
+   }
+  },
+  {
+   "id": "WCoczyK",
+   "title": "SK8-Hi",
+   "description": "The Vans SK8-Hi White Ice Flow sneakers are a classic high-top silhouette reimagined with a fresh \"White Ice Flow\" colorway. Featuring the iconic sidestripe and durable construction, these shoes offer both style and performance for everyday wear. Perfect for those who appreciate timeless skate-inspired design.",
+   "brands": [
+    {
+     "id": "zv3U",
+     "name": "Vans"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/40482f56-35b4-43d0-b235-5e43efc9260f?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=fFUX",
+     "cleaned_url": "https://cdn.trychannel3.com/93f54094-b484-4541-9e2f-dad265555623?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=fFUX",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "White Vans Sk8-hi Ice Flow high-top sneaker."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "male",
+   "age": "adult",
+   "materials": [],
+   "key_features": [],
+   "colors": [
+    {
+     "hex": "#dfe1de",
+     "percentage": 0.9255
+    },
+    {
+     "hex": "#767371",
+     "percentage": 0.0745
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/WCoczyK-fFUX-4ecE2h?o=01KNVWYAJ6MS5R1RKDPMF4GYPG&aid=01M734BCB4Q2CS3XBK5TZSTRTQ",
+     "domain": "stockx.com",
+     "price": {
+      "price": 35,
+      "compare_at_price": 55,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.028,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "occasion-style": [
+     "Casual"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "sneaker-style": [
+     "High-top"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "nsIX829",
+   "title": "Sk8-Hi Reissue Classic Tumble",
+   "description": "A high-top sneaker from Vans, featuring a white leather upper with classic side stripe detailing and ribbed paneling on the ankle. Designed for comfort and style, these shoes have a durable rubber sole and are perfect for everyday wear. Originally introduced in 1978 as the 'Skate Hi,' this iconic silhouette remains a staple for skaters and fashion enthusiasts alike.",
+   "brands": [
+    {
+     "id": "zv3U",
+     "name": "Vans"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/c82cd203-e6ce-4f68-8247-cb672872e812?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=fFUX",
+     "cleaned_url": "https://cdn.trychannel3.com/46559f7c-2f2f-4f3f-9e19-663bc63dc17f?aid=01M734BCB4Q2CS3XBK5TZSTRTQ&mid=fFUX",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "True White Vans Sk8-hi Reissue Classic Tumble sneaker."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "male",
+   "age": "adult",
+   "materials": [
+    "leather",
+    "rubber"
+   ],
+   "key_features": [
+    "High-top design",
+    "Leather upper",
+    "Ribbed paneling",
+    "Durable rubber sole",
+    "Padded collar for comfort",
+    "Signature Vans side stripe"
+   ],
+   "colors": [
+    {
+     "hex": "#d5dce9",
+     "percentage": 0.5158
+    },
+    {
+     "hex": "#8b94a9",
+     "percentage": 0.2653
+    },
+    {
+     "hex": "#b3bbce",
+     "percentage": 0.1139
+    },
+    {
+     "hex": "#666c7b",
+     "percentage": 0.105
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/nsIX829-fFUX-4ecE2h?o=01KNWQ6MSK7B06AXR3YYM8R9DH&aid=01M734BCB4Q2CS3XBK5TZSTRTQ",
+     "domain": "stockx.com",
+     "price": {
+      "price": 37,
+      "compare_at_price": 70,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.028,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "activity": [
+     "Skateboarding",
+     "Running"
+    ],
+    "sneaker-style": [
+     "High-top"
+    ],
+    "footwear-material": [
+     "Leather",
+     "Rubber"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "outsole-stud-type": [
+     "Flat outsole"
+    ],
+    "ankle-collar-style": [
+     "High cut"
+    ],
+    "shoe-collar-height": [
+     "High-top"
+    ],
+    "shoe-features": [
+     "Cushioned"
+    ],
+    "footwear-cut": [
+     "High cut"
+    ],
+    "upper-material": [
+     "Leather"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ]
+   },
+   "ratings": null
+  }
+ ]
+}

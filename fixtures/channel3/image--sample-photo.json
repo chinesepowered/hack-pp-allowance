@@ -1,0 +1,1467 @@
+{
+ "at": "2026-11-10T16:37:37.535Z",
+ "endpoint": "POST /v1/search/image",
+ "request": {
+  "image": "538e23164f059b12",
+  "limit": 8,
+  "filters": {
+   "availability": [
+    "InStock"
+   ],
+   "conditions": [
+    "new"
+   ],
+   "price": {
+    "max_price": 40
+   }
+  },
+  "config": {
+   "country": "US",
+   "currency": "USD",
+   "language": "en"
+  }
+ },
+ "products": [
+  {
+   "id": "FfC7wP7",
+   "title": "Essential Large Backpack",
+   "description": "The Vera Bradley Outlet Essential Large Backpack in Fluorite Green is a versatile and spacious bag designed for work, school, or weekend travel. Crafted from durable polyester, it features three main compartments, including a dedicated section that accommodates laptops up to 17 inches. The exterior is equipped with two side pockets and a convenient trolley sleeve for easy airport transport. Organization is simplified with multiple interior slip pockets and a secure zip pocket, making it an ideal companion for those on the go.",
+   "brands": [
+    {
+     "id": "Ct6X",
+     "name": "Vera Bradley"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/3a516206-4a03-4e48-b666-2fbc54e6cbb8?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/3a516206-4a03-4e48-b666-2fbc54e6cbb8?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Fluorite green backpack shown from the front, plain background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/f5687b67-02d0-4dbc-9bfe-2a8a931b45a9?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Fluorite green backpack open showing patterned interior."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/03fe9e07-9143-46d7-a370-71980b71944e?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/03fe9e07-9143-46d7-a370-71980b71944e?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Fluorite green backpack shown from the back with straps."
+    }
+   ],
+   "category": {
+    "slug": "laptop-backpacks",
+    "title": "Laptop Backpacks",
+    "path": [
+     {
+      "slug": "luggage-bags",
+      "title": "Luggage & Bags"
+     },
+     {
+      "slug": "backpacks",
+      "title": "Backpacks"
+     },
+     {
+      "slug": "laptop-backpacks",
+      "title": "Laptop Backpacks"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": "adult",
+   "materials": [
+    "polyester"
+   ],
+   "key_features": [
+    "Accommodates up to a 17\" laptop",
+    "Capacity 31 L",
+    "Three compartments",
+    "Exterior features two side pockets and a trolley sleeve",
+    "Front compartment features a pen slip pocket and four slip pockets",
+    "Main compartment features two slip pockets and a zip pocket",
+    "Zip closures"
+   ],
+   "colors": [
+    {
+     "hex": "#87ad7f",
+     "percentage": 0.8335
+    },
+    {
+     "hex": "#577650",
+     "percentage": 0.0867
+    },
+    {
+     "hex": "#b3d2ab",
+     "percentage": 0.0798
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/FfC7wP7-A6mW-4ecE2h?o=01M25SAEZX5CTSFSE7S5M3SHXM&aid=01M7354Z83FNZ4KCNWCGJX4H4E",
+     "domain": "verabradleyoutlet.com",
+     "price": {
+      "price": 38.16,
+      "compare_at_price": 159,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": {
+      "length": {
+       "number": 17,
+       "unit": "in"
+      },
+      "width": {
+       "number": 12,
+       "unit": "in"
+      },
+      "height": {
+       "number": 7,
+       "unit": "in"
+      },
+      "weight": {
+       "number": 590,
+       "unit": "g"
+      }
+     }
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "pattern": [
+     "Solid"
+    ],
+    "bag-case-material": [
+     "Polyester"
+    ],
+    "care-instructions": [
+     "Spot clean only",
+     "Line dry"
+    ],
+    "bag-case-features": [
+     "Lightweight"
+    ],
+    "bag-case-storage-features": [
+     "Built-in compartments",
+     "External pockets",
+     "Laptop compartment"
+    ],
+    "carry-options": [
+     "Backpack strap",
+     "Handle",
+     "Trolley sleeve"
+    ],
+    "bag-case-closure": [
+     "Zipper"
+    ],
+    "luggage-bag-closure": [
+     "Zipper"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "EghgwYC",
+   "title": "Bancroft Backpack",
+   "description": "The Bancroft Backpack in Beryl Green is a versatile and stylish companion designed for daily commutes, classes, or travel. Crafted from a featherweight material with a quilted diamond pattern, this backpack offers a blend of functionality and durability. It features a spacious 24L capacity, a dedicated compartment for laptops up to 15 inches, and multiple organization pockets both inside and out, including a trolley sleeve for easy travel.",
+   "brands": [
+    {
+     "id": "Ct6X",
+     "name": "Vera Bradley"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/99fa35c7-676f-424f-b0ab-dfb575dfcd85?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "cleaned_url": null,
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Green quilted backpack shown alone on a plain background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/5174c6fb-a540-4207-996d-596215fb41c7?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/5174c6fb-a540-4207-996d-596215fb41c7?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "is_main_image": false,
+     "shot_type": "on_model",
+     "alt_text": "Woman wearing a green quilted backpack."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/104916fb-3596-488b-abb9-f5dfa4a82cd7?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/104916fb-3596-488b-abb9-f5dfa4a82cd7?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Back view of a green quilted backpack."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/95d6c8f6-04a5-438c-9e9a-3efa641e67dd?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of the backpack interior with colorful lining."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/0904012f-0219-4048-8cf1-125a0ab70c86?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of the backpack interior with colorful lining."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/e21b5776-cec5-4af7-bf9d-5b6429170496?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "in_use",
+     "alt_text": "Green backpack being used to carry a laptop."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/75b6e88b-24f0-4556-99b1-062ac2b77c1b?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/75b6e88b-24f0-4556-99b1-062ac2b77c1b?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=A6mW",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Back view of a green quilted backpack with straps."
+    }
+   ],
+   "category": {
+    "slug": "laptop-backpacks",
+    "title": "Laptop Backpacks",
+    "path": [
+     {
+      "slug": "luggage-bags",
+      "title": "Luggage & Bags"
+     },
+     {
+      "slug": "backpacks",
+      "title": "Backpacks"
+     },
+     {
+      "slug": "laptop-backpacks",
+      "title": "Laptop Backpacks"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": "adult",
+   "materials": [
+    "featherweight"
+   ],
+   "key_features": [
+    "Accommodates up to a 15\" laptop",
+    "24 L capacity",
+    "Exterior features front zip pocket, two zip compartments, laptop compartment, two side slip pockets and a trolley sleeve",
+    "Front zip pocket contains four slip pockets and a pen slip pocket",
+    "Main compartment features two slip pockets and a zip pocket",
+    "Adjustable straps (34.0\") and handle drop (2.25\")"
+   ],
+   "colors": [
+    {
+     "hex": "#8bbfa9",
+     "percentage": 0.3892
+    },
+    {
+     "hex": "#acd5c6",
+     "percentage": 0.2485
+    },
+    {
+     "hex": "#477859",
+     "percentage": 0.1426
+    },
+    {
+     "hex": "#335941",
+     "percentage": 0.1159
+    },
+    {
+     "hex": "#5f9a7a",
+     "percentage": 0.1038
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/EghgwYC-A6mW-4ecE2h?o=01M263KEJVXFKWD1RZECJ6BXQE&aid=01M7354Z83FNZ4KCNWCGJX4H4E",
+     "domain": "verabradleyoutlet.com",
+     "price": {
+      "price": 30,
+      "compare_at_price": 125,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": {
+      "length": {
+       "number": 15.5,
+       "unit": "in"
+      },
+      "width": {
+       "number": 12,
+       "unit": "in"
+      },
+      "height": {
+       "number": 8,
+       "unit": "in"
+      },
+      "weight": {
+       "number": 570,
+       "unit": "g"
+      }
+     }
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "luggage-bag-closure": [
+     "Zipper"
+    ],
+    "pattern": [
+     "Texture"
+    ],
+    "bag-case-closure": [
+     "Zipper"
+    ],
+    "bag-case-storage-features": [
+     "Built-in compartments",
+     "External pockets",
+     "Laptop compartment"
+    ],
+    "care-instructions": [
+     "Spot clean only",
+     "Line dry"
+    ],
+    "carry-options": [
+     "Backpack strap",
+     "Handle",
+     "Trolley sleeve"
+    ],
+    "bag-case-features": [
+     "Lightweight"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "4DV2HDr",
+   "title": "Everclass Backpack",
+   "description": "The High Sierra Everclass Backpack is a clean and versatile everyday bag designed for reliable organization and comfort. It features a streamlined silhouette suitable for commutes or weekend trips. Key functional elements include a padded sleeve that fits most laptops up to 15.6\", sizeable exterior catchall pockets for quick access, and dual side water bottle pockets. For comfort and safety, it is equipped with padded shoulder straps, a padded back panel, and 360-degree reflectivity for low-light visibility. The design is finished with a refined debossed logo patch.",
+   "brands": [
+    {
+     "id": "Ge1U",
+     "name": "High Sierra"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/65a2f21a-03ed-4d88-8410-b3fcdb04a8db?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/65a2f21a-03ed-4d88-8410-b3fcdb04a8db?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Olive green high Sierra Everclass backpack shown from the front."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/facd07e4-fe61-4911-8b08-d62d40eaaf1d?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/facd07e4-fe61-4911-8b08-d62d40eaaf1d?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Black high Sierra Everclass backpack shown from the front."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/f172ce6d-0272-4b16-a897-52b7e21bc254?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "in_use",
+     "alt_text": "Black backpack being used to carry a laptop and various items."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/7e425b8e-da5d-429b-8ecd-538a7fed3795?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Black backpack with school supplies and outdoor items."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/f5e72b8f-bca2-4332-9ff8-6f917edd5924?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Olive green backpack with a laptop, water bottle, and notebooks."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/3bdb619f-1c08-4110-af15-6f1b1eab34c8?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/3bdb619f-1c08-4110-af15-6f1b1eab34c8?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Olive green high Sierra Everclass backpack shown from the front."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/ac1923fd-6ab6-4e28-9434-b80331573c22?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Purple high Sierra Everclass backpack with laptop and gear."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/aefebfbc-0ff7-4f0f-b004-f236942ef752?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/aefebfbc-0ff7-4f0f-b004-f236942ef752?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Purple high Sierra Everclass backpack shown from the front."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/2899e560-d2d5-4fe9-9e96-127e9ac8deb3?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Dark teal backpack with a laptop and water bottle."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/f5dac33e-2704-4f5b-b0d5-38d5917ebcd6?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/f5dac33e-2704-4f5b-b0d5-38d5917ebcd6?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Dark teal high Sierra Everclass backpack shown from the front."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/9bef9947-679d-4008-9df6-54260be42098?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Dark blue backpack with a laptop and gear."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/88b251bc-93bc-4408-aa54-10120e8fc372?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/88b251bc-93bc-4408-aa54-10120e8fc372?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Dark blue high Sierra Everclass backpack shown from the front."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/faafb2d6-24ef-47a1-8a47-ecc59d4192ae?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Grey backpack with laptop and water bottle."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/d6ed4c9e-b9f4-4c82-8667-1411b86112d1?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/d6ed4c9e-b9f4-4c82-8667-1411b86112d1?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Black high Sierra Everclass backpack shown from the front."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/f45f816c-06f5-44e9-a970-fc65598ec6b9?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=p1PB",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Black and white checkered backpack with laptop and accessories."
+    }
+   ],
+   "category": {
+    "slug": "laptop-backpacks",
+    "title": "Laptop Backpacks",
+    "path": [
+     {
+      "slug": "luggage-bags",
+      "title": "Luggage & Bags"
+     },
+     {
+      "slug": "backpacks",
+      "title": "Backpacks"
+     },
+     {
+      "slug": "laptop-backpacks",
+      "title": "Laptop Backpacks"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "Polyester"
+   ],
+   "key_features": [
+    "Padded sleeve fits most laptops up to 15.6\"",
+    "Sizeable exterior catchall pockets for easy access",
+    "Dual side water bottle pockets",
+    "Padded shoulder straps and back panel",
+    "360 reflectivity for low-light visibility",
+    "Debossed logo patch",
+    "Tear-Resistant",
+    "Spacious main compartment for daily essentials",
+    "OLIVE 100% Polyester",
+    "Ample storage"
+   ],
+   "colors": [
+    {
+     "hex": "#67604d",
+     "percentage": 0.8567
+    },
+    {
+     "hex": "#363128",
+     "percentage": 0.0979
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/4DV2HDr-p1PB-4ecE2h?o=01KYTE699SK2TEF38X0FDC3WN0&aid=01M7354Z83FNZ4KCNWCGJX4H4E",
+     "domain": "bestbuy.com",
+     "price": {
+      "price": 29.99,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.005,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/4DV2HDr-LFnL-4ecE2h?o=01KMW28H5JZGVGX0KEBN6DMTDG&aid=01M7354Z83FNZ4KCNWCGJX4H4E",
+     "domain": "staples.com",
+     "price": {
+      "price": 30.79,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.03,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/4DV2HDr-ilvS-4ecE2h?o=01M5EHZBHZ43HS1GZR0FEMK8NN&aid=01M7354Z83FNZ4KCNWCGJX4H4E",
+     "domain": "luggageonline.com",
+     "price": {
+      "price": 34.99,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.042,
+     "dimensions": {
+      "length": {
+       "number": 6.5,
+       "unit": "in"
+      },
+      "width": {
+       "number": 12,
+       "unit": "in"
+      },
+      "height": {
+       "number": 17.5,
+       "unit": "in"
+      },
+      "weight": {
+       "number": 0.46,
+       "unit": "lb"
+      }
+     }
+    },
+    {
+     "url": "https://buy.trychannel3.com/4DV2HDr-fdOw-4ecE2h?o=01M3PP4NAQYRS7F994VZDCH2CA&aid=01M7354Z83FNZ4KCNWCGJX4H4E",
+     "domain": "dickssportinggoods.com",
+     "price": {
+      "price": 34.99,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/4DV2HDr-6Uzl-4ecE2h?o=01M2QTGKS80DMQ0GTBE74Z5BYC&aid=01M7354Z83FNZ4KCNWCGJX4H4E",
+     "domain": "officedepot.com",
+     "price": {
+      "price": 35.99,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.035,
+     "dimensions": {
+      "length": {
+       "number": 6.5,
+       "unit": "in"
+      },
+      "width": null,
+      "height": {
+       "number": 17.5,
+       "unit": "in"
+      },
+      "weight": null
+     }
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "bag-case-features": [
+     "Reflective",
+     "Internal padding",
+     "Lightweight"
+    ],
+    "bag-case-material": [
+     "Polyester",
+     "Nylon"
+    ],
+    "carry-options": [
+     "Backpack strap",
+     "Handle",
+     "Shoulder strap"
+    ],
+    "luggage-bag-closure": [
+     "Zipper"
+    ],
+    "bag-case-closure": [
+     "Zipper"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "bag-case-storage-features": [
+     "External pockets",
+     "Laptop compartment",
+     "Water bottle holder",
+     "Internal padding"
+    ]
+   },
+   "ratings": {
+    "value": 4.73,
+    "count": 16,
+    "source_count": 3
+   }
+  },
+  {
+   "id": "pkGQhLm",
+   "title": "Outlet Essential Rucksack Backpack",
+   "description": "The Vera Bradley Essential Rucksack Backpack in Fluorite Green is a versatile and hands-free companion designed for work, weekend trips, and travel. Crafted from polyester, this rucksack features a spacious 21L capacity and is capable of accommodating a laptop up to 15 inches. It is designed for organization with two exterior side pockets, a front zip pocket, and multiple interior pockets. The bag is secured with a classic buckle closure and includes adjustable straps for a comfortable fit.",
+   "brands": [
+    {
+     "id": "Ct6X",
+     "name": "Vera Bradley"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/a1f7ea9c-bfbd-4d26-99d9-d49c538df791?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=oBbW",
+     "cleaned_url": "https://cdn.trychannel3.com/2a568bbb-3995-4a5f-8d1e-fdc57024e53d?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=oBbW",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Green essential rucksack backpack with multiple compartments"
+    }
+   ],
+   "category": {
+    "slug": "laptop-backpacks",
+    "title": "Laptop Backpacks",
+    "path": [
+     {
+      "slug": "luggage-bags",
+      "title": "Luggage & Bags"
+     },
+     {
+      "slug": "backpacks",
+      "title": "Backpacks"
+     },
+     {
+      "slug": "laptop-backpacks",
+      "title": "Laptop Backpacks"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "Polyester"
+   ],
+   "key_features": [
+    "Accommodates up to a 15\" laptop",
+    "Capacity 21 L",
+    "Exterior features two side pockets and a zip pocket",
+    "Interior features two slip pockets and a zip pocket",
+    "Buckle closure",
+    "Adjustable straps"
+   ],
+   "colors": [
+    {
+     "hex": "#9bc091",
+     "percentage": 0.4039
+    },
+    {
+     "hex": "#749869",
+     "percentage": 0.2581
+    },
+    {
+     "hex": "#567549",
+     "percentage": 0.1331
+    },
+    {
+     "hex": "#2c4121",
+     "percentage": 0.1054
+    },
+    {
+     "hex": "#cbe8c3",
+     "percentage": 0.0995
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/pkGQhLm-oBbW-4ecE2h?o=01KBPC3VVVH4Y4RX24HSJCG8WK&aid=01M7354Z83FNZ4KCNWCGJX4H4E",
+     "domain": "outlet.verabradley.com",
+     "price": {
+      "price": 30.96,
+      "compare_at_price": 129,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.008,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/pkGQhLm-A6mW-4ecE2h?o=01M262BCWX4XBHM910HA2HDF45&aid=01M7354Z83FNZ4KCNWCGJX4H4E",
+     "domain": "verabradleyoutlet.com",
+     "price": {
+      "price": 30.96,
+      "compare_at_price": 129,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": {
+      "length": {
+       "number": 15.5,
+       "unit": "in"
+      },
+      "width": {
+       "number": 10,
+       "unit": "in"
+      },
+      "height": {
+       "number": 6,
+       "unit": "in"
+      },
+      "weight": {
+       "number": 490,
+       "unit": "g"
+      }
+     }
+    }
+   ],
+   "variants": {
+    "options": [
+     {
+      "name": "Pattern",
+      "values": [
+       {
+        "label": "Fluorite Green",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/13881d44-819a-45f7-86f6-73400ea8290f",
+        "product_id": "VzsfcUV"
+       },
+       {
+        "label": "Purple Opulence",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/9b296e96-75fd-4378-9c01-01eb2c669cb0",
+        "product_id": "evvLDyG"
+       },
+       {
+        "label": "Capri Pink",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/360d1e33-4db7-444b-820b-25196f95ff43",
+        "product_id": "ZIaBur0"
+       }
+      ]
+     }
+    ],
+    "selected": []
+   },
+   "structured_attributes": {
+    "bag-case-storage-features": [
+     "External pockets",
+     "Laptop compartment",
+     "Built-in compartments"
+    ],
+    "care-instructions": [
+     "Spot clean only",
+     "Line dry"
+    ],
+    "carry-options": [
+     "Backpack strap",
+     "Handle"
+    ],
+    "bag-case-material": [
+     "Polyester"
+    ],
+    "luggage-bag-closure": [
+     "Buckles"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "bag-case-closure": [
+     "Buckles"
+    ],
+    "bag-case-features": [
+     "Lightweight"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "bEhakSL",
+   "title": "HP Campus Green Backpack",
+   "description": "A lightweight, unisex backpack designed for students and professionals. It features a 15.6‑inch padded laptop compartment, a main large compartment, two quick‑access accessory pockets, an internal pencil pouch, dual side water‑bottle pockets, a lockable zipped design, rain‑repellent material and is made from 50 % post‑consumer recycled plastic (19 recycled plastic bottles). The backpack is available in multiple colors (green, gray, blue, lime gray, pink, lavender) and offers 17 L of organized capacity.",
+   "brands": [
+    {
+     "id": "NdmC",
+     "name": "HP"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/cd668338-70f7-435c-9678-6d787f3a1cba?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=KRXv",
+     "cleaned_url": "https://cdn.trychannel3.com/255f9ab1-5137-43da-a755-301adb0de6d5?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=KRXv",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Green Hp Campus Backpack shown from the side with a shoulder strap."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/010166fe-06df-40b5-9c8a-1f27fe99101c?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=KRXv",
+     "cleaned_url": "https://cdn.trychannel3.com/faa17908-d1d7-4733-919a-e68f0c0e6aed?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=KRXv",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Green Hp Campus Backpack shown from the side with a shoulder strap."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/32defe10-d9b0-436a-b10a-b78486efc264?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=KRXv",
+     "cleaned_url": "https://cdn.trychannel3.com/7a1bd9f9-e98a-45e0-b2a4-4c2b19045a5d?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=KRXv",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Green Hp Campus Backpack shown open displaying interior compartments."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/a4dc2476-8da8-4f92-ae39-a786a90f961b?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=KRXv",
+     "cleaned_url": "https://cdn.trychannel3.com/e0e1ebca-d9be-4fee-8605-156b82077b7c?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=KRXv",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Green Hp Campus Backpack shown from the front with a side pocket."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/8984ddc2-e189-433d-bc13-725a8f39fe98?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=KRXv",
+     "cleaned_url": "https://cdn.trychannel3.com/0ffe62d5-0df8-4a2e-8136-53c2b63c0908?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=KRXv",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Green Hp Campus Backpack shown from the front with a side pocket."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/c3e5cd4c-7b62-4f29-afe1-3b5481d2f542?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=KRXv",
+     "cleaned_url": "https://cdn.trychannel3.com/9d615aa5-a1eb-45f4-8250-a39186f83ec4?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=KRXv",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Green Hp Campus Backpack shown from the front with a side pocket."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/f38da02d-6466-4d4e-b119-c90ef085c4db?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=KRXv",
+     "cleaned_url": "https://cdn.trychannel3.com/828620dc-5f35-4407-8326-dda9c7ab5ae4?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=KRXv",
+     "is_main_image": false,
+     "shot_type": "angle_view",
+     "alt_text": "Back view of the green Hp Campus Backpack showing the padded back panel."
+    }
+   ],
+   "category": {
+    "slug": "laptop-backpacks",
+    "title": "Laptop Backpacks",
+    "path": [
+     {
+      "slug": "luggage-bags",
+      "title": "Luggage & Bags"
+     },
+     {
+      "slug": "backpacks",
+      "title": "Backpacks"
+     },
+     {
+      "slug": "laptop-backpacks",
+      "title": "Laptop Backpacks"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": "adult",
+   "materials": [
+    "rain-repellant-material"
+   ],
+   "key_features": [
+    "15.6‑inch padded floating laptop pocket",
+    "17 L capacity",
+    "Lockable zipper",
+    "Puncture‑resistant zipper",
+    "Rain‑repellent material",
+    "Two quick‑access accessory pockets",
+    "Dual side water‑bottle pockets",
+    "Internal pencil pouch",
+    "10‑in‑6‑in. padded shoulder straps",
+    "Trolley strap for attaching to a rolling bag"
+   ],
+   "colors": [
+    {
+     "hex": "#345c4a",
+     "percentage": 0.2597
+    },
+    {
+     "hex": "#ffffff",
+     "percentage": 0.1484
+    },
+    {
+     "hex": "#6c8d7f",
+     "percentage": 0.1408
+    },
+    {
+     "hex": "#4c7966",
+     "percentage": 0.1285
+    },
+    {
+     "hex": "#1b3d2d",
+     "percentage": 0.1224
+    },
+    {
+     "hex": "#091d11",
+     "percentage": 0.1189
+    },
+    {
+     "hex": "#9db7ac",
+     "percentage": 0.0813
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/bEhakSL-KRXv-4ecE2h?o=01KF2TK7BBZ4VW03G5SVRV8KMD&aid=01M7354Z83FNZ4KCNWCGJX4H4E",
+     "domain": "hp.com",
+     "price": {
+      "price": 29.99,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.052,
+     "dimensions": {
+      "length": {
+       "number": 11.61,
+       "unit": "in"
+      },
+      "width": {
+       "number": 7.28,
+       "unit": "in"
+      },
+      "height": {
+       "number": 17.13,
+       "unit": "in"
+      },
+      "weight": {
+       "number": 1.08,
+       "unit": "lb"
+      }
+     }
+    },
+    {
+     "url": "https://buy.trychannel3.com/bEhakSL-p1PB-4ecE2h?o=01KZ588T9SFPGQG8EX31G2A4T1&aid=01M7354Z83FNZ4KCNWCGJX4H4E",
+     "domain": "bestbuy.com",
+     "price": {
+      "price": 29.99,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.005,
+     "dimensions": {
+      "length": null,
+      "width": {
+       "number": 7.28,
+       "unit": "in"
+      },
+      "height": null,
+      "weight": null
+     }
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "luggage-bag-closure": [
+     "Zipper"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "bag-case-closure": [
+     "Zipper"
+    ],
+    "bag-case-features": [
+     "Lockable",
+     "Lightweight",
+     "Waterproof"
+    ],
+    "carry-options": [
+     "Backpack strap",
+     "Shoulder strap",
+     "Handle"
+    ],
+    "bag-case-storage-features": [
+     "Laptop compartment",
+     "Water bottle holder",
+     "External pockets"
+    ],
+    "bag-case-material": [
+     "Polyester",
+     "Plastic",
+     "Synthetic"
+    ]
+   },
+   "ratings": {
+    "value": 4.62,
+    "count": 36,
+    "source_count": 2
+   }
+  },
+  {
+   "id": "LGRCgI9",
+   "title": "Puma Flow Backpack",
+   "description": "The Puma Flow Backpack is a durable, olive green backpack featuring a quilted accent design. It is designed for practicality and comfort, including a dedicated laptop sleeve, water bottle pockets, a haul handle, and adjustable straps to ensure a secure fit. With dimensions of 18\" height, 13\" width, and 5\" depth, it provides ample space for daily essentials.",
+   "brands": [
+    {
+     "id": "T0QO",
+     "name": "Puma"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/a077b130-4152-4eae-89e8-b717fc0fd091?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=7uRn",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/a077b130-4152-4eae-89e8-b717fc0fd091?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=7uRn",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Back view of a olive green Puma Flow backpack with a yellow leaping cat logo."
+    }
+   ],
+   "category": {
+    "slug": "laptop-backpacks",
+    "title": "Laptop Backpacks",
+    "path": [
+     {
+      "slug": "luggage-bags",
+      "title": "Luggage & Bags"
+     },
+     {
+      "slug": "backpacks",
+      "title": "Backpacks"
+     },
+     {
+      "slug": "laptop-backpacks",
+      "title": "Laptop Backpacks"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": "adult",
+   "materials": [],
+   "key_features": [
+    "Quilted Accent",
+    "Laptop Sleeve",
+    "Water Bottle Pockets",
+    "Haul Handle",
+    "Adjustable Straps"
+   ],
+   "colors": [
+    {
+     "hex": "#9f964a",
+     "percentage": 0.8477
+    },
+    {
+     "hex": "#b9b172",
+     "percentage": 0.087
+    },
+    {
+     "hex": "#696137",
+     "percentage": 0.0652
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/LGRCgI9-7uRn-4ecE2h?o=01M69MYJD3ZBMNZWQQJ52DXTXN&aid=01M7354Z83FNZ4KCNWCGJX4H4E",
+     "domain": "boscovs.com",
+     "price": {
+      "price": 32,
+      "compare_at_price": 40,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.028,
+     "dimensions": {
+      "length": null,
+      "width": {
+       "number": 13,
+       "unit": "in"
+      },
+      "height": {
+       "number": 18,
+       "unit": "in"
+      },
+      "weight": null
+     }
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "bag-case-features": [
+     "Lightweight"
+    ],
+    "bag-case-storage-features": [
+     "Laptop compartment",
+     "Water bottle holder"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "bag-case-closure": [
+     "Zipper"
+    ],
+    "carry-options": [
+     "Backpack strap",
+     "Handle"
+    ],
+    "luggage-bag-closure": [
+     "Zipper"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "uHOiltx",
+   "title": "Kids Backpack Bundle",
+   "description": "This bundle simplifies back-to-school shopping with a durable and stylish collection. It includes a green and blue colorblock backpack made from recycled polyester, a matching insulated lunch box, a pencil case, and a duffel bag. The backpack features a padded tablet pocket and multiple exterior pockets for easy access. The lunch boxes are insulated and designed to fit various food containers, while the duffel bag is spacious for sleepovers or sports. A coordinating stainless steel water bottle is also included to keep drinks cold for up to 12 hours or hot for up to 6 hours. All items can be personalized for a unique touch.",
+   "brands": [
+    {
+     "id": "hwHf",
+     "name": "Crate & Barrel"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/8189be4e-f792-475b-9356-3006515a3767?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/8189be4e-f792-475b-9356-3006515a3767?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Green backpack and pouch with blue trim on a white background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/27ae3f32-afa4-4585-9fe2-b17da7db4b61?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Group shot of multiple colorways and names of kids backpacks."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/518c0cc6-31ae-4cfe-a6a6-2ff1c5666464?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/518c0cc6-31ae-4cfe-a6a6-2ff1c5666464?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Side view of a green backpack with blue straps and grey mesh pockets."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/eed49834-d4dc-4bf4-8582-4cf061332218?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/eed49834-d4dc-4bf4-8582-4cf061332218?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Back view of a green backpack showing blue and white straps."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/9f060bd1-4d67-4a56-bc20-a315a6e10874?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Close-up of the strap and buckles of a green backpack."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/30ac7be7-a46a-4e9a-8468-d41d3249230b?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Close-up detail of the grey mesh pocket on a green backpack."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/893b615e-613a-4ca2-80c2-6cf5fdc430be?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/893b615e-613a-4ca2-80c2-6cf5fdc430be?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "is_main_image": false,
+     "shot_type": "packaging",
+     "alt_text": "Back view of a backpack with an open plastic bag showing the interior and box."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/ce65fb91-b4c2-46c9-975d-823af416e227?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "packaging",
+     "alt_text": "Back view of a backpack with a clear protective bag inside."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/0c6597da-c92e-43c5-96da-6fe62aebaecb?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/0c6597da-c92e-43c5-96da-6fe62aebaecb?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Open view of a green backpack compartment showing interior and storage box."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/8b5e7569-cb07-4e4a-9783-ee203506d901?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "packaging",
+     "alt_text": "Open view of a backpack compartment showing clear plastic packaging with branding."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/4fb412ab-a1cf-4538-ba5f-fe382b9829ce?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/4fb412ab-a1cf-4538-ba5f-fe382b9829ce?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Light green backpack lying flat with a blue strap."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/ebb3113a-722e-465c-9d03-a3d813d5299f?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=FgTK",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "in_use",
+     "alt_text": "Green backpack with brown boots partially inside the compartment."
+    }
+   ],
+   "category": {
+    "slug": "school-backpacks",
+    "title": "School Backpacks",
+    "path": [
+     {
+      "slug": "luggage-bags",
+      "title": "Luggage & Bags"
+     },
+     {
+      "slug": "backpacks",
+      "title": "Backpacks"
+     },
+     {
+      "slug": "school-backpacks",
+      "title": "School Backpacks"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [],
+   "key_features": [],
+   "colors": [
+    {
+     "hex": "#dde4d6",
+     "percentage": 0.2635
+    },
+    {
+     "hex": "#b2bdb4",
+     "percentage": 0.2468
+    },
+    {
+     "hex": "#939f96",
+     "percentage": 0.2396
+    },
+    {
+     "hex": "#6f7a6e",
+     "percentage": 0.13
+    },
+    {
+     "hex": "#405147",
+     "percentage": 0.1201
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/uHOiltx-FgTK-4ecE2h?o=01KBP9CMKGYGEX0YB1JNCBTG5X&aid=01M7354Z83FNZ4KCNWCGJX4H4E",
+     "domain": "crateandbarrel.com",
+     "price": {
+      "price": 34,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.126,
+     "dimensions": null
+    }
+   ],
+   "variants": {
+    "options": [],
+    "selected": [
+     {
+      "name": "Type",
+      "label": "Standard"
+     }
+    ]
+   },
+   "structured_attributes": {
+    "bag-case-features": [
+     "Waterproof"
+    ],
+    "carry-options": [
+     "Backpack strap",
+     "Handle",
+     "Shoulder strap",
+     "Crossbody strap",
+     "Detachable strap"
+    ],
+    "bag-case-storage-features": [
+     "Built-in compartments",
+     "External pockets",
+     "Laptop compartment",
+     "Water bottle holder",
+     "Internal padding"
+    ],
+    "bag-case-closure": [
+     "Zipper"
+    ],
+    "luggage-bag-closure": [
+     "Zipper"
+    ],
+    "pattern": [
+     "Color-block"
+    ],
+    "care-instructions": [
+     "Machine washable",
+     "Spot clean only"
+    ],
+    "bag-case-material": [
+     "Polyester"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "tmmj533",
+   "title": "Dickies Essential Backpack",
+   "description": "The Dickies Essential Backpack is a practical and durable choice for daily use. Made from 100% polyester, it features a large main compartment with an internal laptop sleeve and a front zippered pocket for organization. For added comfort during all-day wear, it is designed with a fully padded back panel and adjustable shoulder straps. It also includes a side water bottle pocket for convenience.",
+   "brands": [
+    {
+     "id": "2xO2",
+     "name": "Dickies"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/0b86a1f9-d6e3-425e-b37e-71fe701d32a3?aid=01M7354Z83FNZ4KCNWCGJX4H4E&mid=NtIK",
+     "cleaned_url": null,
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Green Dickies Essential backpack shown from the back, plain background."
+    }
+   ],
+   "category": {
+    "slug": "laptop-backpacks",
+    "title": "Laptop Backpacks",
+    "path": [
+     {
+      "slug": "luggage-bags",
+      "title": "Luggage & Bags"
+     },
+     {
+      "slug": "backpacks",
+      "title": "Backpacks"
+     },
+     {
+      "slug": "laptop-backpacks",
+      "title": "Laptop Backpacks"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "100% Polyester"
+   ],
+   "key_features": [
+    "Large main compartment",
+    "Internal laptop sleeve",
+    "Front zip pocket",
+    "Fully padded back panel",
+    "Side water bottle pocket"
+   ],
+   "colors": [
+    {
+     "hex": "#304036",
+     "percentage": 0.8425
+    },
+    {
+     "hex": "#181d1b",
+     "percentage": 0.102
+    },
+    {
+     "hex": "#55645b",
+     "percentage": 0.0555
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/tmmj533-NtIK-4ecE2h?o=01M2WR1484HJAWRXDKWJGYM2RK&aid=01M7354Z83FNZ4KCNWCGJX4H4E",
+     "domain": "basicsclothing.com",
+     "price": {
+      "price": 39.99,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "carry-options": [
+     "Backpack strap"
+    ],
+    "bag-case-material": [
+     "Polyester"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "bag-case-storage-features": [
+     "Laptop compartment",
+     "Water bottle holder",
+     "External pockets"
+    ],
+    "bag-case-features": [
+     "Internal padding"
+    ],
+    "bag-case-closure": [
+     "Zipper"
+    ],
+    "luggage-bag-closure": [
+     "Zipper"
+    ]
+   },
+   "ratings": null
+  }
+ ]
+}

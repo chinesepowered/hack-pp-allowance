@@ -1,0 +1,1298 @@
+{
+ "at": "2026-11-10T16:23:34.074Z",
+ "endpoint": "POST /v1/search",
+ "request": {
+  "query": "white canvas shoes",
+  "limit": 8,
+  "filters": {
+   "availability": [
+    "InStock"
+   ],
+   "conditions": [
+    "new"
+   ],
+   "price": {
+    "max_price": 55,
+    "min_price": 44
+   }
+  },
+  "config": {
+   "country": "US",
+   "currency": "USD",
+   "language": "en"
+  }
+ },
+ "products": [
+  {
+   "id": "GoE3vLc",
+   "title": "Sk8-Hi Canvas 'True White' Unisex Shoes",
+   "description": "These are classic high-top canvas sneakers from Vans. They feature a durable canvas upper, a supportive padded ankle, and Vans' signature vulcanized waffle outsole. The shoes are entirely white, including the laces, overlays, and rubber sole, giving them a clean and versatile look suitable for various casual outfits. They are designed for comfort and style, embodying the iconic skate shoe aesthetic.",
+   "brands": [
+    {
+     "id": "zv3U",
+     "name": "Vans"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/377e2d77-a23a-4667-8d3a-eee28330817b?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/377e2d77-a23a-4667-8d3a-eee28330817b?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Pair of white Vans Sk8-hi shoes resting on a dark surface."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/80a22d5b-d985-4915-a126-a4bbc77a2b36?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "cleaned_url": "https://cdn.trychannel3.com/a8ac1a88-90fb-489f-b5c0-b49d196c586f?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Sk8-hi shoe profile view on a dark surface."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/c389b7c2-5019-4bf3-b178-6b389e64c8f0?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "cleaned_url": "https://cdn.trychannel3.com/750e5ecc-1bba-436c-aeb1-c0c2d8f45693?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Sk8-hi shoe profile, showing side panel, on a dark surface."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/0c30b692-e01c-4db6-a30e-54900d5210c6?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "cleaned_url": "https://cdn.trychannel3.com/dc7f5b22-d41c-4bae-8a8d-0bba1a782123?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white Vans Sk8-hi shoes viewed from the bottom."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/c4de6065-22d0-440c-a013-da51b8abbcfb?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/c4de6065-22d0-440c-a013-da51b8abbcfb?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white Vans Sk8-hi shoes from the side, showing branding."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/3aa94d58-3e75-4505-9a04-89ac63c2dfe5?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/3aa94d58-3e75-4505-9a04-89ac63c2dfe5?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of the white rubber sole of a Vans shoe."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/0215ebec-f653-4264-93aa-65ff6734efde?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Sk8-hi sneaker with laces, shown from a three-quarter angle."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/d90164f1-7d78-46e4-b1bc-a7ec7f604ce5?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/d90164f1-7d78-46e4-b1bc-a7ec7f604ce5?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=wscm",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white Vans Sk8-hi shoes from the side with branding visible."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "male",
+   "age": "adult",
+   "materials": [
+    "Canvas",
+    "Rubber",
+    "Fabric"
+   ],
+   "key_features": [
+    "Round toe",
+    "Flat rubber sole",
+    "Lace-up front fastening",
+    "Logo patch at the tongue",
+    "Ankle length",
+    "White Jazz stripe",
+    "Quilted ankle panel",
+    "Tonal stitching",
+    "Classic Sk8-Hi silhouette",
+    "White canvas upper"
+   ],
+   "colors": [
+    {
+     "hex": "#cdcfdd",
+     "percentage": 0.5082
+    },
+    {
+     "hex": "#abaebb",
+     "percentage": 0.2571
+    },
+    {
+     "hex": "#8b8d96",
+     "percentage": 0.2347
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/GoE3vLc-wscm-4ecE2h?o=01M2GS6EMWZKGZP24DDXK51RQ3&aid=01M734B7H99JVX5VTYQEBN1GR3",
+     "domain": "stadiumgoods.com",
+     "price": {
+      "price": 46,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.016,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/GoE3vLc-NuBr-4ecE2h?o=01M62EM7P4FZX9V75VXB7CNBE6&aid=01M734B7H99JVX5VTYQEBN1GR3",
+     "domain": "farfetch.com",
+     "price": {
+      "price": 46,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "closure-type": [
+     "Lace-up"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "sneaker-style": [
+     "High-top"
+    ],
+    "activity": [
+     "Skateboarding",
+     "Training",
+     "Walking",
+     "Universal"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "upper-material": [
+     "Canvas",
+     "Mesh",
+     "Leather"
+    ],
+    "shoe-features": [
+     "Cushioned"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "toe-style": [
+     "Cap",
+     "Round"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Textile",
+     "Rubber",
+     "Leather",
+     "Synthetic"
+    ],
+    "shoe-collar-height": [
+     "High-top"
+    ],
+    "insole-material": [
+     "Memory foam"
+    ],
+    "pronation-support": [
+     "Neutral"
+    ],
+    "sole-construction": [
+     "Two-piece sole"
+    ],
+    "footwear-support-type": [
+     "Neutral"
+    ],
+    "shoe-fit": [
+     "Regular"
+    ],
+    "lining-material": [
+     "Textile",
+     "Leather"
+    ],
+    "footwear-cut": [
+     "High cut"
+    ],
+    "outsole-stud-type": [
+     "Flat outsole"
+    ],
+    "ankle-collar-style": [
+     "High cut"
+    ]
+   },
+   "ratings": {
+    "value": 4.3,
+    "count": 1059,
+    "source_count": 1
+   }
+  },
+  {
+   "id": "FjN9LId",
+   "title": "White Champion Canvas Sneakers",
+   "description": "An updated take on an iconic Keds style, these lace-up sneakers feature a broader fit, along with the minimalist canvas uppers, cushiony footbed, and lightweight rubber outsole that you know and love, for a style with endless ways to customize. * Cotton canvas uppers * Low-top, lace-up sneaker * Broader toe fit * Soft, breathable twill lining * 10% recycled PU foam Softerra™ footbed * Flexible, lightweight rubber outsole Keds Champion Gender-Neutral Canvas Lace-Up Sneakers at Free People in Off White, Size: US 8.5",
+   "brands": [
+    {
+     "id": "QZ72",
+     "name": "Keds"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/34d9f783-d5f5-41d7-9aee-be06df12e2e5?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pdiC",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/34d9f783-d5f5-41d7-9aee-be06df12e2e5?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pdiC",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "White canvas sneakers shown from a side view on a plain background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/ce6d8392-9f09-46b1-821b-ebf060c21eca?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pdiC",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "on_model",
+     "alt_text": "Person wearing white canvas sneakers with beige skirt."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/3035c8aa-f74a-4e24-9a7a-dc8c79fff01e?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pdiC",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/3035c8aa-f74a-4e24-9a7a-dc8c79fff01e?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pdiC",
+     "is_main_image": false,
+     "shot_type": "on_model",
+     "alt_text": "Woman wearing white canvas sneakers and a brown skirt."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/1557ab6d-510b-4da9-932f-b2af3ab7b4d6?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pdiC",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/1557ab6d-510b-4da9-932f-b2af3ab7b4d6?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pdiC",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "A pair of white canvas sneakers laid out."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/4ec93ba4-ace0-4938-b1eb-a03b3c1bcb9e?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pdiC",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of a white canvas sneaker showing the top and sole."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": null,
+   "materials": [
+    "cotton canvas",
+    "rubber",
+    "PU foam"
+   ],
+   "key_features": [
+    "Lace-up",
+    "Breathable twill lining",
+    "Flexible sole"
+   ],
+   "colors": [
+    {
+     "hex": "#dfdcd8",
+     "percentage": 0.9278
+    },
+    {
+     "hex": "#a6a2a0",
+     "percentage": 0.0722
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/FjN9LId-pdiC-4ecE2h?o=01M31C433E7E1Q6AYJE5YC7042&aid=01M734B7H99JVX5VTYQEBN1GR3",
+     "domain": "tnuck.com",
+     "price": {
+      "price": 55,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.063,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "pattern": [
+     "Solid"
+    ],
+    "activity": [
+     "Walking",
+     "Universal"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Rubber"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "outsole-stud-type": [
+     "Flat outsole"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "shoe-features": [
+     "Cushioned",
+     "Breathable design",
+     "Lightweight",
+     "Recycled materials"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ],
+    "care-instructions": [
+     "Spot clean only"
+    ],
+    "ankle-collar-style": [
+     "Low cut"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "shoe-fit": [
+     "Regular",
+     "Wide"
+    ],
+    "lining-material": [
+     "Textile"
+    ],
+    "insole-material": [
+     "Synthetic"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "kOCLw5g",
+   "title": "Casual Shoes",
+   "description": "These classic white canvas sneakers are perfect for everyday wear. They feature a wide fit for extra comfort, a lace-up closure for a secure fit, and a durable rubber outsole. The breathable lining and padded collar ensure all-day comfort, making them a versatile addition to any casual wardrobe.",
+   "brands": [
+    {
+     "id": "msXT",
+     "name": "Lugz"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/1c3438c1-0a8b-4f31-80f5-0cf7a9b8c07b?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pgo6",
+     "cleaned_url": "https://cdn.trychannel3.com/22adafb6-1751-4079-b913-962a81cb9e8c?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pgo6",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "White leather casual shoe viewed from the side."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/bbfeee86-bcbb-4d73-a8ad-d11e86f46f5d?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pgo6",
+     "cleaned_url": "https://cdn.trychannel3.com/92448d72-d6b2-49f4-b3db-b2127bdec9d2?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pgo6",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White leather casual shoe viewed from the top."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/5563f4ec-4d39-44bf-90fa-d7b72491c3b5?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pgo6",
+     "cleaned_url": "https://cdn.trychannel3.com/05c4a029-d727-49f4-a0d1-5164e01f9042?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pgo6",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White leather casual shoe viewed from the side."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/5f46dda5-fe70-482d-8f3a-7e4148bf19e9?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pgo6",
+     "cleaned_url": "https://cdn.trychannel3.com/da6282fd-d9dc-4a05-829c-3769784c35f4?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pgo6",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Bottom view of a white casual shoe sole."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/9b7e28aa-07d7-4860-b54d-9de7b0e5b045?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pgo6",
+     "cleaned_url": "https://cdn.trychannel3.com/073eadc1-e027-408c-a4f9-4edb766feacd?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pgo6",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Top view of the white casual shoe interior."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/8302f9a6-9705-469c-91f4-5f8b2b8b1e16?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pgo6",
+     "cleaned_url": "https://cdn.trychannel3.com/08887d11-5bd9-4272-89d3-dda7639ebfa6?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pgo6",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Bottom view of the white casual shoe sole with branding."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/8f930b8c-d6bf-4169-bd52-4a78b804b68e?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pgo6",
+     "cleaned_url": "https://cdn.trychannel3.com/9bfde677-33a7-4f71-af78-46446fe21e94?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=pgo6",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Outsole of a white casual shoe showing tread pattern."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "male",
+   "age": "adult",
+   "materials": [
+    "Canvas"
+   ],
+   "key_features": [
+    "Cushioned Insole for added comfort",
+    "Canvas Upper",
+    "Rubber outsole, vulcanized",
+    "Lace-up closure for an adjustable, secure fit",
+    "Breathable lining",
+    "Padded collar for a comfortable fit",
+    "Wide fit"
+   ],
+   "colors": [
+    {
+     "hex": "#cecbd2",
+     "percentage": 0.9386
+    },
+    {
+     "hex": "#88868a",
+     "percentage": 0.0614
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/kOCLw5g-pgo6-4ecE2h?o=01KT1E0QQBPSJB4TJXKDFX0SBA&aid=01M734B7H99JVX5VTYQEBN1GR3",
+     "domain": "shoecarnival.com",
+     "price": {
+      "price": 44.99,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "activity": [
+     "Universal"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Textile"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "sneaker-style": [
+     "Fashion"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "shoe-features": [
+     "Cushioned",
+     "Breathable design"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ]
+   },
+   "ratings": {
+    "value": 4.8,
+    "count": 27,
+    "source_count": 1
+   }
+  },
+  {
+   "id": "2BkDEHX",
+   "title": "Chuck Taylor All Star Canvas Shoes",
+   "description": "A classic high-top sneaker from Converse, featuring a white canvas upper and accented with blue details. This iconic style is characterized by its lace-up closure, rubber sole, and the signature round logo patch located on the ankle. The design stands out with a colorful geometric pattern on the sole, adding a unique visual element to the timeless silhouette.",
+   "brands": [
+    {
+     "id": "NuxJ",
+     "name": "Converse"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/55156abe-dfa3-4bcf-822c-d963b84466d7?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "cleaned_url": "https://cdn.trychannel3.com/22add3d1-fd67-476b-a6a4-a444c1996c9a?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Side view of white Converse Chuck Taylor All Star high-top canvas shoes with colorful geometric patterns."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/336f5405-6fe6-408b-87bb-f8e520e2cbbb?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "cleaned_url": "https://cdn.trychannel3.com/185760c2-cbdf-4774-ab0b-3b00785a8121?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Side view of white Converse Chuck Taylor All Star high-top canvas shoes with colorful geometric patterns."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/edf7ee73-3be2-459d-a73c-577f02b5b74e?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "cleaned_url": "https://cdn.trychannel3.com/c0fa7b6a-5992-482c-b4b4-7f34113a9248?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white Converse Chuck Taylor All Star high-top canvas shoes with lime green and blue accents."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/a6ca4457-a023-4972-a16b-b44ccd191bd1?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Top and side view of white Converse Chuck Taylor All Star high-top canvas shoes."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/9f1ce4b5-f1fc-40a0-82d0-83fc74d43d26?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "cleaned_url": "https://cdn.trychannel3.com/55051a57-d399-4346-ad6f-e138f1548bae?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Rear view of white Converse Chuck Taylor All Star high-top canvas shoes."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "canvas",
+    "rubber"
+   ],
+   "key_features": [
+    "High-top sneaker design",
+    "Canvas upper",
+    "Lace-up closure",
+    "Rubber sole",
+    "Colorful geometric sole pattern",
+    "Round logo patch on ankle"
+   ],
+   "colors": [
+    {
+     "hex": "#c6c6c9",
+     "percentage": 0.662
+    },
+    {
+     "hex": "#084c7d",
+     "percentage": 0.1243
+    },
+    {
+     "hex": "#474347",
+     "percentage": 0.1231
+    },
+    {
+     "hex": "#8fa06b",
+     "percentage": 0.0854
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/2BkDEHX-hHvi-4ecE2h?o=01KD1Q7SBJ5HY9Q99JDBZ23GYF&aid=01M734B7H99JVX5VTYQEBN1GR3",
+     "domain": "kickscrew.com",
+     "price": {
+      "price": 45.63,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.04,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "activity": [
+     "Universal"
+    ],
+    "footwear-cut": [
+     "High cut"
+    ],
+    "upper-material": [
+     "Canvas",
+     "Nylon"
+    ],
+    "sneaker-style": [
+     "Athletic"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Textile"
+    ],
+    "shoe-collar-height": [
+     "High-top"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "occasion-style": [
+     "Casual"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "1SNYggd",
+   "title": "Campus 00s Shoes",
+   "description": "Step out in classic style with the adidas Originals Campus 00s shoes. These low-top sneakers feature a versatile off-white canvas upper complemented by crisp white accents, including the iconic Three Stripes and laces. The comfortable design includes a white midsole and a durable brown gum outsole, offering a timeless look that's perfect for everyday wear.",
+   "brands": [
+    {
+     "id": "MJDR",
+     "name": "adidas"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/769421d8-8370-4fd5-951b-d8772b8bdbd7?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=Kddv",
+     "cleaned_url": "https://cdn.trychannel3.com/1e40a6ff-19f3-4270-83e2-8f49ec80e69c?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=Kddv",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Off-White and White adidas Originals Campus 00s shoes in beige and white."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": "adult",
+   "materials": [
+    "canvas"
+   ],
+   "key_features": [
+    "low-top silhouette",
+    "canvas upper",
+    "white stripes",
+    "white laces",
+    "white midsole",
+    "gum outsole"
+   ],
+   "colors": [
+    {
+     "hex": "#cbc3b1",
+     "percentage": 0.5081
+    },
+    {
+     "hex": "#e4e0d1",
+     "percentage": 0.2693
+    },
+    {
+     "hex": "#ad9b87",
+     "percentage": 0.1397
+    },
+    {
+     "hex": "#876b54",
+     "percentage": 0.0829
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/1SNYggd-Kddv-4ecE2h?o=01KRF3TSPSBNKHYP0JD5NZ9A32&aid=01M734B7H99JVX5VTYQEBN1GR3",
+     "domain": "zumiez.ca",
+     "price": {
+      "price": 44.96,
+      "compare_at_price": 109.95,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "sneaker-style": [
+     "Fashion",
+     "Low-top"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ],
+    "activity": [
+     "Walking"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "2xd5TFu",
+   "title": "Clipper Slip On Sneakers",
+   "description": "A classic slip-on sneaker for men. These sneakers feature a durable canvas upper, elastic goring for easy on and off, and a comfortable padded insole. The rubber outsole provides reliable traction. Perfect for casual wear, these versatile sneakers are a wardrobe essential.",
+   "brands": [
+    {
+     "id": "msXT",
+     "name": "Lugz"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/51a8ef1f-0916-41a5-ab97-6cdc25e12f3f?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=lGBj",
+     "cleaned_url": null,
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "White slip-on sneaker viewed from the side on a white background."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "male",
+   "age": "adult",
+   "materials": [
+    "Canvas",
+    "Rubber"
+   ],
+   "key_features": [
+    "Canvas upper",
+    "Slip on with elastic gores",
+    "Breathable lining",
+    "Padded insole",
+    "Rubber outsole"
+   ],
+   "colors": [
+    {
+     "hex": "#bbbabf",
+     "percentage": 1
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/2xd5TFu-lGBj-4ecE2h?o=01KSTAJPMRK24TABHA0295797G&aid=01M734B7H99JVX5VTYQEBN1GR3",
+     "domain": "shoebacca.com",
+     "price": {
+      "price": 44.99,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.05,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "closure-type": [
+     "Slip-on",
+     "Elastic"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "shoe-features": [
+     "Breathable design"
+    ],
+    "shoe-fit": [
+     "Wide"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "activity": [
+     "Universal",
+     "Walking"
+    ],
+    "sneaker-style": [
+     "Fashion"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "9llWnOo",
+   "title": "Smash Vulc Canvas Retro Sports Casual Shoes",
+   "description": "This is a pair of PUMA Smash Vulc Canvas shoes in a classic white and black colorway. These low-top sneakers feature a lace-up closure for a secure fit, a durable rubber outsole, and iconic PUMA branding including the side stripe. They are designed for adults and offer a clean, versatile look suitable for casual wear.",
+   "brands": [
+    {
+     "id": "T0QO",
+     "name": "Puma"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/4bc098a2-ba14-43a9-9bad-6e19dbc3c61c?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "cleaned_url": "https://cdn.trychannel3.com/76ba9f58-01a6-462a-9066-b3fdd81d626b?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "White and black PUMA Smash Vulc Canvas sneaker shown from the side."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/6ecd98c2-e20e-4284-8bd0-e10f7c85b3ad?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "cleaned_url": "https://cdn.trychannel3.com/d545bb8e-8934-4462-bb0e-d904fe94d096?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "is_main_image": false,
+     "shot_type": "angle_view",
+     "alt_text": "Side view of the white and black PUMA Smash Vulc Canvas sneaker."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/1adebd1c-52c0-42ab-958a-2a103ac8ecd3?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "cleaned_url": "https://cdn.trychannel3.com/81adcdae-c4cc-49eb-9f06-238842843a3d?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "is_main_image": false,
+     "shot_type": "angle_view",
+     "alt_text": "Top-down view of the white and black PUMA Smash Vulc Canvas sneaker soles."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/b039babc-2602-4e44-85f0-354900e37a56?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "size_chart",
+     "alt_text": "Bottom view of the white and black PUMA Smash Vulc Canvas sneaker sole."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/1bfddfa4-cea3-48d2-93ce-9389a090143e?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "cleaned_url": "https://cdn.trychannel3.com/532aef56-5a0f-4de6-b804-46d1507d9866?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=hHvi",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of the white geometric tread pattern on the sole of the sneaker."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "canvas"
+   ],
+   "key_features": [
+    "low-top design",
+    "lace-up closure",
+    "rubber outsole",
+    "PUMA logo and side stripe detail",
+    "canvas upper"
+   ],
+   "colors": [
+    {
+     "hex": "#312f34",
+     "percentage": 0.4231
+    },
+    {
+     "hex": "#cdcbd1",
+     "percentage": 0.4032
+    },
+    {
+     "hex": "#a8a7ab",
+     "percentage": 0.1164
+    },
+    {
+     "hex": "#565358",
+     "percentage": 0.0573
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/9llWnOo-hHvi-4ecE2h?o=01KRC1EXDDG67VRV5Y4AX65H46&aid=01M734B7H99JVX5VTYQEBN1GR3",
+     "domain": "kickscrew.com",
+     "price": {
+      "price": 50.31,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.04,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "footwear-material": [
+     "Canvas",
+     "Textile"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "activity": [
+     "Training",
+     "Walking"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ],
+    "sneaker-style": [
+     "Fashion"
+    ],
+    "footwear-construction-method": [
+     "Vulcanized"
+    ],
+    "lining-material": [
+     "Textile"
+    ],
+    "insole-material": [
+     "Memory foam"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "sole-construction": [
+     "Split sole"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "gywtc6a",
+   "title": "Lola Cotton Plimsolls",
+   "description": "The Lola Cotton Plimsolls by BIBICO are versatile, white slip-on shoes designed for comfort and sustainability. Crafted from 100% organic cotton canvas with a recycled gum rubber sole, these vegan-friendly plimsolls feature inner elastic on the upper, allowing them to be worn with or without laces. Finished with decorative eyelets, they offer a clean, timeless look suitable for everyday wear.",
+   "brands": [
+    {
+     "id": "OHCT",
+     "name": "BIBICO"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/392ba8bb-b35c-4195-97df-a180b532258f?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=CzOo",
+     "cleaned_url": null,
+     "is_main_image": true,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white cotton plimsolls worn on feet against a patterned floor."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/6a5d7e09-b775-4224-9327-4eb11ed89e9f?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=CzOo",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white cotton plimsolls worn on feet against a patterned floor."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/68a1afa1-3623-4945-a716-fe10f98cc7e2?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=CzOo",
+     "cleaned_url": "https://cdn.trychannel3.com/f81a810e-ceae-48e6-adbd-2bcd3fd66d69?aid=01M734B7H99JVX5VTYQEBN1GR3&mid=CzOo",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White cotton plimsoll shown from the side on a white background."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": null,
+   "materials": [
+    "Organic Cotton Canvas",
+    "Recycled Gum Rubber"
+   ],
+   "key_features": [
+    "Slip-on design with inner elastic",
+    "Can be worn with or without laces",
+    "Decorative eyelets",
+    "100% Organic Cotton Canvas",
+    "Recycled Gum Rubber Sole",
+    "Vegan",
+    "Machine washable at 30c",
+    "Made in Spain"
+   ],
+   "colors": [
+    {
+     "hex": "#bab7a3",
+     "percentage": 0.5461
+    },
+    {
+     "hex": "#dadad0",
+     "percentage": 0.3774
+    },
+    {
+     "hex": "#6b6656",
+     "percentage": 0.0765
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/gywtc6a-CzOo-4ecE2h?o=01M0QD8GN4HKEE304DNMD0P9YJ&aid=01M734B7H99JVX5VTYQEBN1GR3",
+     "domain": "bibico.co.uk",
+     "price": {
+      "price": 45,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    }
+   ],
+   "variants": {
+    "options": [
+     {
+      "name": "Size",
+      "values": [
+       {
+        "label": "38",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "39",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "40",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "41",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "42",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       }
+      ]
+     }
+    ],
+    "selected": []
+   },
+   "structured_attributes": {
+    "outsole-material": [
+     "Rubber"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ],
+    "care-instructions": [
+     "Machine washable"
+    ],
+    "activity": [
+     "Walking"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "closure-type": [
+     "Slip-on"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "shoe-features": [
+     "Vegan friendly"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ]
+   },
+   "ratings": null
+  }
+ ]
+}

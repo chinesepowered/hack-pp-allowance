@@ -1,0 +1,919 @@
+{
+ "at": "2026-11-10T16:36:50.132Z",
+ "endpoint": "POST /v1/similar",
+ "request": {
+  "product_id": "FjN9LId",
+  "limit": 6,
+  "filters": {
+   "availability": [
+    "InStock"
+   ],
+   "conditions": [
+    "new"
+   ],
+   "price": {
+    "max_price": 23.86
+   }
+  },
+  "config": {
+   "country": "US",
+   "currency": "USD",
+   "language": "en"
+  }
+ },
+ "products": [
+  {
+   "id": "W6lOo6m",
+   "title": "Champion Originals Lace Up Sneakers",
+   "description": "These Keds Champion Originals sneakers are a timeless classic, first introduced in 1916 as one of the original rubber-soled canvas shoes. Loved for over a century by style icons and trendsetters, these lace-up sneakers offer enduring design and all-day comfort. Made with a canvas upper and a flexible, lightweight rubber outsole, they feature a soft, breathable textile lining and a 10% recycled PU foam footbed for added comfort. These sneakers are a versatile wardrobe essential that pairs well with any outfit.",
+   "brands": [
+    {
+     "id": "QZ72",
+     "name": "Keds"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/9787c918-bda4-4195-964a-da191c16c2c3?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=lGBj",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/9787c918-bda4-4195-964a-da191c16c2c3?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=lGBj",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Light green lace-up sneakers viewed from the side on a white background."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": "adult",
+   "materials": [
+    "Canvas"
+   ],
+   "key_features": [
+    "Canvas Upper",
+    "Lace-Up Sneaker",
+    "Soft, Breathable Textile Lining",
+    "10% Recycled PU Foam Softerra Footbed",
+    "Flexible, Lightweight Rubber Outsole"
+   ],
+   "colors": [
+    {
+     "hex": "#cbdeb8",
+     "percentage": 0.6768
+    },
+    {
+     "hex": "#c6c8c2",
+     "percentage": 0.3232
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/W6lOo6m-lGBj-4ecE2h?o=01KST9NTJTEEVPM8QW9XFXJ9TX&aid=01M7353GZK4JAXHBBCF2WA2VNG",
+     "domain": "shoebacca.com",
+     "price": {
+      "price": 19.95,
+      "compare_at_price": 50,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.05,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "shoe-features": [
+     "Cushioned",
+     "Breathable design"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "shoe-fit": [
+     "Regular"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ],
+    "activity": [
+     "Walking",
+     "Universal"
+    ],
+    "sneaker-style": [
+     "Athletic"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "2O7KwfA",
+   "title": "Champion Originals Lace Up Sneakers",
+   "description": "This classic Keds Champion sneaker, first released in 1916, is a timeless and iconic lace-up shoe made with a durable canvas upper and a flexible, lightweight rubber outsole. It features a soft, breathable textile lining and a 10% recycled PU foam Softerra footbed for all-day comfort. Designed for women, this retro-style sneaker in a vibrant blue color is a versatile wardrobe essential that pairs with everything.",
+   "brands": [
+    {
+     "id": "QZ72",
+     "name": "Keds"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/10e69caa-5eb3-46ef-839a-5516706b7973?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=lGBj",
+     "cleaned_url": "https://cdn.trychannel3.com/4c6bfcf5-5f34-436f-8795-f6004a25b1d9?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=lGBj",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Blue Keds Champion Originals lace-up sneaker shown from the side."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": null,
+   "materials": [
+    "Canvas",
+    "Textile",
+    "Recycled PU Foam",
+    "Rubber"
+   ],
+   "key_features": [
+    "Canvas Upper",
+    "Lace-Up Sneaker",
+    "Soft, Breathable Textile Lining",
+    "10% Recycled PU Foam Softerra Footbed",
+    "Flexible, Lightweight Rubber Outsole"
+   ],
+   "colors": [
+    {
+     "hex": "#0faed7",
+     "percentage": 0.7114
+    },
+    {
+     "hex": "#d8dee2",
+     "percentage": 0.2886
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/2O7KwfA-lGBj-4ecE2h?o=01KRYQFMB2494HDYH48V972C53&aid=01M7353GZK4JAXHBBCF2WA2VNG",
+     "domain": "shoebacca.com",
+     "price": {
+      "price": 14.95,
+      "compare_at_price": 50,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.05,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "shoe-features": [
+     "Breathable design",
+     "Lightweight",
+     "Recycled materials"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "shoe-fit": [
+     "Regular"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "mBSxUXa",
+   "title": "Women's Keds Jump Kick Lace-up",
+   "description": "Keds Jump Kick women's sneakers in Snow White Canvas. These casual lace-up shoes feature a round toe silhouette, a soft breathable textile lining, and a removable breathable textile insole. They are completed with a flexible, lightweight synthetic outsole and a 1-inch platform height.",
+   "brands": [
+    {
+     "id": "QZ72",
+     "name": "Keds"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/1dc16bad-e9b0-44c0-af05-79c6634b3122?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/1dc16bad-e9b0-44c0-af05-79c6634b3122?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "is_main_image": true,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white Keds sneakers side view."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/63d88506-5e60-4d24-ac79-2dd9285fd28a?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/63d88506-5e60-4d24-ac79-2dd9285fd28a?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Interior view of the insole of a white Keds shoe."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/132477c0-2880-496e-9a57-437098ff2e5f?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/132477c0-2880-496e-9a57-437098ff2e5f?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "is_main_image": false,
+     "shot_type": "flat_lay",
+     "alt_text": "Flat lay of the sole of a white Keds shoe with a striped pattern."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/081eeace-0798-4b49-9afc-adddb1bf4c04?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/081eeace-0798-4b49-9afc-adddb1bf4c04?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Front view of a white Keds Jump Kick sneaker."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/e9125601-9bd2-4dbe-acb6-04f218843443?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/e9125601-9bd2-4dbe-acb6-04f218843443?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Top view of the back of a white canvas Keds shoe."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/7305dfe0-ce2e-4e35-b7f7-3ac895a8f46e?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/7305dfe0-ce2e-4e35-b7f7-3ac895a8f46e?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white Keds sneakers with tan soles and blue logo."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/e5ee84f0-746f-4dac-99ba-e941ae61dbb7?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/e5ee84f0-746f-4dac-99ba-e941ae61dbb7?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Side profile view of a white Keds Jump Kick sneaker."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/ad109c28-eaf0-40b1-836b-f439f6c72c58?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/ad109c28-eaf0-40b1-836b-f439f6c72c58?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=fsxO",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white Keds sneakers side view."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": "adult",
+   "materials": [
+    "textile",
+    "synthetic"
+   ],
+   "key_features": [
+    "Lace-up closure",
+    "Round toe silhouette",
+    "Soft, breathable textile lining",
+    "Removable, breathable textile insole",
+    "Flexible, lightweight synthetic outsole",
+    "1 inch platform height"
+   ],
+   "colors": [
+    {
+     "hex": "#d5ccc2",
+     "percentage": 0.9377
+    },
+    {
+     "hex": "#adaaa2",
+     "percentage": 0.0623
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/mBSxUXa-fsxO-4ecE2h?o=01M49TDBGADJVFDAVS0W0CH6EB&aid=01M7353GZK4JAXHBBCF2WA2VNG",
+     "domain": "zappos.com",
+     "price": {
+      "price": 19.5,
+      "compare_at_price": 65,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.05,
+     "dimensions": {
+      "length": null,
+      "width": null,
+      "height": null,
+      "weight": {
+       "number": 10,
+       "unit": "oz"
+      }
+     }
+    }
+   ],
+   "variants": {
+    "options": [
+     {
+      "name": "Size",
+      "values": [
+       {
+        "label": "5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "5.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "6",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "6.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "7",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "7.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "8",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "8.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "9",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "9.5",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "10",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "11",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       }
+      ]
+     }
+    ],
+    "selected": []
+   },
+   "structured_attributes": {
+    "toe-style": [
+     "Round"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ],
+    "activity": [
+     "Universal"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "lining-material": [
+     "Textile"
+    ],
+    "shoe-features": [
+     "Breathable design",
+     "Lightweight"
+    ],
+    "shoe-fit": [
+     "Regular"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "outsole-material": [
+     "Synthetic"
+    ]
+   },
+   "ratings": {
+    "value": 4,
+    "count": 1,
+    "source_count": 1
+   }
+  },
+  {
+   "id": "GZ0TlrH",
+   "title": "KEDS Champion Shoe WF48110",
+   "description": "A classic casual sneaker from the Keds collection, the Original Champion features a grey canvas upper, rubber outsole, and metal eyelet lace-up closure for a snug fit. It is designed for all-day comfort with a latex foam sockliner and is styled with a white sole and a red inner lining.",
+   "brands": [
+    {
+     "id": "QZ72",
+     "name": "Keds"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/c7690719-0299-46d2-8b71-5bb54093e221?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=CJ7h",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/c7690719-0299-46d2-8b71-5bb54093e221?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=CJ7h",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Grey suede sneaker viewed from the side on a white background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/98df67af-b0c7-40e5-93b7-a86a731c3b67?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=CJ7h",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/98df67af-b0c7-40e5-93b7-a86a731c3b67?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=CJ7h",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Grey suede sneaker viewed from the side with laces."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/f78b8661-d2ed-4f02-9ce5-4ec1b1ce5010?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=CJ7h",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/f78b8661-d2ed-4f02-9ce5-4ec1b1ce5010?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=CJ7h",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Grey suede sneaker viewed from the side."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/11576592-47cf-4f0e-8260-ef357f6a8bc9?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=CJ7h",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/11576592-47cf-4f0e-8260-ef357f6a8bc9?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=CJ7h",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up detail of the back of a grey Keds shoe."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/e7272e06-7156-4fb1-bf17-2a2875bf3aa6?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=CJ7h",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/e7272e06-7156-4fb1-bf17-2a2875bf3aa6?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=CJ7h",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Side view of a grey Keds shoe."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": "adult",
+   "materials": [
+    "Canvas",
+    "Rubber"
+   ],
+   "key_features": [
+    "Canvas upper",
+    "Metal eyelet lace up",
+    "Latex foam sockliner",
+    "Rubber outsole"
+   ],
+   "colors": [
+    {
+     "hex": "#484240",
+     "percentage": 0.4049
+    },
+    {
+     "hex": "#6b6663",
+     "percentage": 0.2674
+    },
+    {
+     "hex": "#babbba",
+     "percentage": 0.12
+    },
+    {
+     "hex": "#848280",
+     "percentage": 0.1082
+    },
+    {
+     "hex": "#2f2828",
+     "percentage": 0.0995
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/GZ0TlrH-CJ7h-4ecE2h?o=01M2RE5BSCSC0QY6KT3BRY8XD2&aid=01M7353GZK4JAXHBBCF2WA2VNG",
+     "domain": "shiekh.com",
+     "price": {
+      "price": 19.99,
+      "compare_at_price": 39.99,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.24,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "footwear-material": [
+     "Canvas"
+    ],
+    "activity": [
+     "Universal"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "shoe-features": [
+     "Cushioned"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "gyXtfQC",
+   "title": "Women's Kickstart Repeat Logo Sneakers",
+   "description": "Showcase your team spirit with these white Keds Kickstart sneakers, featuring a repeat Cleveland Indians logo design. Perfect for game day or everyday wear, these canvas sneakers offer comfort with a foam insole and a durable rubber sole.",
+   "brands": [
+    {
+     "id": "QZ72",
+     "name": "Keds"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/e8ca9f35-ea1e-4bb9-80f6-b9fd573095ad?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=SsL4",
+     "cleaned_url": null,
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "White Keds sneakers with red flame pattern shown from the side."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/c39c2863-6be5-417b-9838-431ed14e6ee4?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=SsL4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/c39c2863-6be5-417b-9838-431ed14e6ee4?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=SsL4",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Pair of white Keds sneakers with red flame pattern laid out."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/39bccbb1-6837-4951-9eb3-b5d3a099729f?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=SsL4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/39bccbb1-6837-4951-9eb3-b5d3a099729f?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=SsL4",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Back view of a white Keds sneaker highlighting the ankle and sole."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/881d640d-b13b-485e-9fba-437215064d50?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=SsL4",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/881d640d-b13b-485e-9fba-437215064d50?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=SsL4",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Bottom view of the sneaker sole with tan rubber and blue accents."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": null,
+   "materials": [
+    "Canvas",
+    "Rubber"
+   ],
+   "key_features": [
+    "Foam insole",
+    "Six eyelet lace-up sneaker",
+    "Sublimated graphics",
+    "Surface washable",
+    "Officially licensed"
+   ],
+   "colors": [
+    {
+     "hex": "#dad6d5",
+     "percentage": 0.6385
+    },
+    {
+     "hex": "#6d595f",
+     "percentage": 0.1275
+    },
+    {
+     "hex": "#adaaa9",
+     "percentage": 0.1204
+    },
+    {
+     "hex": "#8a7f81",
+     "percentage": 0.1136
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/gyXtfQC-SsL4-4ecE2h?o=01KBPBZSF3S8KQTTW1AJ4T79K1&aid=01M7353GZK4JAXHBBCF2WA2VNG",
+     "domain": "mlbshop.com",
+     "price": {
+      "price": 22.99,
+      "compare_at_price": 64.99,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.063,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "activity": [
+     "Universal"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "pattern": [
+     "Logo"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "C0ojgxy",
+   "title": "Converse Chuck Taylor All Star Ox 'Natural White'",
+   "description": "A classic low-top sneaker featuring a natural white canvas upper, white laces, and a white rubber sole with a contrasting red stripe. The design includes a white toe cap and metal eyelets, maintaining the timeless aesthetic of the Chuck Taylor All Star line.",
+   "brands": [
+    {
+     "id": "NuxJ",
+     "name": "Converse"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/00d657bc-44e9-4e99-8c6c-4bfb17ecf253?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=hHvi",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/00d657bc-44e9-4e99-8c6c-4bfb17ecf253?aid=01M7353GZK4JAXHBBCF2WA2VNG&mid=hHvi",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Natural white Converse Chuck Taylor All Star Ox shoe viewed from the side."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "male",
+   "age": "adult",
+   "materials": [
+    "canvas",
+    "rubber"
+   ],
+   "key_features": [
+    "Low-top silhouette",
+    "Canvas upper",
+    "Rubber sole",
+    "Lace-up closure",
+    "White toe cap"
+   ],
+   "colors": [
+    {
+     "hex": "#cdc8b8",
+     "percentage": 0.7583
+    },
+    {
+     "hex": "#b2a994",
+     "percentage": 0.1574
+    },
+    {
+     "hex": "#61524d",
+     "percentage": 0.0844
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/C0ojgxy-hHvi-4ecE2h?o=01M3HCBKEYAP2DKMX21PZHJ08C&aid=01M7353GZK4JAXHBBCF2WA2VNG",
+     "domain": "kickscrew.com",
+     "price": {
+      "price": 23.4,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.04,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "upper-material": [
+     "Canvas"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "toe-style": [
+     "Cap"
+    ]
+   },
+   "ratings": null
+  }
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "at": "2026-11-10T16:30:43.917Z",
+ "endpoint": "GET /v1/products/{id}",
+ "request": {
+  "product_id": "ORTXCzn",
+  "country": "US",
+  "currency": "USD"
+ },
+ "products": [
+  {
+   "id": "ORTXCzn",
+   "title": "Mead Spiral Notebook College Rule 10 1/2\" x 8\" 70 Pages 6 Books/Pack 73065",
+   "description": "This pack of 6 Mead spiral notebooks is perfect for school or office use. Each notebook is college-ruled with 70 sheets of white paper and measures 8\" x 10.5\". The notebooks feature a spiral binding for easy page turning and are 3-hole punched to fit in a binder. The covers come in assorted colors, ensuring you have a variety to choose from, though specific color selection is not possible when ordering.",
+   "brands": [
+    {
+     "id": "hO4I",
+     "name": "Mead"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/856d2ebd-2a96-4892-b016-91c81036ac07?aid=01M734RBKZ6C1MC2X5W61ZH0ER&mid=LPzf",
+     "cleaned_url": null,
+     "is_main_image": true,
+     "shot_type": "lifestyle",
+     "alt_text": "Six-pack of colored spiral notebooks in various colors."
+    }
+   ],
+   "category": {
+    "slug": "notebooks-notepads",
+    "title": "Notebooks & Notepads",
+    "path": [
+     {
+      "slug": "office-supplies",
+      "title": "Office Supplies"
+     },
+     {
+      "slug": "general-office-supplies",
+      "title": "General Office Supplies"
+     },
+     {
+      "slug": "paper-products",
+      "title": "Paper Products"
+     },
+     {
+      "slug": "notebooks-notepads",
+      "title": "Notebooks & Notepads"
+     }
+    ],
+    "has_children": true
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "Paper"
+   ],
+   "key_features": [
+    "Sold as 6/Pack",
+    "Spiral binding for smooth page turning",
+    "Double-sided, ruled paper",
+    "Coated paper cover",
+    "College ruled",
+    "Micro perforation",
+    "70 sheets per book",
+    "3-hole punched"
+   ],
+   "colors": [],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/ORTXCzn-LPzf-4ecE2h?o=01M4SAKM633WVJXNE2FYX2DS19&aid=01M734RBKZ6C1MC2X5W61ZH0ER",
+     "domain": "newegg.com",
+     "price": {
+      "price": 19.99,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.007,
+     "dimensions": {
+      "length": {
+       "number": 8,
+       "unit": "in"
+      },
+      "width": null,
+      "height": {
+       "number": 10.5,
+       "unit": "in"
+      },
+      "weight": null
+     }
+    },
+    {
+     "url": "https://buy.trychannel3.com/ORTXCzn-p1PB-4ecE2h?o=01KYC9XXC90Z28S53NZP1KGM26&aid=01M734RBKZ6C1MC2X5W61ZH0ER",
+     "domain": "bestbuy.com",
+     "price": {
+      "price": 25.22,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.005,
+     "dimensions": {
+      "length": {
+       "number": 8,
+       "unit": "in"
+      },
+      "width": {
+       "number": 10.5,
+       "unit": "in"
+      },
+      "height": null,
+      "weight": null
+     }
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "notepad-design": [
+     "Spiral-bound",
+     "Subject notebook"
+    ],
+    "paper-type": [
+     "Plain white",
+     "Lined",
+     "Perforated"
+    ],
+    "sheet-pattern": [
+     "Solid"
+    ],
+    "notepad-cover-type": [
+     "Soft"
+    ],
+    "pattern": [
+     "Solid"
+    ]
+   },
+   "ratings": {
+    "value": 2,
+    "count": 3,
+    "source_count": 1
+   }
+  }
+ ]
+}

@@ -1,0 +1,195 @@
+{
+ "at": "2026-11-10T16:36:49.308Z",
+ "endpoint": "GET /v1/products/{id}",
+ "request": {
+  "product_id": "FjN9LId",
+  "country": "US",
+  "currency": "USD"
+ },
+ "products": [
+  {
+   "id": "FjN9LId",
+   "title": "White Champion Canvas Sneakers",
+   "description": "An updated take on an iconic Keds style, these lace-up sneakers feature a broader fit, along with the minimalist canvas uppers, cushiony footbed, and lightweight rubber outsole that you know and love, for a style with endless ways to customize. * Cotton canvas uppers * Low-top, lace-up sneaker * Broader toe fit * Soft, breathable twill lining * 10% recycled PU foam Softerra™ footbed * Flexible, lightweight rubber outsole Keds Champion Gender-Neutral Canvas Lace-Up Sneakers at Free People in Off White, Size: US 8.5",
+   "brands": [
+    {
+     "id": "QZ72",
+     "name": "Keds"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/34d9f783-d5f5-41d7-9aee-be06df12e2e5?aid=01M7353GDW77TCS6N5FM8V37WT&mid=pdiC",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/34d9f783-d5f5-41d7-9aee-be06df12e2e5?aid=01M7353GDW77TCS6N5FM8V37WT&mid=pdiC",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "White canvas sneakers shown from a side view on a plain background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/ce6d8392-9f09-46b1-821b-ebf060c21eca?aid=01M7353GDW77TCS6N5FM8V37WT&mid=pdiC",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "on_model",
+     "alt_text": "Person wearing white canvas sneakers with beige skirt."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/3035c8aa-f74a-4e24-9a7a-dc8c79fff01e?aid=01M7353GDW77TCS6N5FM8V37WT&mid=pdiC",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/3035c8aa-f74a-4e24-9a7a-dc8c79fff01e?aid=01M7353GDW77TCS6N5FM8V37WT&mid=pdiC",
+     "is_main_image": false,
+     "shot_type": "on_model",
+     "alt_text": "Woman wearing white canvas sneakers and a brown skirt."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/1557ab6d-510b-4da9-932f-b2af3ab7b4d6?aid=01M7353GDW77TCS6N5FM8V37WT&mid=pdiC",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/1557ab6d-510b-4da9-932f-b2af3ab7b4d6?aid=01M7353GDW77TCS6N5FM8V37WT&mid=pdiC",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "A pair of white canvas sneakers laid out."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/4ec93ba4-ace0-4938-b1eb-a03b3c1bcb9e?aid=01M7353GDW77TCS6N5FM8V37WT&mid=pdiC",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of a white canvas sneaker showing the top and sole."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": null,
+   "materials": [
+    "cotton canvas",
+    "rubber",
+    "PU foam"
+   ],
+   "key_features": [
+    "Lace-up",
+    "Breathable twill lining",
+    "Flexible sole"
+   ],
+   "colors": [
+    {
+     "hex": "#dfdcd8",
+     "percentage": 0.9278
+    },
+    {
+     "hex": "#a6a2a0",
+     "percentage": 0.0722
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/FjN9LId-pdiC-4ecE2h?o=01M31F2E0X2253PQBGYVTAE18G&aid=01M7353GDW77TCS6N5FM8V37WT",
+     "domain": "tnuck.com",
+     "price": {
+      "price": 55,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.063,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/FjN9LId-ICa0-4ecE2h?o=01M5V31HEWZ6ZC38K04QE64193&aid=01M7353GDW77TCS6N5FM8V37WT",
+     "domain": "freepeople.com",
+     "price": {
+      "price": 60,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.03,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "pattern": [
+     "Solid"
+    ],
+    "activity": [
+     "Walking",
+     "Universal"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Rubber"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "outsole-stud-type": [
+     "Flat outsole"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "shoe-features": [
+     "Cushioned",
+     "Breathable design",
+     "Lightweight",
+     "Recycled materials"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ],
+    "care-instructions": [
+     "Spot clean only"
+    ],
+    "ankle-collar-style": [
+     "Low cut"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "shoe-fit": [
+     "Regular",
+     "Wide"
+    ],
+    "lining-material": [
+     "Textile"
+    ],
+    "insole-material": [
+     "Synthetic"
+    ]
+   },
+   "ratings": null
+  }
+ ]
+}

@@ -63,6 +63,54 @@ async function readCache(key: string): Promise<CacheDoc | null> {
   }
 }
 
+let fixtureDocs: CacheDoc[] | null = null;
+
+async function allFixtures(): Promise<CacheDoc[]> {
+  if (fixtureDocs) return fixtureDocs;
+  const docs: CacheDoc[] = [];
+  try {
+    for (const name of await fs.readdir(FIXTURE_DIR)) {
+      if (!name.endsWith(".json")) continue;
+      try {
+        docs.push(JSON.parse(await fs.readFile(path.join(FIXTURE_DIR, name), "utf8")) as CacheDoc);
+      } catch {
+        /* skip a broken fixture */
+      }
+    }
+  } catch {
+    /* no fixtures directory */
+  }
+  fixtureDocs = docs;
+  return docs;
+}
+
+function words(text: string): Set<string> {
+  return new Set(text.toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 2));
+}
+
+/**
+ * When Channel3 cannot be reached and this exact request was never cached,
+ * the closest recorded response in fixtures/channel3 stands in: the same
+ * product for detail and similar, the most similar query for a search.
+ */
+async function nearestFixture(endpoint: string, request: unknown): Promise<CacheDoc | null> {
+  const docs = (await allFixtures()).filter((d) => d.endpoint === endpoint && d.products.length > 0);
+  if (docs.length === 0) return null;
+  const r = request as { query?: string; product_id?: string; image?: string };
+  if (r.product_id) return docs.find((d) => (d.request as { product_id?: string }).product_id === r.product_id) ?? null;
+  if (r.image) return docs[0];
+  if (!r.query) return null;
+  const want = words(r.query);
+  let best: { doc: CacheDoc; score: number } | null = null;
+  for (const d of docs) {
+    const have = words((d.request as { query?: string }).query ?? "");
+    const shared = [...want].filter((w) => have.has(w)).length;
+    const score = shared / Math.max(1, Math.max(want.size, have.size));
+    if (!best || score > best.score) best = { doc: d, score };
+  }
+  return best && best.score >= 0.5 ? best.doc : null;
+}
+
 async function writeCache(key: string, doc: CacheDoc): Promise<void> {
   await store()
     .set(`c3cache/${key}`, doc)
@@ -141,9 +189,10 @@ async function call(endpoint: string, opKey: string, request: unknown, run: () =
   });
   if (res.error) {
     logChannel3Call({ endpoint, summary: `${summarize(request)} (failed: ${res.error.slice(0, 80)})`, status: res.status, ms: res.ms, cached: false, results: 0 });
-    if (cached) {
-      logChannel3Call({ endpoint, summary: `${summarize(request)} (served from cache)`, status: 200, ms: 0, cached: true, results: cached.products.length });
-      return { products: cached.products, cached: true, cachedAt: cached.at };
+    const standIn = cached ?? (await nearestFixture(endpoint, request));
+    if (standIn) {
+      logChannel3Call({ endpoint, summary: `${summarize(request)} (served from cache)`, status: 200, ms: 0, cached: true, results: standIn.products.length });
+      return { products: standIn.products, cached: true, cachedAt: standIn.at };
     }
     throw new CatalogError(res.status, res.error);
   }

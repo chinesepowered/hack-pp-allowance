@@ -1,0 +1,268 @@
+{
+ "at": "2026-11-10T16:21:47.889Z",
+ "endpoint": "GET /v1/products/{id}",
+ "request": {
+  "product_id": "L4olgDA",
+  "country": "US",
+  "currency": "USD"
+ },
+ "products": [
+  {
+   "id": "L4olgDA",
+   "title": "Low-top Canvas Sneakers",
+   "description": "These Low-Top Canvas Sneakers by Cultum offer a classic, versatile look with a durable canvas upper. Featuring a secure lace-up closure with metal eyelets and a protective rounded rubber toe cap, these sneakers combine functionality with a clean aesthetic. The khaki and white colorway is complemented by a gum-colored rubber sole, making them an ideal choice for casual daily wear.",
+   "brands": [
+    {
+     "id": "uL2t",
+     "name": "Cultum"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/b9dbedff-dc86-4bf8-bbc2-5af216bc4bc5?aid=01M734804604QDM44J71P7EQ27&mid=y4aA",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/b9dbedff-dc86-4bf8-bbc2-5af216bc4bc5?aid=01M734804604QDM44J71P7EQ27&mid=y4aA",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Single tan/brown low-top canvas sneaker with canvas upper on a light background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/7300e9cf-f634-48dd-96a5-34a5dd290956?aid=01M734804604QDM44J71P7EQ27&mid=y4aA",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/7300e9cf-f634-48dd-96a5-34a5dd290956?aid=01M734804604QDM44J71P7EQ27&mid=y4aA",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Pair of khaki canvas low-top sneakers on a plain background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/c0f73217-8de2-4dfd-856c-f1ee8b52131c?aid=01M734804604QDM44J71P7EQ27&mid=y4aA",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/c0f73217-8de2-4dfd-856c-f1ee8b52131c?aid=01M734804604QDM44J71P7EQ27&mid=y4aA",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Pair of khaki canvas low-top sneakers displayed on a plain background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/d72eab7c-87bc-4f43-9a71-688645e6f749?aid=01M734804604QDM44J71P7EQ27&mid=y4aA",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/d72eab7c-87bc-4f43-9a71-688645e6f749?aid=01M734804604QDM44J71P7EQ27&mid=y4aA",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up detail of the side and toe of a low-top canvas sneaker."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/3c9dd0d9-1a43-4e30-83ab-2a25fd7d0490?aid=01M734804604QDM44J71P7EQ27&mid=y4aA",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "on_model",
+     "alt_text": "Person wearing khaki pants and white low-top canvas sneakers, tying the laces."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": "adult",
+   "materials": [
+    "canvas",
+    "rubber"
+   ],
+   "key_features": [
+    "Low-top lace-up design",
+    "Canvas upper",
+    "Metal eyelets",
+    "Rounded rubber toe cap",
+    "Tonal laces",
+    "Side ventilation eyelets",
+    "Stitched paneling",
+    "Gum-colored rubber sole"
+   ],
+   "colors": [
+    {
+     "hex": "#bca286",
+     "percentage": 0.5454
+    },
+    {
+     "hex": "#5d350e",
+     "percentage": 0.1586
+    },
+    {
+     "hex": "#422007",
+     "percentage": 0.1169
+    },
+    {
+     "hex": "#dac1ad",
+     "percentage": 0.1011
+    },
+    {
+     "hex": "#845d32",
+     "percentage": 0.078
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/L4olgDA-y4aA-4ecE2h?o=01M1VHKYBRB9ZPKJVVXK0CYEFC&aid=01M734804604QDM44J71P7EQ27",
+     "domain": "atorie.com",
+     "price": {
+      "price": 49,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    }
+   ],
+   "variants": {
+    "options": [
+     {
+      "name": "Color",
+      "values": [
+       {
+        "label": "Khaki and White",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/b9dbedff-dc86-4bf8-bbc2-5af216bc4bc5",
+        "product_id": "L4olgDA"
+       },
+       {
+        "label": "Khaki Corduroy",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/afdb836f-3a88-4038-ad3b-aa6837886c0f",
+        "product_id": "xzlGe0D"
+       },
+       {
+        "label": "Natural White Plain Weave",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/fdbd5a0f-eea4-4098-b07b-3a23cf645891",
+        "product_id": "OeLCzM9"
+       }
+      ]
+     },
+     {
+      "name": "Size",
+      "values": [
+       {
+        "label": "36",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "37",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "38",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "39",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "40",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "41",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "42",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "43",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "44",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       }
+      ]
+     }
+    ],
+    "selected": [
+     {
+      "name": "Color",
+      "label": "Khaki and White"
+     }
+    ]
+   },
+   "structured_attributes": {
+    "upper-material": [
+     "Canvas"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ],
+    "activity": [
+     "Universal"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ]
+   },
+   "ratings": null
+  }
+ ]
+}

@@ -13,6 +13,8 @@ const nextConfig: NextConfig = {
     },
   },
   images: { unoptimized: true },
+  // The Channel3 stand-in responses are read from disk at run time.
+  outputFileTracingIncludes: { "/api/**/*": ["./fixtures/channel3/**/*"] },
   devIndicators: false,
   async headers() {
     return [

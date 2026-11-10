@@ -79,6 +79,10 @@ function Menu({ onHood }: { onHood: () => void }) {
             Kip&apos;s voice: {sound ? "on" : "off"}
             <span className="block text-xs font-normal text-[var(--color-ink-2)]">Short pre-recorded lines, no live text to speech</span>
           </button>
+          <a href="/kip" className={item} data-testid="menu-kip">
+            Meet Kip
+            <span className="block text-xs font-normal text-[var(--color-ink-2)]">The capybara&apos;s poses and what they mean</span>
+          </a>
           {state ? (
             <button
               type="button"

@@ -1,0 +1,1312 @@
+{
+ "at": "2026-11-10T16:21:44.205Z",
+ "endpoint": "POST /v1/search",
+ "request": {
+  "query": "canvas sneakers",
+  "limit": 8,
+  "filters": {
+   "availability": [
+    "InStock"
+   ],
+   "conditions": [
+    "new"
+   ],
+   "price": {
+    "max_price": 55,
+    "min_price": 44
+   }
+  },
+  "config": {
+   "country": "US",
+   "currency": "USD",
+   "language": "en"
+  }
+ },
+ "products": [
+  {
+   "id": "L4olgDA",
+   "title": "Low-top Canvas Sneakers",
+   "description": "These Low-Top Canvas Sneakers by Cultum offer a classic, versatile look with a durable canvas upper. Featuring a secure lace-up closure with metal eyelets and a protective rounded rubber toe cap, these sneakers combine functionality with a clean aesthetic. The khaki and white colorway is complemented by a gum-colored rubber sole, making them an ideal choice for casual daily wear.",
+   "brands": [
+    {
+     "id": "uL2t",
+     "name": "Cultum"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/b9dbedff-dc86-4bf8-bbc2-5af216bc4bc5?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=y4aA",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/b9dbedff-dc86-4bf8-bbc2-5af216bc4bc5?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=y4aA",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Single tan/brown low-top canvas sneaker with canvas upper on a light background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/7300e9cf-f634-48dd-96a5-34a5dd290956?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=y4aA",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/7300e9cf-f634-48dd-96a5-34a5dd290956?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=y4aA",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Pair of khaki canvas low-top sneakers on a plain background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/c0f73217-8de2-4dfd-856c-f1ee8b52131c?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=y4aA",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/c0f73217-8de2-4dfd-856c-f1ee8b52131c?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=y4aA",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Pair of khaki canvas low-top sneakers displayed on a plain background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/d72eab7c-87bc-4f43-9a71-688645e6f749?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=y4aA",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/d72eab7c-87bc-4f43-9a71-688645e6f749?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=y4aA",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up detail of the side and toe of a low-top canvas sneaker."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/3c9dd0d9-1a43-4e30-83ab-2a25fd7d0490?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=y4aA",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "on_model",
+     "alt_text": "Person wearing khaki pants and white low-top canvas sneakers, tying the laces."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": "adult",
+   "materials": [
+    "canvas",
+    "rubber"
+   ],
+   "key_features": [
+    "Low-top lace-up design",
+    "Canvas upper",
+    "Metal eyelets",
+    "Rounded rubber toe cap",
+    "Tonal laces",
+    "Side ventilation eyelets",
+    "Stitched paneling",
+    "Gum-colored rubber sole"
+   ],
+   "colors": [
+    {
+     "hex": "#bca286",
+     "percentage": 0.5454
+    },
+    {
+     "hex": "#5d350e",
+     "percentage": 0.1586
+    },
+    {
+     "hex": "#422007",
+     "percentage": 0.1169
+    },
+    {
+     "hex": "#dac1ad",
+     "percentage": 0.1011
+    },
+    {
+     "hex": "#845d32",
+     "percentage": 0.078
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/L4olgDA-y4aA-4ecE2h?o=01M1VHGTFNTC40K523719C842A&aid=01M7347W8J06XS0SZG8S5QQEQD",
+     "domain": "atorie.com",
+     "price": {
+      "price": 49,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    }
+   ],
+   "variants": {
+    "options": [
+     {
+      "name": "Color",
+      "values": [
+       {
+        "label": "Khaki and White",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/b9dbedff-dc86-4bf8-bbc2-5af216bc4bc5",
+        "product_id": "L4olgDA"
+       },
+       {
+        "label": "Khaki Corduroy",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/afdb836f-3a88-4038-ad3b-aa6837886c0f",
+        "product_id": "xzlGe0D"
+       },
+       {
+        "label": "Natural White Plain Weave",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/fdbd5a0f-eea4-4098-b07b-3a23cf645891",
+        "product_id": "OeLCzM9"
+       }
+      ]
+     },
+     {
+      "name": "Size",
+      "values": [
+       {
+        "label": "36",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "37",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "38",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "39",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "40",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "41",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "42",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "43",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "44",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       }
+      ]
+     }
+    ],
+    "selected": [
+     {
+      "name": "Color",
+      "label": "Khaki and White"
+     }
+    ]
+   },
+   "structured_attributes": {
+    "upper-material": [
+     "Canvas"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ],
+    "activity": [
+     "Universal"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "qFwXVow",
+   "title": "Champion Canvas Sneakers",
+   "description": "A black canvas low-top sneaker with white laces and a white rubber sole. Features include canvas upper, textile lining, lace-up closure, round toe, and rubber sole. Imported from China. Style #KEDSS20213.",
+   "brands": [
+    {
+     "id": "QZ72",
+     "name": "Keds"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/d7d1c287-bbf3-4d43-8ffb-7cb6786d38a0?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=pyJB",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/d7d1c287-bbf3-4d43-8ffb-7cb6786d38a0?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=pyJB",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Black Keds Champion Canvas sneaker on a white background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/9773a7ff-a214-422b-aa38-852d4ee25c26?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=pyJB",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "on_model",
+     "alt_text": "Person wearing black Keds sneakers with blue jeans."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/748d3ce5-1f67-4a46-b416-e51aabeb7819?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=pyJB",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of the side and sole of a black Keds sneaker with blue accents."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/1f16b033-bf1f-4093-94fe-4134485336d3?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=pyJB",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/1f16b033-bf1f-4093-94fe-4134485336d3?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=pyJB",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Black Keds sneaker viewed from the side against a white background."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/dec69ca5-c7e2-4b93-9907-a8155f5c0ce0?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=pyJB",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Black Keds sneaker viewed from the top showing laces."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": "adult",
+   "materials": [
+    "Upper: Canvas",
+    "Lining: Textile"
+   ],
+   "key_features": [
+    "Upper: Canvas",
+    "Lining: Textile",
+    "Activity: Lifestyle",
+    "Lace-up closure",
+    "Round toe",
+    "Rubber sole",
+    "Imported, China",
+    "This item cannot be gift-boxed"
+   ],
+   "colors": [
+    {
+     "hex": "#2d2b30",
+     "percentage": 0.7602
+    },
+    {
+     "hex": "#555156",
+     "percentage": 0.1281
+    },
+    {
+     "hex": "#b1aeb6",
+     "percentage": 0.1116
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/qFwXVow-pyJB-4ecE2h?o=01KT7EZM690RWKK0XGDDNQ4KP5&aid=01M7347W8J06XS0SZG8S5QQEQD",
+     "domain": "shopbop.com",
+     "price": {
+      "price": 55,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.08,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "sneaker-style": [
+     "Low-top",
+     "Athletic",
+     "Fashion"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "activity": [
+     "Walking",
+     "Universal"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ],
+    "lining-material": [
+     "Canvas"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Textile"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "upper-material": [
+     "Canvas"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "TptAizE",
+   "title": "lace-up canvas sneakers",
+   "description": "These low-top sneakers from SUPERGA feature a vibrant green canvas upper with a clean white rubber sole. Designed for a casual look, they include a lace-up closure, round toe, and a fabric inner for comfort, finished with the signature brand logo on the side.",
+   "brands": [
+    {
+     "id": "pyZH",
+     "name": "Superga"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/c2fd89a5-f009-418c-8b26-69d096fdcb64?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=VOEo",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/c2fd89a5-f009-418c-8b26-69d096fdcb64?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=VOEo",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Green canvas lace-up sneakers viewed from the side."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": "adult",
+   "materials": [
+    "Canvas",
+    "Textile fibers",
+    "Rubber"
+   ],
+   "key_features": [
+    "Low-top sneakers",
+    "Solid color",
+    "Fabric inner",
+    "Lace-up",
+    "Round toe",
+    "Brand logo",
+    "canvas material",
+    "flat sole",
+    "rubber sole"
+   ],
+   "colors": [
+    {
+     "hex": "#088851",
+     "percentage": 0.7247
+    },
+    {
+     "hex": "#d3d7d0",
+     "percentage": 0.1546
+    },
+    {
+     "hex": "#42a37d",
+     "percentage": 0.063
+    },
+    {
+     "hex": "#407657",
+     "percentage": 0.0577
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/TptAizE-VOEo-4ecE2h?o=01M6S5N43NDF8ZCTC9PZJYFAGV&aid=01M7347W8J06XS0SZG8S5QQEQD",
+     "domain": "yoox.com",
+     "price": {
+      "price": 54,
+      "compare_at_price": 90,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.07,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "occasion-style": [
+     "Casual"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "lining-material": [
+     "Cotton",
+     "Textile"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Rubber"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "activity": [
+     "Walking"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "JjpxbFQ",
+   "title": "Charge Canvas Mens Sneakers",
+   "description": "These Nike Charge men's canvas sneakers are a classic go-to style for everyday wear. Made with a black and white canvas upper, the lightweight pair has rubber sole and the iconic Nike logo on the sides. Wear them with anything from jeans or shorts to workout gear. Features: Lightweight; Closure Type: Lace-Up; Upper/Outer Base Material: 100% Canvas; Sole Material Content: 100% Rubber; Care: Spot Clean; Heel Style: Flat Heel; Toe Shape: Round Toe; Country of Origin: Imported.",
+   "brands": [
+    {
+     "id": "MpZS",
+     "name": "Nike"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/33ede8ba-e693-402a-b3a8-c3a8ff675994?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "cleaned_url": "https://cdn.trychannel3.com/d3d916e2-efa1-46e4-9074-47d4155d9953?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Black Nike Charge Canvas sneakers shown from a side view with a matching white sole."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/df29c507-38d8-41a0-8fb0-7911f4f4f70a?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/df29c507-38d8-41a0-8fb0-7911f4f4f70a?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Black Nike Charge Canvas sneaker shown from a side profile."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/65bfc946-6494-42dc-aad2-c37c95d73de0?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/65bfc946-6494-42dc-aad2-c37c95d73de0?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Black Nike Charge Canvas sneaker shown from a three-quarter angle."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/794c7325-d022-4c31-8c3a-a97703974fba?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Pair of black Nike Charge Canvas sneakers viewed from the rear."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/89bd77d4-e118-4776-886a-b496e80df77b?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/89bd77d4-e118-4776-886a-b496e80df77b?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of the sole and outsole of a black Nike Charge Canvas sneaker."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/82ddc5ae-14a9-4462-bd02-eb3dad3b9a72?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/82ddc5ae-14a9-4462-bd02-eb3dad3b9a72?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Black Nike Charge Canvas sneaker shown from the front view."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/7a3f8758-d71b-45a2-89b0-0fa185a42dc6?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/7a3f8758-d71b-45a2-89b0-0fa185a42dc6?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Interior view of the black Nike Charge Canvas sneaker lining."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/0cfd1597-6455-4fe2-bd06-a9d59509ee99?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/0cfd1597-6455-4fe2-bd06-a9d59509ee99?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Qoqa",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Bottom view of the outsole of a black Nike Charge Canvas sneaker."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "male",
+   "age": "adult",
+   "materials": [
+    "100% Canvas",
+    "100% Rubber"
+   ],
+   "key_features": [
+    "Lightweight",
+    "Closure Type: Lace-Up",
+    "Spot Clean",
+    "Upper/Outer Base Material: 100% Canvas",
+    "Sole Material Content: 100% Rubber",
+    "Heel Style: Flat Heel",
+    "Toe Shape: Round Toe"
+   ],
+   "colors": [
+    {
+     "hex": "#161516",
+     "percentage": 0.3665
+    },
+    {
+     "hex": "#302e2f",
+     "percentage": 0.304
+    },
+    {
+     "hex": "#d1cfd2",
+     "percentage": 0.2956
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/JjpxbFQ-Qoqa-4ecE2h?o=01KQYPRB12JSWQ7K55KQAA4RBM&aid=01M7347W8J06XS0SZG8S5QQEQD",
+     "domain": "jcpenney.com",
+     "price": {
+      "price": 52.5,
+      "compare_at_price": 70,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "heel-height-type": [
+     "Flat"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "pattern": [
+     "Logo"
+    ],
+    "sneaker-style": [
+     "Fashion"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "activity": [
+     "Walking"
+    ],
+    "shoe-features": [
+     "Lightweight"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Rubber"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "4JYmCUA",
+   "title": "Classic Canvas Sneakers",
+   "description": "Step out in style with the Andrea canvas lace-up classic sneakers. These low-top sneakers feature a durable canvas upper, a padded insole for comfort, and an anti-slip outsole, making them a versatile staple for any urban wardrobe.",
+   "brands": [
+    {
+     "id": "aCgK",
+     "name": "Andrea"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/fcac398a-0218-4255-9f33-ec26f6ef201d?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Z87s",
+     "cleaned_url": "https://cdn.trychannel3.com/83b00bd9-7231-4ace-a3d9-92833b97118c?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Z87s",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Black canvas sneakers with white accents, viewed from the side."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/45c80051-3bee-451d-9784-362fe8971ed0?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Z87s",
+     "cleaned_url": "https://cdn.trychannel3.com/9e73c5d0-5efb-4727-b4c7-f19223069a77?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Z87s",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White canvas sneaker sole view, showing red and black trim."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/289ec930-28cb-48dd-8f24-0ad0397da206?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Z87s",
+     "cleaned_url": "https://cdn.trychannel3.com/039fb3c4-a33e-47e8-a8f4-e625bcafb85c?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Z87s",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White canvas sneaker side view, showing red and black trim."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/c6c5179d-9ddc-4130-9a74-e8a286bda854?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Z87s",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/c6c5179d-9ddc-4130-9a74-e8a286bda854?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=Z87s",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of the sole and 'ANDREA' branding on a white sneaker."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": "adult",
+   "materials": [
+    "Cotton",
+    "Canvas"
+   ],
+   "key_features": [
+    "Padded insole",
+    "Classic timeless design",
+    "Durable canvas upper",
+    "Anti-slip outsole",
+    "Lace-up closure"
+   ],
+   "colors": [
+    {
+     "hex": "#1b1716",
+     "percentage": 0.6311
+    },
+    {
+     "hex": "#b4b3b1",
+     "percentage": 0.1316
+    },
+    {
+     "hex": "#3d3b3a",
+     "percentage": 0.127
+    },
+    {
+     "hex": "#6a6968",
+     "percentage": 0.1103
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/4JYmCUA-Z87s-4ecE2h?o=01M1C7DVNXPDQDA1GYA8FP8G13&aid=01M7347W8J06XS0SZG8S5QQEQD",
+     "domain": "kohls.com",
+     "price": {
+      "price": 44.25,
+      "compare_at_price": 59,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.021,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "activity": [
+     "Walking"
+    ],
+    "shoe-features": [
+     "Cushioned",
+     "Slip resistant"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ],
+    "footwear-construction-method": [
+     "Vulcanized"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Cotton"
+    ],
+    "ankle-collar-style": [
+     "Low cut"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "sneaker-style": [
+     "Fashion"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "toe-style": [
+     "Cap"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "outsole-stud-type": [
+     "Flat outsole"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "kVHOSWj",
+   "title": "Champion Canvas Sneakers",
+   "description": "Classic lace-up sneakers from Keds, featuring a durable red canvas upper and crisp white soles. These timeless shoes include bright blue insoles with the Keds logo for a subtle pop of color.",
+   "brands": [
+    {
+     "id": "QZ72",
+     "name": "Keds"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/2ef06e6a-2004-4113-806b-a4ca7afd60e1?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=asdf",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/27f70b8d-554c-4340-95f8-d9ebcb263a53?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=asdf",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Red canvas Keds sneaker on white background."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": "adult",
+   "materials": [
+    "canvas",
+    "rubber"
+   ],
+   "key_features": [
+    "Canvas upper",
+    "Lace-up closure",
+    "Rubber sole"
+   ],
+   "colors": [
+    {
+     "hex": "#cb2338",
+     "percentage": 0.4619
+    },
+    {
+     "hex": "#d8d2db",
+     "percentage": 0.3816
+    },
+    {
+     "hex": "#ba5b6a",
+     "percentage": 0.0921
+    },
+    {
+     "hex": "#9e2132",
+     "percentage": 0.0643
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/kVHOSWj-asdf-4ecE2h?o=01M1P97SY11N48BT2M0AXRYKP6&aid=01M7347W8J06XS0SZG8S5QQEQD",
+     "domain": "nordstrom.com",
+     "price": {
+      "price": 55,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.084,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/kVHOSWj-pyJB-4ecE2h?o=01KBPD9PVM0XF72ZAK1VJZBPPA&aid=01M7347W8J06XS0SZG8S5QQEQD",
+     "domain": "shopbop.com",
+     "price": {
+      "price": 55,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.08,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "care-instructions": [
+     "Spot clean only"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ],
+    "insole-material": [
+     "Gel"
+    ],
+    "activity": [
+     "Universal",
+     "Walking"
+    ],
+    "sneaker-style": [
+     "Athletic",
+     "Low-top"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "sole-construction": [
+     "Split sole"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "lining-material": [
+     "Textile"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "outsole-stud-type": [
+     "Flat outsole"
+    ],
+    "ankle-collar-style": [
+     "Low cut"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "clV2LI5",
+   "title": "Canvas sneakers",
+   "description": "These SUPERGA low-top sneakers for girls and teens are crafted from light pink canvas textile fibers. They feature a classic round toe, lace-up closure, and a durable rubber sole, finished with the signature brand logo for a timeless, casual look.",
+   "brands": [
+    {
+     "id": "pyZH",
+     "name": "Superga"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/80fac6f3-6d6d-4a27-acab-991f40564b21?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=VOEo",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/80fac6f3-6d6d-4a27-acab-991f40564b21?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=VOEo",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Light pink textile fabric sneakers shown from the side."
+    }
+   ],
+   "category": {
+    "slug": "baby-children-s-sneakers",
+    "title": "Baby & Children's Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "baby-children-s-shoes",
+      "title": "Baby & Children's Shoes"
+     },
+     {
+      "slug": "baby-children-s-sneakers",
+      "title": "Baby & Children's Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": "kids",
+   "materials": [
+    "Textile fibers",
+    "Rubber"
+   ],
+   "key_features": [
+    "Low-top sneakers",
+    "Solid color",
+    "Fabric inner",
+    "Lace-up",
+    "Round toe",
+    "Brand logo"
+   ],
+   "colors": [
+    {
+     "hex": "#eacdc5",
+     "percentage": 0.529
+    },
+    {
+     "hex": "#c88c71",
+     "percentage": 0.2503
+    },
+    {
+     "hex": "#d1a99b",
+     "percentage": 0.2207
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/clV2LI5-VOEo-4ecE2h?o=01M6RB2922TVQ4Z0CD79ZD38E5&aid=01M7347W8J06XS0SZG8S5QQEQD",
+     "domain": "yoox.com",
+     "price": {
+      "price": 52,
+      "compare_at_price": 64,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.07,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "outsole-material": [
+     "Rubber"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "activity": [
+     "Walking"
+    ],
+    "sneaker-style": [
+     "Low-top"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "lining-material": [
+     "Textile"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "WreUH0l",
+   "title": "Canvas Sneakers",
+   "description": "Step into a garden of style with the Lena Liu Sunflower Splendor Canvas Sneakers. These exclusive canvas shoes feature the breathtaking sunflower artwork of acclaimed artist Lena Liu, bringing a vibrant splash of nature's beauty to your everyday wear. Crafted for comfort with a durable canvas upper, rubber sole, and foam insole, these sneakers offer petal-soft cushioning with every step. The design is enhanced by subtle yellow stitching and charming sculpted golden butterfly charms on the laces, adding a unique touch to this artistic apparel. Perfect for fans of Lena Liu's art or anyone looking to add a touch of sunny elegance to their wardrobe.",
+   "brands": [
+    {
+     "id": "Me2d",
+     "name": "The Bradford Exchange"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/9db570af-a396-4e4b-bae7-9002adef4ce6?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=1ps3",
+     "cleaned_url": "https://cdn.trychannel3.com/e6f13e64-1267-430d-8a1c-08d8102e036d?aid=01M7347W8J06XS0SZG8S5QQEQD&mid=1ps3",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Lena Liu Sunflower Splendor Canvas Sneakers with a floral sunflower pattern."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": "female",
+   "age": "adult",
+   "materials": [
+    "canvas",
+    "rubber",
+    "foam"
+   ],
+   "key_features": [
+    "Showcasing beautiful sunflower art by beloved artist Lena Liu",
+    "Crafted in durable canvas materials",
+    "Feature rubber soles and foam insoles for petal-soft comfort",
+    "Accented with complementing yellow stitching",
+    "Sculpted golden butterfly charms on the laces",
+    "Available in women's sizes 5 to 10 (includes half sizes)",
+    "Standard medium width",
+    "30-Day Money-Back Guarantee",
+    "Features the garden artwork of Lena Liu",
+    "Exclusive Lena Liu women's shoes"
+   ],
+   "colors": [
+    {
+     "hex": "#c4c2b9",
+     "percentage": 0.3581
+    },
+    {
+     "hex": "#e1ded7",
+     "percentage": 0.3051
+    },
+    {
+     "hex": "#8e8d7f",
+     "percentage": 0.1223
+    },
+    {
+     "hex": "#a3a79e",
+     "percentage": 0.1099
+    },
+    {
+     "hex": "#6b5f53",
+     "percentage": 0.1046
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/WreUH0l-1ps3-4ecE2h?o=01KQ0QYRHXYDT64NF019J8GBC3&aid=01M7347W8J06XS0SZG8S5QQEQD",
+     "domain": "bradfordexchange.com",
+     "price": {
+      "price": 49.98,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.05,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "shoe-features": [
+     "Cushioned"
+    ],
+    "shoe-fit": [
+     "Regular"
+    ],
+    "occasion-style": [
+     "Casual"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "sneaker-style": [
+     "Fashion"
+    ],
+    "pattern": [
+     "Floral",
+     "Art"
+    ],
+    "footwear-material": [
+     "Canvas",
+     "Rubber"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ]
+   },
+   "ratings": null
+  }
+ ]
+}

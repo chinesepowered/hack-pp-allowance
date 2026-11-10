@@ -1,0 +1,286 @@
+{
+ "at": "2026-11-10T15:15:42.736Z",
+ "endpoint": "GET /v1/products/{id}",
+ "request": {
+  "product_id": "uEQbicn",
+  "country": "US",
+  "currency": "USD"
+ },
+ "products": [
+  {
+   "id": "uEQbicn",
+   "title": "Authentic Shoe",
+   "description": "Unisex low-profile canvas sneaker with vulcanized sole and lace-up closure. Classic Vans Authentic design featuring a white canvas upper and rubber waffle sole. Lightweight and versatile casual footwear suitable for everyday wear.",
+   "brands": [
+    {
+     "id": "36LM",
+     "name": "VF CORPORATION"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/bc4d664d-5565-4bf6-921c-c4eb7694e607?aid=01M730EZW8XPNF4PRYN3NGCYMZ&mid=Nn6J",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/bc4d664d-5565-4bf6-921c-c4eb7694e607?aid=01M730EZW8XPNF4PRYN3NGCYMZ&mid=Nn6J",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "White Vans Authentic shoe viewed from the side."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/31260471-78ed-4ff8-8cb0-841fd99013c0?aid=01M730EZW8XPNF4PRYN3NGCYMZ&mid=Nn6J",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/31260471-78ed-4ff8-8cb0-841fd99013c0?aid=01M730EZW8XPNF4PRYN3NGCYMZ&mid=Nn6J",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Authentic shoe viewed from the top."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/9d76bd05-e816-4235-a418-5471180f3d29?aid=01M730EZW8XPNF4PRYN3NGCYMZ&mid=Nn6J",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/9d76bd05-e816-4235-a418-5471180f3d29?aid=01M730EZW8XPNF4PRYN3NGCYMZ&mid=Nn6J",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Authentic shoe viewed from the side."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/6257f4ce-c4bd-4766-b916-eeb03b599411?aid=01M730EZW8XPNF4PRYN3NGCYMZ&mid=Nn6J",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White Vans Authentic shoe and insole spread apart."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/b1b444bd-fd27-43ba-9180-4b285fc5e93d?aid=01M730EZW8XPNF4PRYN3NGCYMZ&mid=Nn6J",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/b1b444bd-fd27-43ba-9180-4b285fc5e93d?aid=01M730EZW8XPNF4PRYN3NGCYMZ&mid=Nn6J",
+     "is_main_image": false,
+     "shot_type": "detail",
+     "alt_text": "Close-up of the white shoe sole with a geometric tread pattern."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/b2a0ffa4-8958-426f-b4a6-dc1f0004d1d1?aid=01M730EZW8XPNF4PRYN3NGCYMZ&mid=Nn6J",
+     "cleaned_url": "https://cdn.trychannel3.com/a15546df-799a-4c91-9e0e-1c92b7db5987?aid=01M730EZW8XPNF4PRYN3NGCYMZ&mid=Nn6J",
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "A pair of white Vans Authentic shoes shown from the back."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/d05b42af-4a00-4374-b807-b41ba93efafc?aid=01M730EZW8XPNF4PRYN3NGCYMZ&mid=Nn6J",
+     "cleaned_url": "https://cdn.trychannel3.com/3b903b89-d181-4338-9228-511a61e28def?aid=01M730EZW8XPNF4PRYN3NGCYMZ&mid=Nn6J",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "A pair of white Vans Authentic shoes viewed from the side."
+    }
+   ],
+   "category": {
+    "slug": "sneakers",
+    "title": "Sneakers",
+    "path": [
+     {
+      "slug": "apparel-accessories",
+      "title": "Apparel & Accessories"
+     },
+     {
+      "slug": "shoes",
+      "title": "Shoes"
+     },
+     {
+      "slug": "sneakers",
+      "title": "Sneakers"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": "adult",
+   "materials": [
+    "canvas",
+    "rubber"
+   ],
+   "key_features": [
+    "Low-profile canvas upper",
+    "Lace closure",
+    "Vulcanized rubber waffle sole",
+    "Classic Vans Authentic silhouette"
+   ],
+   "colors": [
+    {
+     "hex": "#f1f1f5",
+     "percentage": 0.7472
+    },
+    {
+     "hex": "#cacad6",
+     "percentage": 0.2528
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/uEQbicn-Nn6J-4ecE2h?o=01KJGJ792NT17RPWV32N0RSEQ8&aid=01M730EZW8XPNF4PRYN3NGCYMZ",
+     "domain": "backcountry.com",
+     "price": {
+      "price": 38.46,
+      "compare_at_price": 54.95,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.015,
+     "dimensions": null
+    }
+   ],
+   "variants": {
+    "options": [
+     {
+      "name": "Color",
+      "values": [
+       {
+        "label": "Black",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/96cdabbd-2b88-4562-a98d-21e03c740b8e",
+        "product_id": "18Kg5Qq"
+       },
+       {
+        "label": "True White",
+        "exists": true,
+        "available": null,
+        "thumbnail_url": "https://cdn.trychannel3.com/bc4d664d-5565-4bf6-921c-c4eb7694e607",
+        "product_id": "uEQbicn"
+       }
+      ]
+     },
+     {
+      "name": "Size",
+      "values": [
+       {
+        "label": "W 6.5 / M 5",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 7 / M 5.5",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 7.5 / M 6",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 8 / M 6.5",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 8.5 / M 7",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 9 / M 7.5",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 9.5 / M 8",
+        "exists": false,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 10.5 / M 9",
+        "exists": false,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 11.5 / M 10",
+        "exists": true,
+        "available": "InStock",
+        "thumbnail_url": null,
+        "product_id": null
+       },
+       {
+        "label": "W 12 / M 11",
+        "exists": false,
+        "available": null,
+        "thumbnail_url": null,
+        "product_id": null
+       }
+      ]
+     }
+    ],
+    "selected": [
+     {
+      "name": "Color",
+      "label": "True White"
+     }
+    ]
+   },
+   "structured_attributes": {
+    "occasion-style": [
+     "Casual"
+    ],
+    "outsole-material": [
+     "Rubber"
+    ],
+    "sneaker-style": [
+     "Athletic"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "footwear-construction-method": [
+     "Vulcanized"
+    ],
+    "flat-shoe-style": [
+     "Moccasins"
+    ],
+    "footwear-cut": [
+     "Low cut"
+    ],
+    "upper-material": [
+     "Canvas"
+    ],
+    "activity": [
+     "Skateboarding",
+     "Training"
+    ],
+    "sole-construction": [
+     "Split sole"
+    ],
+    "shoe-collar-height": [
+     "Low-top"
+    ],
+    "closure-type": [
+     "Lace-up"
+    ],
+    "heel-height-type": [
+     "Flat"
+    ],
+    "toe-style": [
+     "Round"
+    ],
+    "footwear-material": [
+     "Canvas"
+    ]
+   },
+   "ratings": {
+    "value": 4.41,
+    "count": 1785,
+    "source_count": 1
+   }
+  }
+ ]
+}

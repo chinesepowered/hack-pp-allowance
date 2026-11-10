@@ -68,7 +68,7 @@ trail including each policy check.
 - **W&B Inference** for the models, through the OpenAI SDK.
 - **Replay mode** runs the same code with recorded sandbox, Channel3 and model responses, for when a service is down.
   The same recordings drive an offline end-to-end test.
-- **85 automated tests** cover the money rules, the mandate, the PayPal write path, webhooks and the whole flow.
+- **89 automated tests** cover the money rules, the mandate, the PayPal write path, webhooks and the whole flow.
 
 ## Challenges we ran into
 

@@ -86,3 +86,19 @@ Dated notes of what surprised us, what blocked us and how we got around it. PayP
 - Chromium under Playwright sends `localhost` through a configured proxy unless `bypass` is set. The first browser
   check hung for that reason.
 - Next.js 16 lint rules (React Compiler era) reject refs written during render and `setState` directly in an effect.
+
+### Video, screenshots and accessibility
+
+- The first recording drifted: the page itself scrolled by a few pixels whenever a pane was scrolled into view, because
+  the body had a minimum height that the recording zoom made taller than the window. The page no longer scrolls at all;
+  only the panes do.
+- PayPal's window is a separate page, so Playwright records it as a second video. The composer shows it over a dimmed
+  frame of the app and blurs the band where the login pages print the sandbox buyer's email.
+- "Around $55" used to return cheaper sneakers that fit the rules, which made the approval scene a coin toss. A price
+  window (80% of the named price up to the cap) is now sent to Channel3 as `min_price` and `max_price`.
+- Recording mode (`?safe=1`) first only stripped the listed brand. One title still carried a shoe model name, so
+  recording mode now shows the catalog category instead of the product title.
+- An axe-core scan found list items under a `log` role, two names that did not match their visible text, a stray menu
+  role and a dimmed heading. All fixed; `pnpm a11y` now reports no violations in ten states.
+- The first Replay recording kept the sandbox buyer's email as PayPal returned it. The recorder now replaces it with a
+  placeholder before writing a fixture (see `docs/needs-user.md` for the one commit where it remains in history).

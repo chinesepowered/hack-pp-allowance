@@ -98,7 +98,7 @@ flowchart TB
   payment detail.
 - The wrapper (`lib/agent/guard.ts`) requires the product to be one Channel3 returned in this session, re-reads its
   price from Channel3 product detail, classifies it, and runs `evaluatePurchase()` (`lib/mandate/policy.ts`), which is
-  plain code with 85 unit and integration tests around it.
+  plain code with 89 unit and integration tests around it.
 - Only if `authorizePayment()` says yes does the code call the PayPal Agent Toolkit's `create_order`, with arguments
   built by code. The saved PayPal (the vault id) is attached server-side by an interceptor. The model never sees it.
 
@@ -204,8 +204,8 @@ Channel3". Four uses, each visible in the product (`lib/channel3/client.ts`, pac
 | Similar products | `products.findSimilar` capped at what the rules allow | "Similar, and inside the rules" under an approval request |
 | Product detail | `products.retrieve`: offers across retailers and buy links | re-checked right before paying; the buy link is the simulated retailer handoff |
 
-Responses are cached. If Channel3 is slow, failing or out of credits, the last good response for the same request is
-served and labeled "cached result".
+Responses are cached. If Channel3 is slow, failing or out of credits, the last good response for the same request, or
+the closest recorded one in `fixtures/channel3/`, is served and labeled "cached result".
 
 ### APIMatic
 
@@ -288,13 +288,15 @@ Deploying to Vercel needs a Blob store (`BLOB_READ_WRITE_TOKEN`) for state. See 
 
 ## Tests
 
-`pnpm test` runs 85 tests in about two seconds, with no network and no keys:
+`pnpm test` runs 89 tests in about two seconds, with no network and no keys:
 
 - `tests/policy.test.ts`: every outcome of the policy check, the rolling budget, the gate in front of PayPal, undo.
 - `tests/mandate.test.ts`: what the model may propose, signing, tamper detection, "approve and add a rule".
 - `tests/payments.test.ts`: claim before call, one charge per approval even on a double tap, webhook handling, an unknown outcome is
   re-read with the same request id and never reported as a failure, a declined wallet is not retried.
 - `tests/replay.test.ts`: the whole aha, offline: the real agent loop, guard and ledger run against the recorded tapes.
+- `tests/channel3-fallback.test.ts`: when Channel3 is down the closest recorded response is served and labeled, and
+  used or out-of-stock offers are never picked.
 
 ## Accessibility
 

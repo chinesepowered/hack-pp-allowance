@@ -1,0 +1,162 @@
+{
+ "at": "2026-11-10T16:18:58.394Z",
+ "endpoint": "GET /v1/products/{id}",
+ "request": {
+  "product_id": "V39knQg",
+  "country": "US",
+  "currency": "USD"
+ },
+ "products": [
+  {
+   "id": "V39knQg",
+   "title": "A5 College Ruled Notebooks Bulk Pack 60",
+   "description": "A bulk set of 60 A5-sized college-ruled notebooks designed for school, office, or project planning. Each notebook features a durable 220gsm kraft cover with colorful spine edges in six assorted colors (Red, Orange, Yellow, Green, Purple, and Blue). The interior consists of high-quality 80gsm bleed-resistant paper, providing a clean writing experience for journaling and note-taking.",
+   "brands": [
+    {
+     "id": "gSw7",
+     "name": "GARVEE"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/84756580-900b-499c-b512-8f2c479019bb?aid=01M7342TMA9HXX0ZFCQV9W7CB9&mid=BCUF",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/84756580-900b-499c-b512-8f2c479019bb?aid=01M7342TMA9HXX0ZFCQV9W7CB9&mid=BCUF",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Stack of colorful ruled notebooks with kraft covers."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/f330a281-49ea-4b4b-8b83-c6242feac0a2?aid=01M7342TMA9HXX0ZFCQV9W7CB9&mid=BCUF",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "product_information",
+     "alt_text": "Product size and pack specification chart."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/5f16464a-9922-447a-b70e-884d3dac88a0?aid=01M7342TMA9HXX0ZFCQV9W7CB9&mid=BCUF",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Open notebook with pens on a wooden desk."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/586685b9-250a-4928-85e6-84f953893030?aid=01M7342TMA9HXX0ZFCQV9W7CB9&mid=BCUF",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "in_use",
+     "alt_text": "Hand writing in a notebook with a pen."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/5752fe8f-5799-41c3-8de1-5e84f50b8b2d?aid=01M7342TMA9HXX0ZFCQV9W7CB9&mid=BCUF",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "product_information",
+     "alt_text": "Diagram showing 8mm line spacing in a notebook."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/2a222f87-993d-4796-b409-fd3f9350f616?aid=01M7342TMA9HXX0ZFCQV9W7CB9&mid=BCUF",
+     "cleaned_url": null,
+     "is_main_image": false,
+     "shot_type": "lifestyle",
+     "alt_text": "Notebook lying flat with stationery and plant."
+    }
+   ],
+   "category": {
+    "slug": "notebooks-notepads",
+    "title": "Notebooks & Notepads",
+    "path": [
+     {
+      "slug": "office-supplies",
+      "title": "Office Supplies"
+     },
+     {
+      "slug": "general-office-supplies",
+      "title": "General Office Supplies"
+     },
+     {
+      "slug": "paper-products",
+      "title": "Paper Products"
+     },
+     {
+      "slug": "notebooks-notepads",
+      "title": "Notebooks & Notepads"
+     }
+    ],
+    "has_children": true
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "80gsm Paper",
+    "220gsm Kraft"
+   ],
+   "key_features": [
+    "Bulk Set of 60 A5 Notebooks - Perfect for schools, offices, and project planning, with assorted Colorful covers.",
+    "High-quality 80gsm College Ruled Paper - Smooth, bleed-resistant pages ideal for note-taking, journaling, and daily writing.",
+    "Sturdy 220gsm Kraft Covers - Durable, colorful protection keeps your notes secure and adds a fun touch.",
+    "Portable A5 Size (8.3\" x 5.5\") - Easily fits in backpacks, purses, or desks for convenient, on-the-go use.",
+    "Clean Writing Experience - High-quality paper prevents ink bleed-through, ensuring crisp, legible notes every time."
+   ],
+   "colors": [
+    {
+     "hex": "#d7cfbe",
+     "percentage": 0.4526
+    },
+    {
+     "hex": "#db4e4a",
+     "percentage": 0.1414
+    },
+    {
+     "hex": "#539f8b",
+     "percentage": 0.1369
+    },
+    {
+     "hex": "#d4ad86",
+     "percentage": 0.1057
+    },
+    {
+     "hex": "#7064a4",
+     "percentage": 0.0929
+    },
+    {
+     "hex": "#eadbb4",
+     "percentage": 0.0704
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/V39knQg-BCUF-4ecE2h?o=01M2RSAD1DMDZJA5TNQF2DRYRP&aid=01M7342TMA9HXX0ZFCQV9W7CB9",
+     "domain": "garvee.com",
+     "price": {
+      "price": 51.99,
+      "compare_at_price": 89.99,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.05,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "sheet-pattern": [
+     "Solid"
+    ],
+    "notepad-cover-type": [
+     "Soft"
+    ],
+    "paper-type": [
+     "Lined"
+    ],
+    "target-audience": [
+     "Suitable for all ages"
+    ],
+    "pattern": [
+     "Solid"
+    ]
+   },
+   "ratings": null
+  }
+ ]
+}

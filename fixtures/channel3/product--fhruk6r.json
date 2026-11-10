@@ -1,0 +1,139 @@
+{
+ "at": "2026-11-10T16:18:18.013Z",
+ "endpoint": "GET /v1/products/{id}",
+ "request": {
+  "product_id": "FhRuk6R",
+  "country": "US",
+  "currency": "USD"
+ },
+ "products": [
+  {
+   "id": "FhRuk6R",
+   "title": "4 Packs: 6 ct. (24 total) Mead® Spiral 1-Subject College Ruled Notebooks, 10.5\" x 7.5\"",
+   "description": "A bulk set of 24 Mead spiral notebooks, provided as 4 packs of 6 notebooks each. These one-subject notebooks feature college-ruled, double-sided white paper and come in assorted cover colors including black, yellow, green, purple, red, and blue. Each notebook contains 70 perforated, 3-hole punched sheets with a coated cover and a durable spiral binding designed to resist snagging and uncoiling.",
+   "brands": [
+    {
+     "id": "hO4I",
+     "name": "Mead"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/eae687de-ec18-4174-8401-5c618c58eb3b?aid=01M7341K6EWHJWVRFCRBNC38ZK&mid=cBzV",
+     "cleaned_url": null,
+     "is_main_image": true,
+     "shot_type": "lifestyle",
+     "alt_text": "A set of 6 colored spiral notebooks lying side by side."
+    }
+   ],
+   "category": {
+    "slug": "notebooks-notepads",
+    "title": "Notebooks & Notepads",
+    "path": [
+     {
+      "slug": "office-supplies",
+      "title": "Office Supplies"
+     },
+     {
+      "slug": "general-office-supplies",
+      "title": "General Office Supplies"
+     },
+     {
+      "slug": "paper-products",
+      "title": "Paper Products"
+     },
+     {
+      "slug": "notebooks-notepads",
+      "title": "Notebooks & Notepads"
+     }
+    ],
+    "has_children": true
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "paper"
+   ],
+   "key_features": [
+    "1-Subject",
+    "College ruled",
+    "Double sided pages",
+    "70 sheets per notebook",
+    "Spiral bound",
+    "3 hole punched",
+    "Perforated pages",
+    "Coated cover"
+   ],
+   "colors": [
+    {
+     "hex": "#0e80c0",
+     "percentage": 0.2701
+    },
+    {
+     "hex": "#945a95",
+     "percentage": 0.1553
+    },
+    {
+     "hex": "#dbd9d1",
+     "percentage": 0.1416
+    },
+    {
+     "hex": "#1b1c1c",
+     "percentage": 0.1261
+    },
+    {
+     "hex": "#20a57a",
+     "percentage": 0.1126
+    },
+    {
+     "hex": "#e4a940",
+     "percentage": 0.1026
+    },
+    {
+     "hex": "#c13151",
+     "percentage": 0.0917
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/FhRuk6R-cBzV-4ecE2h?o=01M5GFJP3QBE7V9RNKKDPGT31A&aid=01M7341K6EWHJWVRFCRBNC38ZK",
+     "domain": "michaels.com",
+     "price": {
+      "price": 19.99,
+      "compare_at_price": 24.99,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.024875,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "notepad-cover-type": [
+     "Soft"
+    ],
+    "notepad-design": [
+     "Spiral-bound"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "paper-type": [
+     "Lined",
+     "Perforated",
+     "Plain white"
+    ],
+    "sheet-pattern": [
+     "Solid"
+    ]
+   },
+   "ratings": {
+    "value": 5,
+    "count": 1,
+    "source_count": 1
+   }
+  }
+ ]
+}

@@ -1,0 +1,992 @@
+{
+ "at": "2026-11-10T15:14:38.657Z",
+ "endpoint": "POST /v1/search",
+ "request": {
+  "query": "graphing calculator",
+  "limit": 8,
+  "filters": {
+   "availability": [
+    "InStock"
+   ],
+   "price": {
+    "max_price": 36.75
+   }
+  },
+  "config": {
+   "country": "US",
+   "currency": "USD",
+   "language": "en"
+  }
+ },
+ "products": [
+  {
+   "id": "29rbhGE",
+   "title": "Scientific Graphic Function Calculator",
+   "description": "The PURSONIC Scientific Graphic Function Calculator is a slim and portable tool designed for students and professionals. It features a 2.5-inch multi-line LCD screen for visualizing complex calculations and includes 20 built-in graphs for visual learning. This comprehensive calculator is suitable for a wide range of subjects, including algebra, geometry, trigonometry, calculus, statistics, biology, chemistry, physics, business, and finance. It also offers fraction calculation, a variety of utilities, probability functions, and an instant replay feature. The device supports three operating modes (Angular Measurement, Calculation, and Display) and comes with a durable protective cover for safe transport.",
+   "brands": [
+    {
+     "id": "N7ua",
+     "name": "Franklin"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/1f33b913-b4c8-46f9-975c-6ae20796d708?aid=01M730D120RR4WBF9ZT4S34BDP&mid=K6RA",
+     "cleaned_url": null,
+     "is_main_image": true,
+     "shot_type": "product_information",
+     "alt_text": "Calculator screen showing scientific functions and keypad layout."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/21f3f6ff-beb9-4bac-9f08-510207ea2654?aid=01M730D120RR4WBF9ZT4S34BDP&mid=K6RA",
+     "cleaned_url": "https://cdn.trychannel3.com/55d37e5f-baf6-4e7c-8737-b93380b0b597?aid=01M730D120RR4WBF9ZT4S34BDP&mid=K6RA",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "White portable scientific graphic function calculator product in display."
+    }
+   ],
+   "category": {
+    "slug": "graphing-calculators",
+    "title": "Graphing Calculators",
+    "path": [
+     {
+      "slug": "office-supplies",
+      "title": "Office Supplies"
+     },
+     {
+      "slug": "office-equipment",
+      "title": "Office Equipment"
+     },
+     {
+      "slug": "calculators",
+      "title": "Calculators"
+     },
+     {
+      "slug": "graphing-calculators",
+      "title": "Graphing Calculators"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "plastic"
+   ],
+   "key_features": [
+    "2.5-inch LCD screen with multi-line display",
+    "Includes 20 built-in graphs for visual learning",
+    "Fraction Calculation: simplifies and solves fractions",
+    "Comprehensive tools for geometry, basic functions, and algebra",
+    "Advanced probability functions and instant replay feature",
+    "3 Operating Modes: Angular Measurement, Calculation, and Display",
+    "Includes a durable protective cover"
+   ],
+   "colors": [
+    {
+     "hex": "#383738",
+     "percentage": 0.4277
+    },
+    {
+     "hex": "#62927d",
+     "percentage": 0.1739
+    },
+    {
+     "hex": "#e2e1de",
+     "percentage": 0.1305
+    },
+    {
+     "hex": "#1e201f",
+     "percentage": 0.1061
+    },
+    {
+     "hex": "#45524e",
+     "percentage": 0.0962
+    },
+    {
+     "hex": "#696c68",
+     "percentage": 0.0655
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/29rbhGE-K6RA-4ecE2h?o=01M1KCCAHR5TKPEN2X860SKP3H&aid=01M730D120RR4WBF9ZT4S34BDP",
+     "domain": "macys.com",
+     "price": {
+      "price": 31.99,
+      "compare_at_price": 39.99,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.056,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "calculator-features": [
+     "Fraction calculation",
+     "Graphing function",
+     "LCD display",
+     "Statistical analysis",
+     "Numeric keypad",
+     "Trigonometric function",
+     "Basic arithmetic",
+     "Equation solving"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "H6X6mRA",
+   "title": "Scientific Graphic Function Calculator",
+   "description": "This slim, portable scientific graphic function calculator is designed for students and professionals. It features a 2.5-inch LCD multi-line display and includes 20 built-in graphs to assist with visual learning in subjects such as algebra, geometry, trigonometry, calculus, statistics, and physics. The device offers fraction calculation, comprehensive geometry utilities, probability functions, and an instant replay feature for reviewing work. It operates in three different modes (Angular Measurement, Calculation, and Display) and includes a durable protective cover for portability.",
+   "brands": [
+    {
+     "id": "eTJU",
+     "name": "Pursonic"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/a3fc6d70-0e6e-4e5a-8664-9ed5f134e9b7?aid=01M730D120RR4WBF9ZT4S34BDP&mid=K6RA",
+     "cleaned_url": "https://cdn.trychannel3.com/97b0aa57-cc53-449f-8fa8-dee506eeb9c8?aid=01M730D120RR4WBF9ZT4S34BDP&mid=K6RA",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Front view of a black scientific graphic function calculator with a digital display and a comprehensive numeric and function keypad."
+    }
+   ],
+   "category": {
+    "slug": "graphing-calculators",
+    "title": "Graphing Calculators",
+    "path": [
+     {
+      "slug": "office-supplies",
+      "title": "Office Supplies"
+     },
+     {
+      "slug": "office-equipment",
+      "title": "Office Equipment"
+     },
+     {
+      "slug": "calculators",
+      "title": "Calculators"
+     },
+     {
+      "slug": "graphing-calculators",
+      "title": "Graphing Calculators"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "Plastic casing (inferred from typical calculator construction)"
+   ],
+   "key_features": [
+    "Graphic Functions: Includes 20 built-in graphs for visual learning.",
+    "Display: 2.5-inch LCD screen with multi-line display.",
+    "Functionality: Supports algebra, geometry, trigonometry, calculus, statistics, biology, chemistry, physics, business, and finance calculations.",
+    "Fraction Calculation: Simplifies and solves fractions.",
+    "Advanced Utilities: Includes Probability functions and Instant Replay feature.",
+    "Operating Modes: Features 3 modes (Angular Measurement, Calculation, Display).",
+    "Design: Slim and portable with a durable protective cover.",
+    "Model Number visible on image: FGC-100.",
+    "Includes 20 built-in graph types (line, bar, pie, scatter, histogram, and more)",
+    "Powerful probability tools for calculating distributions, permutations, and combinations"
+   ],
+   "colors": [],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/H6X6mRA-K6RA-4ecE2h?o=01M1B3BZSPSZQGHC07E2J5JBYV&aid=01M730D120RR4WBF9ZT4S34BDP",
+     "domain": "macys.com",
+     "price": {
+      "price": 31.990000000000006,
+      "compare_at_price": 39.99,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.056,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "calculator-features": [
+     "Fraction calculation",
+     "Graphing function",
+     "LCD display",
+     "Statistical analysis",
+     "Trigonometric function",
+     "Numeric keypad",
+     "Basic arithmetic",
+     "Equation solving",
+     "Statistical calculation"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "gaG01s8",
+   "title": "Workshop Statistics, Discovery with Data and the Graphing Calculator",
+   "description": "Facts101 is your complete guide to Workshop Statistics, Discovery with Data and the Graphing Calculator. In this book, you will learn topics such as as those in your book plus much more. With key features such as key terms, people and places,...",
+   "brands": [
+    {
+     "id": "nuFZ",
+     "name": "Barnes & Noble"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/37aae3cf-a397-4eee-9ae9-846d3cdb7ddf?aid=01M730D120RR4WBF9ZT4S34BDP&mid=i2yC",
+     "cleaned_url": null,
+     "is_main_image": true,
+     "shot_type": "product_information",
+     "alt_text": "Textbook cover for Workshop Statistics, Discovery with Data and the Graphing Calculator."
+    }
+   ],
+   "category": {
+    "slug": "print-books",
+    "title": "Print Books",
+    "path": [
+     {
+      "slug": "media",
+      "title": "Media"
+     },
+     {
+      "slug": "books",
+      "title": "Books"
+     },
+     {
+      "slug": "print-books",
+      "title": "Print Books"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [],
+   "key_features": [],
+   "colors": [
+    {
+     "hex": "#d9d9d9",
+     "percentage": 0.4045
+    },
+    {
+     "hex": "#dd1f20",
+     "percentage": 0.1447
+    },
+    {
+     "hex": "#bc3737",
+     "percentage": 0.1308
+    },
+    {
+     "hex": "#b8b7b7",
+     "percentage": 0.1181
+    },
+    {
+     "hex": "#c72425",
+     "percentage": 0.117
+    },
+    {
+     "hex": "#cc7373",
+     "percentage": 0.0849
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/gaG01s8-i2yC-4ecE2h?o=01M5QKZ20AQ5CGN4GFHZW55H9E&aid=01M730D120RR4WBF9ZT4S34BDP",
+     "domain": "barnesandnoble.com",
+     "price": {
+      "price": 28.95,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.036,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "language-version": [
+     "ENG- English"
+    ],
+    "genre": [
+     "Education"
+    ],
+    "target-audience": [
+     "Adults"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "GZi677M",
+   "title": "TI-30XS MultiView Scientific Calculator",
+   "description": "The Texas Instruments TI-30XS MultiView is a scientific calculator designed for students in general math, Pre-Algebra, Algebra 1 and 2, Geometry, Statistics, general science, Biology, and Chemistry. It features a MultiView display that supports up to four lines, allowing users to view multiple calculations simultaneously and compare results. The calculator displays math expressions, symbols, and stacked fractions exactly as they appear in textbooks, eliminating the need for technical syntax. Additionally, it provides scientific notation output with proper superscripted exponents and an (x,y) table of values for function exploration.",
+   "brands": [
+    {
+     "id": "13LJ",
+     "name": "Texas Instruments"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/8be33e77-5ddd-418e-aee6-75b13054cd4a?aid=01M730D120RR4WBF9ZT4S34BDP&mid=Z87s",
+     "cleaned_url": "https://cdn.trychannel3.com/64e29f39-b0ba-4067-badc-2475a4ac6708?aid=01M730D120RR4WBF9ZT4S34BDP&mid=Z87s",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Blue and white Texas Instruments TI-30XS MultiView scientific calculator."
+    }
+   ],
+   "category": {
+    "slug": "scientific-calculators",
+    "title": "Scientific Calculators",
+    "path": [
+     {
+      "slug": "office-supplies",
+      "title": "Office Supplies"
+     },
+     {
+      "slug": "office-equipment",
+      "title": "Office Equipment"
+     },
+     {
+      "slug": "calculators",
+      "title": "Calculators"
+     },
+     {
+      "slug": "scientific-calculators",
+      "title": "Scientific Calculators"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "plastic"
+   ],
+   "key_features": [
+    "16-digit four-line LCD display",
+    "MathPrint entry and output mode",
+    "Solar cell and battery powered",
+    "Up to seven memory variables",
+    "Review and edit previous entries",
+    "Negation key",
+    "Menu settings and central MODE menu",
+    "Fraction calculations and conversions",
+    "Hyperbolic functions",
+    "Random number and random integer generator"
+   ],
+   "colors": [
+    {
+     "hex": "#688496",
+     "percentage": 0.6491
+    },
+    {
+     "hex": "#a8b6b1",
+     "percentage": 0.1461
+    },
+    {
+     "hex": "#e4eae7",
+     "percentage": 0.1025
+    },
+    {
+     "hex": "#2b3b46",
+     "percentage": 0.1023
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/GZi677M-Z87s-4ecE2h?o=01M3NVJW97J45S9TMVT0ZYS90Z&aid=01M730D120RR4WBF9ZT4S34BDP",
+     "domain": "kohls.com",
+     "price": {
+      "price": 16.99,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.021,
+     "dimensions": {
+      "length": {
+       "number": 16,
+       "unit": "cm"
+      },
+      "width": {
+       "number": 10,
+       "unit": "cm"
+      },
+      "height": {
+       "number": 2,
+       "unit": "cm"
+      },
+      "weight": null
+     }
+    },
+    {
+     "url": "https://buy.trychannel3.com/GZi677M-LFnL-4ecE2h?o=01KPCJXQNMHFAR13498NGGWF0A&aid=01M730D120RR4WBF9ZT4S34BDP",
+     "domain": "staples.com",
+     "price": {
+      "price": 21.49,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.03,
+     "dimensions": null
+    },
+    {
+     "url": "https://buy.trychannel3.com/GZi677M-p1PB-4ecE2h?o=01KY1NS3CDD0BNYM2NA9K0MDA3&aid=01M730D120RR4WBF9ZT4S34BDP",
+     "domain": "bestbuy.com",
+     "price": {
+      "price": 34.5,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.005,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "calculator-features": [
+     "Fraction calculation",
+     "LCD display",
+     "Statistical analysis",
+     "Statistical calculation",
+     "Trigonometric function",
+     "Basic arithmetic",
+     "Logarithmic function",
+     "Numeric keypad",
+     "Equation solving"
+    ]
+   },
+   "ratings": {
+    "value": 4.63,
+    "count": 431,
+    "source_count": 3
+   }
+  },
+  {
+   "id": "0M8pLy5",
+   "title": "Texas Instruments MultiView Scientific Calculator - 34MV/TBL/1L1/A",
+   "description": "The Texas Instruments TI-34 MultiView is a scientific calculator designed to improve mathematical understanding for students in middle school math, pre-algebra, algebra 1 and 2, general science, and geometry. It features a 16-digit, four-line LCD display and MathPrint mode, which displays numbers and expressions as they appear in textbooks. The calculator includes a list conversion function for internalizing number formats and dedicated functions for integer division and step-by-step fraction simplification. It is powered by a dual power system consisting of a solar cell and one CR2032 battery.",
+   "brands": [
+    {
+     "id": "13LJ",
+     "name": "Texas Instruments"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/9cb4c96e-5c6f-4fde-b48b-676eadf0be33?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/9cb4c96e-5c6f-4fde-b48b-676eadf0be33?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Front view of a Texas Instruments TI-34 MultiView calculator."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/3bb4f544-595c-4efc-9bf3-6fce38e5fa4d?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/3bb4f544-595c-4efc-9bf3-6fce38e5fa4d?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Front view of a Texas Instruments TI-34 MultiView calculator."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/ecdaad41-f2b3-4ad2-b6f2-a702d08b87e8?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/ecdaad41-f2b3-4ad2-b6f2-a702d08b87e8?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Front view of a Texas Instruments TI-34 MultiView calculator."
+    }
+   ],
+   "category": {
+    "slug": "scientific-calculators",
+    "title": "Scientific Calculators",
+    "path": [
+     {
+      "slug": "office-supplies",
+      "title": "Office Supplies"
+     },
+     {
+      "slug": "office-equipment",
+      "title": "Office Equipment"
+     },
+     {
+      "slug": "calculators",
+      "title": "Calculators"
+     },
+     {
+      "slug": "scientific-calculators",
+      "title": "Scientific Calculators"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "hard plastic",
+    "rubber"
+   ],
+   "key_features": [
+    "Four-line display for viewing multiple calculations",
+    "MathPrint feature for textbook-style display of expressions",
+    "Advanced fraction capabilities with step-by-step simplification",
+    "One- and two-variable statistics",
+    "Solar and battery powered",
+    "Includes impact-resistant cover with quick-reference card",
+    "Scrollable home screen for reviewing and editing entries",
+    "Toggle key for fraction/decimal and pi/decimal conversions",
+    "Up to seven memory variables",
+    "EOS (Equation Operating System)"
+   ],
+   "colors": [
+    {
+     "hex": "#096799",
+     "percentage": 0.1545
+    },
+    {
+     "hex": "#dee2e4",
+     "percentage": 0.1518
+    },
+    {
+     "hex": "#1696bf",
+     "percentage": 0.1487
+    },
+    {
+     "hex": "#174a79",
+     "percentage": 0.1421
+    },
+    {
+     "hex": "#18274d",
+     "percentage": 0.1185
+    },
+    {
+     "hex": "#aecbd2",
+     "percentage": 0.1068
+    },
+    {
+     "hex": "#799eab",
+     "percentage": 0.0987
+    },
+    {
+     "hex": "#3c6c89",
+     "percentage": 0.0789
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/0M8pLy5-LPzf-4ecE2h?o=01M5ZQ8K4QY2FCFWYNHF904884&aid=01M730D120RR4WBF9ZT4S34BDP",
+     "domain": "newegg.com",
+     "price": {
+      "price": 19.99,
+      "compare_at_price": 28.49,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.007,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "calculator-features": [
+     "Fraction calculation",
+     "LCD display",
+     "Logarithmic function",
+     "Numeric keypad",
+     "Statistical analysis",
+     "Statistical calculation",
+     "Trigonometric function"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "5olzdVf",
+   "title": "Explorer Scientific Calculator",
+   "description": "The Texas Instruments TI-15 Explorer is an elementary scientific calculator designed for students in grades 3 through 6. It features a transparent, impact-resistant blue case that allows students to see the internal components. The calculator includes color-coded keys for easy navigation and a two-line display providing clear viewing of entries and results. Key educational tools include step-by-step fraction reduction, conversion between fractions, decimals, and percents, and built-in flash cards for basic arithmetic practice. It is powered by a dual system utilizing both solar cells and battery power.",
+   "brands": [
+    {
+     "id": "13LJ",
+     "name": "Texas Instruments"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/0cc36dc2-1e3f-470c-a402-8e9f1ab0c8cd?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "cleaned_url": "https://cdn.trychannel3.com/ac60ceeb-fef2-4506-9a9a-da04c7b94e77?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Texas Instruments TI-15 scientific calculator in blue."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/a60636d6-ef6d-4f39-b95f-37f60d49e5a8?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "cleaned_url": "https://cdn.trychannel3.com/53544b93-4413-4b86-a67a-1722da55ffdc?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Angled view of a blue Texas Instruments TI-15 scientific calculator."
+    }
+   ],
+   "category": {
+    "slug": "scientific-calculators",
+    "title": "Scientific Calculators",
+    "path": [
+     {
+      "slug": "office-supplies",
+      "title": "Office Supplies"
+     },
+     {
+      "slug": "office-equipment",
+      "title": "Office Equipment"
+     },
+     {
+      "slug": "calculators",
+      "title": "Calculators"
+     },
+     {
+      "slug": "scientific-calculators",
+      "title": "Scientific Calculators"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "plastic"
+   ],
+   "key_features": [
+    "Two-line display for viewing entries and results",
+    "Color-coded keys grouped by function",
+    "Step-by-step fraction reduction and simplification",
+    "Converters for fractions, decimals, and percents",
+    "Built-in flash cards for addition, subtraction, multiplication, and division",
+    "Dual power source: solar and battery",
+    "Impact-resistant transparent cover",
+    "Equation Operating System (EOS) performing operations in M-D-A-S order",
+    "Supports basic math functions, inequalities, and square roots"
+   ],
+   "colors": [
+    {
+     "hex": "#075e81",
+     "percentage": 0.4016
+    },
+    {
+     "hex": "#f1efd2",
+     "percentage": 0.1397
+    },
+    {
+     "hex": "#3d89a9",
+     "percentage": 0.1335
+    },
+    {
+     "hex": "#b0b7a9",
+     "percentage": 0.118
+    },
+    {
+     "hex": "#62a6c6",
+     "percentage": 0.117
+    },
+    {
+     "hex": "#7b6169",
+     "percentage": 0.0902
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/5olzdVf-LPzf-4ecE2h?o=01M22ESJMZXGHXPXAQR80VJ25W&aid=01M730D120RR4WBF9ZT4S34BDP",
+     "domain": "newegg.com",
+     "price": {
+      "price": 27.2,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.007,
+     "dimensions": {
+      "length": {
+       "number": 6.9,
+       "unit": "in"
+      },
+      "width": {
+       "number": 3.5,
+       "unit": "in"
+      },
+      "height": {
+       "number": 0.7,
+       "unit": "in"
+      },
+      "weight": null
+     }
+    },
+    {
+     "url": "https://buy.trychannel3.com/5olzdVf-LFnL-4ecE2h?o=01KZ5K150NWEGF5V5YCK6THCTC&aid=01M730D120RR4WBF9ZT4S34BDP",
+     "domain": "staples.com",
+     "price": {
+      "price": 29.49,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.03,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "calculator-features": [
+     "Basic arithmetic",
+     "Fraction calculation",
+     "LCD display",
+     "Numeric keypad"
+    ]
+   },
+   "ratings": {
+    "value": 4.25,
+    "count": 21,
+    "source_count": 1
+   }
+  },
+  {
+   "id": "DwS1Yit",
+   "title": "fx-115ES PLUS B 2nd Edition Advanced Scientific Calculator",
+   "description": "The Casio fx-115ES PLUS B 2nd Edition is an advanced non-programmable, non-graphing scientific calculator featuring a Natural Textbook Display for easy reading of mathematical expressions. It offers 252 functions, including matrix and vector calculations, differential and integration capabilities, and a wide range of scientific constants and metric conversions. This model is powered by a single AAA battery with an approximate 3-year life and comes with a protective hard case.",
+   "brands": [
+    {
+     "id": "dQKh",
+     "name": "Casio"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/de44c5a4-b5ab-42c1-870f-7e61767f8f3a?aid=01M730D120RR4WBF9ZT4S34BDP&mid=91hP",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/de44c5a4-b5ab-42c1-870f-7e61767f8f3a?aid=01M730D120RR4WBF9ZT4S34BDP&mid=91hP",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Front view of the Casio fx-115ES PLUS B scientific calculator."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/3cac8066-0fde-4716-9292-93ed2ba69399?aid=01M730D120RR4WBF9ZT4S34BDP&mid=91hP",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/3cac8066-0fde-4716-9292-93ed2ba69399?aid=01M730D120RR4WBF9ZT4S34BDP&mid=91hP",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Front view of the Casio fx-115ES PLUS B scientific calculator."
+    }
+   ],
+   "category": {
+    "slug": "scientific-calculators",
+    "title": "Scientific Calculators",
+    "path": [
+     {
+      "slug": "office-supplies",
+      "title": "Office Supplies"
+     },
+     {
+      "slug": "office-equipment",
+      "title": "Office Equipment"
+     },
+     {
+      "slug": "calculators",
+      "title": "Calculators"
+     },
+     {
+      "slug": "scientific-calculators",
+      "title": "Scientific Calculators"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [
+    "Plastic"
+   ],
+   "key_features": [
+    "Natural textbook display",
+    "252 functions",
+    "Non-programmable, non-graphing",
+    "Matrix and vector calculations",
+    "Differential and integration calculation",
+    "Scientific constants and metric conversion",
+    "10 + 2 digit display",
+    "Powered by 1 AAA battery",
+    "Includes hard case"
+   ],
+   "colors": [
+    {
+     "hex": "#aaa9a6",
+     "percentage": 0.8123
+    },
+    {
+     "hex": "#c7cea4",
+     "percentage": 0.1192
+    },
+    {
+     "hex": "#7b7d7d",
+     "percentage": 0.0685
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/DwS1Yit-91hP-4ecE2h?o=01M71R53WX219XDCTE32VA49X3&aid=01M730D120RR4WBF9ZT4S34BDP",
+     "domain": "casio.com",
+     "price": {
+      "price": 23.09,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0,
+     "dimensions": null
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "calculator-features": [
+     "LCD display",
+     "Measurement conversion",
+     "Numeric keypad",
+     "Fraction calculation"
+    ]
+   },
+   "ratings": null
+  },
+  {
+   "id": "1dO0l99",
+   "title": "Sharp EL501X2BWH Scientific Calculator",
+   "description": "The Sharp EL501X2BWH (EL-501XBWH) is a scientific calculator designed for students studying general math, pre-algebra, algebra, geometry, and trigonometry. It features a 10-digit LCD screen and can perform over 130 scientific and math functions. For durability, it comes with a hard cover to protect the device from scratches and includes an auto power-down feature to conserve battery. This model is permitted for use on various standardized tests, including AP Chemistry, AP Physics, PSAT/NMSQT, SAT I, SAT II, Math IC, and Math IIC.",
+   "brands": [
+    {
+     "id": "F8ze",
+     "name": "SHARP"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.trychannel3.com/96504ff0-05eb-452f-b373-33e3ab40afaa?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/96504ff0-05eb-452f-b373-33e3ab40afaa?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "is_main_image": true,
+     "shot_type": "hero",
+     "alt_text": "Front view of a black Sharp scientific calculator keypad."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/fc905486-2d97-4c68-b4bf-71b173bb08e8?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/fc905486-2d97-4c68-b4bf-71b173bb08e8?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Front view of a black Sharp scientific calculator showing a display."
+    },
+    {
+     "url": "https://cdn.trychannel3.com/6495c331-452d-4c66-8149-714dbd34152b?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/6495c331-452d-4c66-8149-714dbd34152b?aid=01M730D120RR4WBF9ZT4S34BDP&mid=LPzf",
+     "is_main_image": false,
+     "shot_type": "hero",
+     "alt_text": "Front view of a black Sharp scientific calculator."
+    }
+   ],
+   "category": {
+    "slug": "scientific-calculators",
+    "title": "Scientific Calculators",
+    "path": [
+     {
+      "slug": "office-supplies",
+      "title": "Office Supplies"
+     },
+     {
+      "slug": "office-equipment",
+      "title": "Office Equipment"
+     },
+     {
+      "slug": "calculators",
+      "title": "Calculators"
+     },
+     {
+      "slug": "scientific-calculators",
+      "title": "Scientific Calculators"
+     }
+    ],
+    "has_children": false
+   },
+   "gender": null,
+   "age": null,
+   "materials": [],
+   "key_features": [
+    "Performs more than 130 scientific and math functions",
+    "Ideal for students studying general math, pre-algebra, algebra, geometry and trigonometry",
+    "Hard cover protects calculator from scratches",
+    "Auto power down feature",
+    "Permitted for use on AP Chemistry, AP Physics, PSAT/NMSQT, SAT I, SAT II, Math IC and Math IIC tests"
+   ],
+   "colors": [
+    {
+     "hex": "#1f1f20",
+     "percentage": 0.6443
+    },
+    {
+     "hex": "#595a5a",
+     "percentage": 0.16
+    },
+    {
+     "hex": "#b3adab",
+     "percentage": 0.1057
+    },
+    {
+     "hex": "#423c3c",
+     "percentage": 0.0899
+    }
+   ],
+   "offers": [
+    {
+     "url": "https://buy.trychannel3.com/1dO0l99-LPzf-4ecE2h?o=01M58SNB68X9RHGTTQWC7BAS65&aid=01M730D120RR4WBF9ZT4S34BDP",
+     "domain": "newegg.com",
+     "price": {
+      "price": 18.99,
+      "compare_at_price": null,
+      "currency": "USD"
+     },
+     "availability": "InStock",
+     "condition": "new",
+     "max_commission_rate": 0.007,
+     "dimensions": {
+      "length": {
+       "number": 3.13,
+       "unit": "in"
+      },
+      "width": null,
+      "height": {
+       "number": 5.75,
+       "unit": "in"
+      },
+      "weight": null
+     }
+    }
+   ],
+   "variants": null,
+   "structured_attributes": {
+    "calculator-features": [
+     "LCD display",
+     "Numeric keypad",
+     "Trigonometric function"
+    ]
+   },
+   "ratings": null
+  }
+ ]
+}
