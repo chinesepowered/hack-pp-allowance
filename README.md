@@ -4,7 +4,8 @@
 
 An entry for the PayPal AI Hackathon. Everything here runs against the **PayPal sandbox**. No real money moves.
 
-- Demo video: [`demo/video.mp4`](demo/video.mp4) (under three minutes), narration in [`demo/narration.txt`](demo/narration.txt)
+- **Live demo:** https://hack-pp-allowance.vercel.app (PayPal sandbox; it starts with a saved PayPal and a signed mandate, so no login is needed)
+- **Demo video:** https://youtu.be/NgeQTCp-CLY (2:31). The same file is in [`demo/video.mp4`](demo/video.mp4), narration in [`demo/narration.txt`](demo/narration.txt)
 - Devpost text: [`docs/devpost.md`](docs/devpost.md)
 - Build notes (what surprised us in PayPal, Channel3 and the models): [`docs/build-log.md`](docs/build-log.md)
 
@@ -274,7 +275,7 @@ Other commands:
 | `pnpm video` | records, renders cards and composes `demo/video.mp4` (needs `ELEVENLABS_API_KEY` and ffmpeg) |
 | `curl -X POST <host>/api/admin/reset -H "x-admin-token: $DEMO_ADMIN_TOKEN"` | drops every visitor session so the demo is clean again |
 
-Deploying to Vercel needs a Blob store (`BLOB_READ_WRITE_TOKEN`) for state. See [`docs/needs-user.md`](docs/needs-user.md).
+Deploying to Vercel needs a Blob store (`BLOB_READ_WRITE_TOKEN`) for state. See [`docs/deploy.md`](docs/deploy.md).
 
 ## Sandbox test logins for judges
 
@@ -341,8 +342,11 @@ What was not checked: a screen reader pass with a person, and keyboard-only use 
 - **One teen, US dollars, one item per request**, no shipping or tax in the amount, a rolling seven-day budget.
 - **Categories come from a model.** Low confidence goes to the parent, but a confident mistake is possible.
 - **State is last writer wins across serverless instances.** PayPal ids and idempotent request ids keep money correct.
-- **Not verified in the build environment:** Vercel Blob storage, real webhook deliveries, and the save-PayPal window on
-  a real domain. These are listed in `docs/needs-user.md`.
+- **Checked on the hosted demo after deploying:** Vercel Blob storage, real webhook deliveries with signature
+  verification, and the save-PayPal window on the real domain. See [`docs/deploy.md`](docs/deploy.md).
+- **On the hosted demo the Agent Toolkit does not load yet** (a packaging issue on Vercel), so purchases there take the
+  Server SDK path behind the same mandate check, and the ledger says so. Locally and in the video they go through the
+  toolkit's wrapped `create_order`.
 - Catalog data is real retail data, so brand names, odd titles and the occasional non-English listing appear.
 
 ## What is next
@@ -366,7 +370,7 @@ lib/replay/          record and replay of outside calls
 fixtures/replay/     recorded sandbox, Channel3 and model responses
 scripts/             seed, webhook registration, replay recording, screenshots, video pipeline
 tests/               Vitest
-docs/                build log, needs-user, Devpost text, credits, screenshots
+docs/                build log, deploy notes, Devpost text, credits, screenshots
 demo/                video, thumbnail, narration
 ```
 

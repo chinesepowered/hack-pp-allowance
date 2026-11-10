@@ -101,7 +101,7 @@ Dated notes of what surprised us, what blocked us and how we got around it. PayP
 - An axe-core scan found list items under a `log` role, two names that did not match their visible text, a stray menu
   role and a dimmed heading. All fixed; `pnpm a11y` now reports no violations in ten states.
 - The first Replay recording kept the sandbox buyer's email as PayPal returned it. The recorder now replaces it with a
-  placeholder before writing a fixture (see `docs/needs-user.md` for the one commit where it remains in history).
+  placeholder before writing a fixture (one early commit still has it in history).
 - The narrator was changed to a young female voice (Jessica) after the first cut. Only the twelve narrator lines were
   generated again; Kip's lines and the footage are the same. The new voice paces the opening differently, so the first
   card's length is now taken from the pauses in the audio instead of a fixed number, and the composer checks that every

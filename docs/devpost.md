@@ -1,6 +1,6 @@
 # Devpost submission text
 
-Copy each section into the matching Devpost field. Fill in the three items marked TODO after deploying.
+The text used for the Devpost submission.
 
 ## Project name
 
@@ -12,8 +12,8 @@ A shopping agent for teens that pays with the family's PayPal, but only inside r
 
 ## Links
 
-- Hosted demo: TODO (the Vercel URL)
-- Video: TODO (the YouTube URL of `demo/video.mp4`)
+- Hosted demo: https://hack-pp-allowance.vercel.app
+- Video: https://youtu.be/NgeQTCp-CLY
 - Repository: https://github.com/chinesepowered/hack-pp-allowance
 
 ## Inspiration
@@ -127,7 +127,7 @@ OpenAI SDK, Zod, Vercel, Vercel Blob, Vitest, Playwright, ElevenLabs, FFmpeg
 | `zai-org/GLM-5.3-Flash` on W&B Inference | fallback when the main model keeps failing |
 | Channel3 | product search with price and stock filters from the mandate, image search, similar products, product detail with offers across retailers |
 | ElevenLabs | the video narration and Kip's short voice lines, pre-rendered. The app never calls it. |
-| Claude Code | wrote the code, tests, docs and the video pipeline in a cloud session, from the team's brief |
+| Claude Code | AI coding agent used to build the app, tests, docs and video pipeline from a written brief, with the APIMatic PayPal Context Plugin skills |
 | Playwright | approves the one-time PayPal save in the seed script, and records the demo video from real runs |
 
 The AI never decides a payment. It proposes; code checks the signed mandate; a parent approves when the rules say so.
@@ -162,7 +162,7 @@ merchant account, and the retailer order step is simulated and labeled as simula
 - Ask Kip for "Notebooks for school", then "Sneakers, about $55", then "Game top-up". Switch to Dana (parent) to
   approve, undo and pause. Open "Under the hood" for the PayPal calls.
 - To try the parent setup: Demo menu, "Start from an empty family", then "Save PayPal", and log in to PayPal's sandbox
-  window with this test buyer: TODO (paste `PAYPAL_SANDBOX_BUYER_EMAIL` and `PAYPAL_SANDBOX_BUYER_PASSWORD` here; they
-  are not in the repository).
+  window with the sandbox test buyer given in the Devpost submission's testing instructions (the login is not in the
+  repository).
 - If the sandbox or the model is down, switch to Replay (top right).
 - Sandbox only. No real money moves.

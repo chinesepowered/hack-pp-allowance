@@ -124,7 +124,7 @@ async function main() {
     console.log(`  ${v.created ? "saved" : "already saved"}: payment token ...${vault.paymentTokenId.slice(-4)} for ${vault.payerEmail ?? "the sandbox buyer"}`);
   } catch (err) {
     console.error("  Could not vault the PayPal wallet:", (err as Error).message);
-    console.error("  If this is a Vault permission error, enable Vault on the sandbox app (see docs/needs-user.md).");
+    console.error("  If this is a Vault permission error, enable Vault on the sandbox app (developer.paypal.com, Apps & Credentials, the app, Features).");
     process.exitCode = 1;
     return;
   }

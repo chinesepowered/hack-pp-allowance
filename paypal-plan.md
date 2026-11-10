@@ -188,4 +188,4 @@ Implemented once in `errorResponse()` (`lib/http.ts`), used by every route.
 ## Assumptions and blockers
 
 - Assumption: a deployment runs on one PayPal sandbox app. No multi-merchant handling.
-- No blocker. The one thing only a person can do is register the webhook after deploying (see `docs/needs-user.md`).
+- No blocker. The one thing only a person can do is register the webhook after deploying (see `docs/deploy.md`).
