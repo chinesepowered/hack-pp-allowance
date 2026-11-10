@@ -1,6 +1,22 @@
 {
  "scenario": "summary",
- "recordedAt": "",
- "note": "placeholder, replaced by pnpm replay:record",
- "exchanges": []
+ "recordedAt": "2026-11-10T15:52:14.091Z",
+ "note": "The weekly note, written by the model from the ledger.",
+ "exchanges": [
+  {
+   "svc": "llm",
+   "op": "chat:summary",
+   "res": {
+    "content": "Leo spent $78.25 on three items, including White Champion Canvas Sneakers that required and received your approval. One item was blocked, and one refund of $12.89 was processed. The budget of $60.00 is now fully used, leaving $0.00.",
+    "toolCalls": [],
+    "model": "Qwen/Qwen3.8-27B",
+    "ms": 728,
+    "tokens": {
+     "prompt": 328,
+     "completion": 65
+    },
+    "usedFallback": false
+   }
+  }
+ ]
 }

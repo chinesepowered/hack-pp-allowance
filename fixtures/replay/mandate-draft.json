@@ -1,6 +1,22 @@
 {
  "scenario": "mandate-draft",
- "recordedAt": "",
- "note": "placeholder, replaced by pnpm replay:record",
- "exchanges": []
+ "recordedAt": "2026-11-10T15:51:44.269Z",
+ "note": "The model turns Dana's plain-English rules into a mandate draft.",
+ "exchanges": [
+  {
+   "svc": "llm",
+   "op": "chat:mandate",
+   "res": {
+    "content": "{\n  \"rules\": [\n    {\"kind\":\"budget\",\"text\":\"Up to $60 a week\",\"weeklyLimit\":60},\n    {\"kind\":\"allow\",\"text\":\"School supplies and books any time\",\"categories\":[\"school_supplies\",\"books\"],\"perItemCap\":null},\n    {\"kind\":\"allow\",\"text\":\"Clothes up to $40 an item\",\"categories\":[\"clothing\"],\"perItemCap\":40},\n    {\"kind\":\"block\",\"text\":\"No gaming or gift cards\",\"categories\":[\"gaming\",\"gift_cards\"],\"merchants\":[]},\n    {\"kind\":\"approval\",\"text\":\"Anything over $25 from a store we haven't used before needs my OK\",\"overAmount\":25,\"when\":\"new_merchant\",\"categories\":[]}\n  ],\n  \"expiresInDays\": 90,\n  \"unclear\": []\n}",
+    "toolCalls": [],
+    "model": "Qwen/Qwen3.8-27B",
+    "ms": 2610,
+    "tokens": {
+     "prompt": 728,
+     "completion": 396
+    },
+    "usedFallback": false
+   }
+  }
+ ]
 }

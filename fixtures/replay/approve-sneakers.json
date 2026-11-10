@@ -1,6 +1,349 @@
 {
  "scenario": "approve-sneakers",
- "recordedAt": "",
- "note": "placeholder, replaced by pnpm replay:record",
- "exchanges": []
+ "recordedAt": "2026-11-10T15:52:07.305Z",
+ "note": "Dana approves. The saved PayPal is charged.",
+ "exchanges": [
+  {
+   "svc": "paypal",
+   "op": "toolkit.create_order",
+   "res": {
+    "status": 201,
+    "debugId": "83b5da6ae6df1",
+    "body": {
+     "id": "0TY28420ND428752P",
+     "intent": "CAPTURE",
+     "status": "COMPLETED",
+     "payment_source": {
+      "paypal": {
+       "email_address": "hackpp-buyer-d173@personal.example.com",
+       "account_id": "SHB5GFLEDVTY6",
+       "account_status": "VERIFIED",
+       "name": {
+        "given_name": "Test",
+        "surname": "Buyer"
+       },
+       "address": {
+        "country_code": "US"
+       }
+      }
+     },
+     "purchase_units": [
+      {
+       "reference_id": "default",
+       "amount": {
+        "currency_code": "USD",
+        "value": "55.00",
+        "breakdown": {
+         "item_total": {
+          "currency_code": "USD",
+          "value": "55.00"
+         },
+         "shipping": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "handling": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "tax_total": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "insurance": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "shipping_discount": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "discount": {
+          "currency_code": "USD",
+          "value": "0.0"
+         }
+        }
+       },
+       "payee": {
+        "email_address": "hackpp-allowance-d173@business.example.com",
+        "merchant_id": "CC59CBB2RNTFS"
+       },
+       "description": "Allowance: Leo's purchase via Kip (approved by parent)",
+       "custom_id": "led_93a8af9464ff",
+       "invoice_id": "ALW-93A8AF9464FF",
+       "items": [
+        {
+         "name": "White Champion Canvas Sneakers",
+         "unit_amount": {
+          "currency_code": "USD",
+          "value": "55.00"
+         },
+         "tax": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "quantity": "1",
+         "description": "Allowance: Leo's purchase via Kip (approved by parent)"
+        }
+       ],
+       "payments": {
+        "captures": [
+         {
+          "id": "6FP72802DX400011A",
+          "status": "COMPLETED",
+          "amount": {
+           "currency_code": "USD",
+           "value": "55.00"
+          },
+          "final_capture": true,
+          "seller_protection": {
+           "status": "ELIGIBLE",
+           "dispute_categories": [
+            "ITEM_NOT_RECEIVED",
+            "UNAUTHORIZED_TRANSACTION"
+           ]
+          },
+          "seller_receivable_breakdown": {
+           "gross_amount": {
+            "currency_code": "USD",
+            "value": "55.00"
+           },
+           "paypal_fee": {
+            "currency_code": "USD",
+            "value": "2.41"
+           },
+           "net_amount": {
+            "currency_code": "USD",
+            "value": "52.59"
+           }
+          },
+          "invoice_id": "ALW-93A8AF9464FF",
+          "custom_id": "led_93a8af9464ff",
+          "links": [
+           {
+            "href": "https://api.sandbox.paypal.com/v2/payments/captures/6FP72802DX400011A",
+            "rel": "self",
+            "method": "GET"
+           },
+           {
+            "href": "https://api.sandbox.paypal.com/v2/payments/captures/6FP72802DX400011A/refund",
+            "rel": "refund",
+            "method": "POST"
+           },
+           {
+            "href": "https://api.sandbox.paypal.com/v2/checkout/orders/0TY28420ND428752P",
+            "rel": "up",
+            "method": "GET"
+           }
+          ],
+          "create_time": "2026-11-10T15:52:08Z",
+          "update_time": "2026-11-10T15:52:08Z"
+         }
+        ]
+       }
+      }
+     ],
+     "payer": {
+      "name": {
+       "given_name": "Test",
+       "surname": "Buyer"
+      },
+      "email_address": "hackpp-buyer-d173@personal.example.com",
+      "payer_id": "SHB5GFLEDVTY6",
+      "address": {
+       "country_code": "US"
+      }
+     },
+     "create_time": "2026-11-10T15:52:07Z",
+     "update_time": "2026-11-10T15:52:08Z",
+     "links": [
+      {
+       "href": "https://api.sandbox.paypal.com/v2/checkout/orders/0TY28420ND428752P",
+       "rel": "self",
+       "method": "GET"
+      }
+     ]
+    },
+    "ms": 2476,
+    "calls": [
+     {
+      "method": "POST",
+      "path": "/v2/checkout/orders",
+      "status": 201,
+      "debugId": "83b5da6ae6df1",
+      "ms": 2476,
+      "data": null,
+      "network": false
+     }
+    ],
+    "error": null,
+    "unknown": false
+   }
+  },
+  {
+   "svc": "paypal",
+   "op": "toolkit.get_order",
+   "res": {
+    "status": 200,
+    "debugId": "dacd27dbc50c6",
+    "body": {
+     "id": "0TY28420ND428752P",
+     "intent": "CAPTURE",
+     "status": "COMPLETED",
+     "payment_source": {
+      "paypal": {
+       "email_address": "hackpp-buyer-d173@personal.example.com",
+       "account_id": "SHB5GFLEDVTY6",
+       "account_status": "VERIFIED",
+       "name": {
+        "given_name": "Test",
+        "surname": "Buyer"
+       },
+       "address": {
+        "country_code": "US"
+       }
+      }
+     },
+     "purchase_units": [
+      {
+       "reference_id": "default",
+       "amount": {
+        "currency_code": "USD",
+        "value": "55.00",
+        "breakdown": {
+         "item_total": {
+          "currency_code": "USD",
+          "value": "55.00"
+         },
+         "shipping": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "tax_total": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "discount": {
+          "currency_code": "USD",
+          "value": "0.00"
+         }
+        }
+       },
+       "payee": {
+        "email_address": "hackpp-allowance-d173@business.example.com",
+        "merchant_id": "CC59CBB2RNTFS"
+       },
+       "description": "Allowance: Leo's purchase via Kip (approved by parent)",
+       "custom_id": "led_93a8af9464ff",
+       "invoice_id": "ALW-93A8AF9464FF",
+       "items": [
+        {
+         "name": "White Champion Canvas Sneakers",
+         "unit_amount": {
+          "currency_code": "USD",
+          "value": "55.00"
+         },
+         "tax": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "quantity": "1",
+         "description": "Allowance: Leo's purchase via Kip (approved by parent)"
+        }
+       ],
+       "payments": {
+        "captures": [
+         {
+          "id": "6FP72802DX400011A",
+          "status": "COMPLETED",
+          "amount": {
+           "currency_code": "USD",
+           "value": "55.00"
+          },
+          "final_capture": true,
+          "seller_protection": {
+           "status": "ELIGIBLE",
+           "dispute_categories": [
+            "ITEM_NOT_RECEIVED",
+            "UNAUTHORIZED_TRANSACTION"
+           ]
+          },
+          "seller_receivable_breakdown": {
+           "gross_amount": {
+            "currency_code": "USD",
+            "value": "55.00"
+           },
+           "paypal_fee": {
+            "currency_code": "USD",
+            "value": "2.41"
+           },
+           "net_amount": {
+            "currency_code": "USD",
+            "value": "52.59"
+           }
+          },
+          "invoice_id": "ALW-93A8AF9464FF",
+          "custom_id": "led_93a8af9464ff",
+          "links": [
+           {
+            "href": "https://api.sandbox.paypal.com/v2/payments/captures/6FP72802DX400011A",
+            "rel": "self",
+            "method": "GET"
+           },
+           {
+            "href": "https://api.sandbox.paypal.com/v2/payments/captures/6FP72802DX400011A/refund",
+            "rel": "refund",
+            "method": "POST"
+           },
+           {
+            "href": "https://api.sandbox.paypal.com/v2/checkout/orders/0TY28420ND428752P",
+            "rel": "up",
+            "method": "GET"
+           }
+          ],
+          "create_time": "2026-11-10T15:52:08Z",
+          "update_time": "2026-11-10T15:52:08Z"
+         }
+        ]
+       }
+      }
+     ],
+     "payer": {
+      "name": {
+       "given_name": "Test",
+       "surname": "Buyer"
+      },
+      "email_address": "hackpp-buyer-d173@personal.example.com",
+      "payer_id": "SHB5GFLEDVTY6",
+      "address": {
+       "country_code": "US"
+      }
+     },
+     "create_time": "2026-11-10T15:52:08Z",
+     "update_time": "2026-11-10T15:52:08Z",
+     "links": [
+      {
+       "href": "https://api.sandbox.paypal.com/v2/checkout/orders/0TY28420ND428752P",
+       "rel": "self",
+       "method": "GET"
+      }
+     ]
+    },
+    "ms": 819,
+    "calls": [
+     {
+      "method": "GET",
+      "path": "/v2/checkout/orders/0TY28420ND428752P",
+      "status": 200,
+      "debugId": "dacd27dbc50c6",
+      "ms": 819,
+      "data": null,
+      "network": false
+     }
+    ],
+    "error": null,
+    "unknown": false
+   }
+  }
+ ]
 }

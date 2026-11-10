@@ -1,5 +1,404 @@
 {
- "createdAt": "2026-11-10T00:00:00.000Z",
- "vault": null,
- "purchases": []
+ "createdAt": "2026-11-10T15:52:16.771Z",
+ "vault": {
+  "paymentTokenId": "replay0vault0token",
+  "customerId": "replay",
+  "payerEmail": "hackpp-buyer-d173@personal.example.com",
+  "payerName": "Test Buyer",
+  "savedAt": "2026-11-10T15:08:45.492Z",
+  "source": "replay",
+  "kind": "paypal"
+ },
+ "purchases": [
+  {
+   "ageHours": 219,
+   "entry": {
+    "id": "led_seed_novel",
+    "createdAt": "2026-11-01T12:08:45.494Z",
+    "requestText": "I need the book for English class",
+    "product": {
+     "id": "seed_novel",
+     "title": "Paperback novel for English class",
+     "brand": null,
+     "image": null,
+     "merchant": "cornerbooks.example",
+     "buyUrl": null,
+     "price": 11.49
+    },
+    "amount": {
+     "value": "11.49",
+     "currency": "USD"
+    },
+    "category": "books",
+    "status": "paid",
+    "decision": {
+     "checks": [
+      {
+       "name": "signature",
+       "pass": true,
+       "detail": "Signature valid.",
+       "ruleN": null
+      },
+      {
+       "name": "expiry",
+       "pass": true,
+       "detail": "Valid until 2027-02-08.",
+       "ruleN": null
+      },
+      {
+       "name": "mandate_active",
+       "pass": true,
+       "detail": "Mandate v1 is active.",
+       "ruleN": null
+      },
+      {
+       "name": "blocked_merchant",
+       "pass": true,
+       "detail": "cornerbooks.example is not a blocked store.",
+       "ruleN": null
+      },
+      {
+       "name": "blocked_category",
+       "pass": true,
+       "detail": "Books is not a blocked category.",
+       "ruleN": null
+      },
+      {
+       "name": "classification",
+       "pass": true,
+       "detail": "Books at 97% confidence (needs 75%).",
+       "ruleN": null
+      },
+      {
+       "name": "allowed_category",
+       "pass": true,
+       "detail": "Covered by rule 2.",
+       "ruleN": 2
+      },
+      {
+       "name": "item_cap",
+       "pass": true,
+       "detail": "No per-item cap for this category.",
+       "ruleN": 2
+      },
+      {
+       "name": "merchant_rule",
+       "pass": true,
+       "detail": "cornerbooks.example is a new store, but no approval rule applies at this price.",
+       "ruleN": null
+      },
+      {
+       "name": "weekly_budget",
+       "pass": true,
+       "detail": "$11.49 against $60.00 left of $60.00 this week.",
+       "ruleN": 1
+      }
+     ],
+     "budget": {
+      "limit": 60,
+      "spent": 0,
+      "remaining": 60,
+      "afterPurchase": 48.51
+     },
+     "category": "books",
+     "confidence": 0.97,
+     "price": 11.49,
+     "merchant": "cornerbooks.example",
+     "mandateVersion": 1,
+     "evaluatedAt": "2026-11-10T15:08:45.494Z",
+     "outcome": "auto_approved",
+     "code": "ok",
+     "ruleN": 2,
+     "ruleText": "School supplies and books any time",
+     "summary": "Paid under rule 2: School supplies and books any time",
+     "teenLine": "This fits rule 2 (\"School supplies and books any time\"), so I can pay right away.",
+     "parentLine": "Allowed by rule 2: \"School supplies and books any time\"."
+    },
+    "approvedBy": "mandate",
+    "approvalId": null,
+    "paypal": {
+     "orderId": "53X546165G6994416",
+     "captureId": "5H3218438T9823448",
+     "orderStatus": "COMPLETED",
+     "captureStatus": "COMPLETED",
+     "refundId": null,
+     "refundStatus": null,
+     "payerEmail": "hackpp-buyer-d173@personal.example.com",
+     "invoiceId": "ALW-SEED-NOVEL-MWATRSP0",
+     "lastSyncedAt": "2026-11-10T15:08:45.494Z",
+     "via": "server-sdk"
+    },
+    "retailerHandoff": {
+     "simulated": true,
+     "buyUrl": null,
+     "note": "Seeded demo history. The store and product are fictional; the PayPal capture is a real sandbox capture."
+    },
+    "kipReason": "It is the edition on the class list, and the cheapest copy in stock.",
+    "undoUntil": "2026-11-02T12:08:45.494Z",
+    "seeded": true,
+    "replaySlug": null,
+    "events": []
+   }
+  },
+  {
+   "ageHours": 77,
+   "entry": {
+    "id": "led_seed_graphpaper",
+    "createdAt": "2026-11-07T10:08:48.072Z",
+    "requestText": "Graph paper notebooks for geometry",
+    "product": {
+     "id": "seed_graph-paper",
+     "title": "Graph paper notebooks, 3 pack",
+     "brand": null,
+     "image": null,
+     "merchant": "papertrail.example",
+     "buyUrl": null,
+     "price": 8.75
+    },
+    "amount": {
+     "value": "8.75",
+     "currency": "USD"
+    },
+    "category": "school_supplies",
+    "status": "paid",
+    "decision": {
+     "checks": [
+      {
+       "name": "signature",
+       "pass": true,
+       "detail": "Signature valid.",
+       "ruleN": null
+      },
+      {
+       "name": "expiry",
+       "pass": true,
+       "detail": "Valid until 2027-02-08.",
+       "ruleN": null
+      },
+      {
+       "name": "mandate_active",
+       "pass": true,
+       "detail": "Mandate v1 is active.",
+       "ruleN": null
+      },
+      {
+       "name": "blocked_merchant",
+       "pass": true,
+       "detail": "papertrail.example is not a blocked store.",
+       "ruleN": null
+      },
+      {
+       "name": "blocked_category",
+       "pass": true,
+       "detail": "School supplies is not a blocked category.",
+       "ruleN": null
+      },
+      {
+       "name": "classification",
+       "pass": true,
+       "detail": "School supplies at 97% confidence (needs 75%).",
+       "ruleN": null
+      },
+      {
+       "name": "allowed_category",
+       "pass": true,
+       "detail": "Covered by rule 2.",
+       "ruleN": 2
+      },
+      {
+       "name": "item_cap",
+       "pass": true,
+       "detail": "No per-item cap for this category.",
+       "ruleN": 2
+      },
+      {
+       "name": "merchant_rule",
+       "pass": true,
+       "detail": "papertrail.example is a new store, but no approval rule applies at this price.",
+       "ruleN": null
+      },
+      {
+       "name": "weekly_budget",
+       "pass": true,
+       "detail": "$8.75 against $60.00 left of $60.00 this week.",
+       "ruleN": 1
+      }
+     ],
+     "budget": {
+      "limit": 60,
+      "spent": 0,
+      "remaining": 60,
+      "afterPurchase": 51.25
+     },
+     "category": "school_supplies",
+     "confidence": 0.97,
+     "price": 8.75,
+     "merchant": "papertrail.example",
+     "mandateVersion": 1,
+     "evaluatedAt": "2026-11-10T15:08:48.072Z",
+     "outcome": "auto_approved",
+     "code": "ok",
+     "ruleN": 2,
+     "ruleText": "School supplies and books any time",
+     "summary": "Paid under rule 2: School supplies and books any time",
+     "teenLine": "This fits rule 2 (\"School supplies and books any time\"), so I can pay right away.",
+     "parentLine": "Allowed by rule 2: \"School supplies and books any time\"."
+    },
+    "approvedBy": "mandate",
+    "approvalId": null,
+    "paypal": {
+     "orderId": "9NC25240LH337352H",
+     "captureId": "95773054VN481733H",
+     "orderStatus": "COMPLETED",
+     "captureStatus": "COMPLETED",
+     "refundId": null,
+     "refundStatus": null,
+     "payerEmail": "hackpp-buyer-d173@personal.example.com",
+     "invoiceId": "ALW-SEED-GRAPH-PAPER-MWATRSP0",
+     "lastSyncedAt": "2026-11-10T15:08:48.072Z",
+     "via": "server-sdk"
+    },
+    "retailerHandoff": {
+     "simulated": true,
+     "buyUrl": null,
+     "note": "Seeded demo history. The store and product are fictional; the PayPal capture is a real sandbox capture."
+    },
+    "kipReason": "Three notebooks for less than the single ones, with quad ruled pages.",
+    "undoUntil": "2026-11-08T10:08:48.072Z",
+    "seeded": true,
+    "replaySlug": null,
+    "events": []
+   }
+  },
+  {
+   "ageHours": 26,
+   "entry": {
+    "id": "led_seed_tshirt",
+    "createdAt": "2026-11-09T13:08:50.261Z",
+    "requestText": "A plain navy T-shirt for PE",
+    "product": {
+     "id": "seed_tshirt",
+     "title": "Plain cotton T-shirt, navy",
+     "brand": null,
+     "image": null,
+     "merchant": "northfield-basics.example",
+     "buyUrl": null,
+     "price": 14.5
+    },
+    "amount": {
+     "value": "14.50",
+     "currency": "USD"
+    },
+    "category": "clothing",
+    "status": "paid",
+    "decision": {
+     "checks": [
+      {
+       "name": "signature",
+       "pass": true,
+       "detail": "Signature valid.",
+       "ruleN": null
+      },
+      {
+       "name": "expiry",
+       "pass": true,
+       "detail": "Valid until 2027-02-08.",
+       "ruleN": null
+      },
+      {
+       "name": "mandate_active",
+       "pass": true,
+       "detail": "Mandate v1 is active.",
+       "ruleN": null
+      },
+      {
+       "name": "blocked_merchant",
+       "pass": true,
+       "detail": "northfield-basics.example is not a blocked store.",
+       "ruleN": null
+      },
+      {
+       "name": "blocked_category",
+       "pass": true,
+       "detail": "Clothes and shoes is not a blocked category.",
+       "ruleN": null
+      },
+      {
+       "name": "classification",
+       "pass": true,
+       "detail": "Clothes and shoes at 97% confidence (needs 75%).",
+       "ruleN": null
+      },
+      {
+       "name": "allowed_category",
+       "pass": true,
+       "detail": "Covered by rule 3.",
+       "ruleN": 3
+      },
+      {
+       "name": "item_cap",
+       "pass": true,
+       "detail": "$14.50 against a $40.00 cap.",
+       "ruleN": 3
+      },
+      {
+       "name": "merchant_rule",
+       "pass": true,
+       "detail": "northfield-basics.example is a new store, but no approval rule applies at this price.",
+       "ruleN": null
+      },
+      {
+       "name": "weekly_budget",
+       "pass": true,
+       "detail": "$14.50 against $60.00 left of $60.00 this week.",
+       "ruleN": 1
+      }
+     ],
+     "budget": {
+      "limit": 60,
+      "spent": 0,
+      "remaining": 60,
+      "afterPurchase": 45.5
+     },
+     "category": "clothing",
+     "confidence": 0.97,
+     "price": 14.5,
+     "merchant": "northfield-basics.example",
+     "mandateVersion": 1,
+     "evaluatedAt": "2026-11-10T15:08:50.261Z",
+     "outcome": "auto_approved",
+     "code": "ok",
+     "ruleN": 3,
+     "ruleText": "Clothes up to $40 an item",
+     "summary": "Paid under rule 3: Clothes up to $40 an item",
+     "teenLine": "This fits rule 3 (\"Clothes up to $40 an item\"), so I can pay right away.",
+     "parentLine": "Allowed by rule 3: \"Clothes up to $40 an item\"."
+    },
+    "approvedBy": "mandate",
+    "approvalId": null,
+    "paypal": {
+     "orderId": "6LU48047EJ7009000",
+     "captureId": "79S2573223157945F",
+     "orderStatus": "COMPLETED",
+     "captureStatus": "COMPLETED",
+     "refundId": null,
+     "refundStatus": null,
+     "payerEmail": "hackpp-buyer-d173@personal.example.com",
+     "invoiceId": "ALW-SEED-TSHIRT-MWATRSP0",
+     "lastSyncedAt": "2026-11-10T15:08:50.261Z",
+     "via": "server-sdk"
+    },
+    "retailerHandoff": {
+     "simulated": true,
+     "buyUrl": null,
+     "note": "Seeded demo history. The store and product are fictional; the PayPal capture is a real sandbox capture."
+    },
+    "kipReason": "Plain navy as the PE kit asks, and well under the clothes cap.",
+    "undoUntil": "2026-11-10T13:08:50.261Z",
+    "seeded": true,
+    "replaySlug": null,
+    "events": []
+   }
+  }
+ ]
 }

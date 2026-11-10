@@ -11,9 +11,10 @@ import chatSneakers from "@/fixtures/replay/chat-sneakers.json";
 import mandateDraft from "@/fixtures/replay/mandate-draft.json";
 import summary from "@/fixtures/replay/summary.json";
 import undoNotebooks from "@/fixtures/replay/undo-notebooks.json";
+import undoSneakers from "@/fixtures/replay/undo-sneakers.json";
 import vaultSave from "@/fixtures/replay/vault-save.json";
 
-export const SCENARIOS = ["chat-notebooks", "chat-sneakers", "chat-gaming", "approve-sneakers", "undo-notebooks", "mandate-draft", "summary", "vault-save"] as const;
+export const SCENARIOS = ["chat-notebooks", "chat-sneakers", "chat-gaming", "approve-sneakers", "undo-notebooks", "undo-sneakers", "mandate-draft", "summary", "vault-save"] as const;
 export type Scenario = (typeof SCENARIOS)[number];
 
 const TAPES: Record<Scenario, Tape> = {
@@ -22,6 +23,7 @@ const TAPES: Record<Scenario, Tape> = {
   "chat-gaming": chatGaming as Tape,
   "approve-sneakers": approveSneakers as Tape,
   "undo-notebooks": undoNotebooks as Tape,
+  "undo-sneakers": undoSneakers as Tape,
   "mandate-draft": mandateDraft as Tape,
   summary: summary as Tape,
   "vault-save": vaultSave as Tape,

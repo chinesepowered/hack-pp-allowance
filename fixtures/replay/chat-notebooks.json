@@ -1,6 +1,1723 @@
 {
  "scenario": "chat-notebooks",
- "recordedAt": "",
- "note": "placeholder, replaced by pnpm replay:record",
- "exchanges": []
+ "recordedAt": "2026-11-10T15:51:46.902Z",
+ "note": "Leo asks for notebooks. Auto-approved and paid with the saved PayPal.",
+ "exchanges": [
+  {
+   "svc": "llm",
+   "op": "chat:classify-request",
+   "res": {
+    "content": "{\"category\": \"school_supplies\", \"confidence\": 1.0}",
+    "toolCalls": [],
+    "model": "Qwen/Qwen3.8-27B",
+    "ms": 317,
+    "tokens": {
+     "prompt": 408,
+     "completion": 17
+    },
+    "usedFallback": false
+   }
+  },
+  {
+   "svc": "llm",
+   "op": "chat:kip",
+   "res": {
+    "content": "[",
+    "toolCalls": [],
+    "model": "Qwen/Qwen3.8-27B",
+    "ms": 6062,
+    "tokens": {
+     "prompt": 1496,
+     "completion": 500
+    },
+    "usedFallback": false
+   }
+  },
+  {
+   "svc": "llm",
+   "op": "chat:kip:retry",
+   "res": {
+    "content": "",
+    "toolCalls": [
+     {
+      "id": "call-e03a91ba-005c-41bb-88e4-23b472bb73f2",
+      "name": "search_products",
+      "arguments": "{\"category\":\"school_supplies\",\"query\":\"college ruled notebooks pack\"}"
+     }
+    ],
+    "model": "Qwen/Qwen3.8-27B",
+    "ms": 882,
+    "tokens": {
+     "prompt": 1520,
+     "completion": 79
+    },
+    "usedFallback": false
+   }
+  },
+  {
+   "svc": "channel3",
+   "op": "search",
+   "res": {
+    "status": 200,
+    "ms": 1393,
+    "products": [
+     {
+      "id": "ZYI4han",
+      "title": "Sparco College Ruled Wire-bound Notebook",
+      "description": "A 3-pack of Sparco college-ruled wire-bound notebooks. Each notebook contains 70 sheets and measures 10.5\" x 8\". The set includes three different colors: red, green, and blue, each featuring a stylish striped cover design.",
+      "brands": [
+       {
+        "id": "VgJL",
+        "name": "Sparco"
+       }
+      ],
+      "images": [
+       {
+        "url": "https://cdn.trychannel3.com/b793922c-d060-41c7-b8f0-573843d88cf8?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LPzf",
+        "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/b793922c-d060-41c7-b8f0-573843d88cf8?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LPzf",
+        "is_main_image": true,
+        "shot_type": "packaging",
+        "alt_text": "Three Sparco ruled notebooks shown side by side with colored spines."
+       }
+      ],
+      "category": {
+       "slug": "notebooks-notepads",
+       "title": "Notebooks & Notepads",
+       "path": [
+        {
+         "slug": "office-supplies",
+         "title": "Office Supplies"
+        },
+        {
+         "slug": "general-office-supplies",
+         "title": "General Office Supplies"
+        },
+        {
+         "slug": "paper-products",
+         "title": "Paper Products"
+        },
+        {
+         "slug": "notebooks-notepads",
+         "title": "Notebooks & Notepads"
+        }
+       ],
+       "has_children": true
+      },
+      "gender": null,
+      "age": null,
+      "materials": [],
+      "key_features": [
+       "College ruled",
+       "Wire-bound",
+       "70 sheets per notebook"
+      ],
+      "colors": [
+       {
+        "hex": "#0f4aa6",
+        "percentage": 0.3954
+       },
+       {
+        "hex": "#37885e",
+        "percentage": 0.2256
+       },
+       {
+        "hex": "#c83639",
+        "percentage": 0.1902
+       },
+       {
+        "hex": "#b8c9c8",
+        "percentage": 0.1157
+       }
+      ],
+      "offers": [
+       {
+        "url": "https://buy.trychannel3.com/ZYI4han-LPzf-4ecE2h?o=01M5ZQ5NM8ZQ7P3CPT3JAGQVKH&aid=01M732H97KDRSJQ70APTQWDDN8",
+        "domain": "newegg.com",
+        "price": {
+         "price": 7.99,
+         "compare_at_price": null,
+         "currency": "USD"
+        },
+        "availability": "InStock",
+        "condition": "new",
+        "max_commission_rate": 0.007,
+        "dimensions": null
+       }
+      ],
+      "variants": null,
+      "structured_attributes": {
+       "paper-type": [
+        "Lined"
+       ],
+       "pattern": [
+        "Striped"
+       ],
+       "notepad-design": [
+        "Spiral-bound"
+       ]
+      },
+      "ratings": null
+     },
+     {
+      "id": "FhRuk6R",
+      "title": "4 Packs: 6 ct. (24 total) Mead® Spiral 1-Subject College Ruled Notebooks, 10.5\" x 7.5\"",
+      "description": "A bulk set of 24 Mead spiral notebooks, provided as 4 packs of 6 notebooks each. These one-subject notebooks feature college-ruled, double-sided white paper and come in assorted cover colors including black, yellow, green, purple, red, and blue. Each notebook contains 70 perforated, 3-hole punched sheets with a coated cover and a durable spiral binding designed to resist snagging and uncoiling.",
+      "brands": [
+       {
+        "id": "hO4I",
+        "name": "Mead"
+       }
+      ],
+      "images": [
+       {
+        "url": "https://cdn.trychannel3.com/eae687de-ec18-4174-8401-5c618c58eb3b?aid=01M732H97KDRSJQ70APTQWDDN8&mid=cBzV",
+        "cleaned_url": null,
+        "is_main_image": true,
+        "shot_type": "lifestyle",
+        "alt_text": "A set of 6 colored spiral notebooks lying side by side."
+       }
+      ],
+      "category": {
+       "slug": "notebooks-notepads",
+       "title": "Notebooks & Notepads",
+       "path": [
+        {
+         "slug": "office-supplies",
+         "title": "Office Supplies"
+        },
+        {
+         "slug": "general-office-supplies",
+         "title": "General Office Supplies"
+        },
+        {
+         "slug": "paper-products",
+         "title": "Paper Products"
+        },
+        {
+         "slug": "notebooks-notepads",
+         "title": "Notebooks & Notepads"
+        }
+       ],
+       "has_children": true
+      },
+      "gender": null,
+      "age": null,
+      "materials": [
+       "paper"
+      ],
+      "key_features": [
+       "1-Subject",
+       "College ruled",
+       "Double sided pages",
+       "70 sheets per notebook",
+       "Spiral bound",
+       "3 hole punched",
+       "Perforated pages",
+       "Coated cover"
+      ],
+      "colors": [
+       {
+        "hex": "#0e80c0",
+        "percentage": 0.2701
+       },
+       {
+        "hex": "#945a95",
+        "percentage": 0.1553
+       },
+       {
+        "hex": "#dbd9d1",
+        "percentage": 0.1416
+       },
+       {
+        "hex": "#1b1c1c",
+        "percentage": 0.1261
+       },
+       {
+        "hex": "#20a57a",
+        "percentage": 0.1126
+       },
+       {
+        "hex": "#e4a940",
+        "percentage": 0.1026
+       },
+       {
+        "hex": "#c13151",
+        "percentage": 0.0917
+       }
+      ],
+      "offers": [
+       {
+        "url": "https://buy.trychannel3.com/FhRuk6R-cBzV-4ecE2h?o=01M5GFJP3QBE7V9RNKKDPGT31A&aid=01M732H97KDRSJQ70APTQWDDN8",
+        "domain": "michaels.com",
+        "price": {
+         "price": 19.99,
+         "compare_at_price": 24.99,
+         "currency": "USD"
+        },
+        "availability": "InStock",
+        "condition": "new",
+        "max_commission_rate": 0.025,
+        "dimensions": null
+       }
+      ],
+      "variants": null,
+      "structured_attributes": {
+       "notepad-cover-type": [
+        "Soft"
+       ],
+       "notepad-design": [
+        "Spiral-bound"
+       ],
+       "pattern": [
+        "Solid"
+       ],
+       "paper-type": [
+        "Lined",
+        "Perforated",
+        "Plain white"
+       ],
+       "sheet-pattern": [
+        "Solid"
+       ]
+      },
+      "ratings": {
+       "value": 5,
+       "count": 1,
+       "source_count": 1
+      }
+     },
+     {
+      "id": "nI6Tj98",
+      "title": "Wirebound Notebooks College Ruled Sheets Pack Of 3",
+      "description": "This is a pack of three wirebound notebooks by Sparco, ideal for school, home, or office use. Each notebook features 70 college-ruled sheets designed for organized note-taking. The 8\" x 10 1/2\" page size offers ample writing space, and the sheets are perforated for easy removal. A stiff back cover provides durability and allows the notebook to lay flat when writing. Additionally, the notebooks include three punched holes, making it convenient to transfer pages into a standard binder.",
+      "brands": [
+       {
+        "id": "VgJL",
+        "name": "Sparco"
+       }
+      ],
+      "images": [
+       {
+        "url": "https://cdn.trychannel3.com/04c57ee2-7b75-4d22-8380-0f3eecc88198?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LPzf",
+        "cleaned_url": "https://cdn.trychannel3.com/6d711213-a523-47bf-8dd1-13e1d9365886?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LPzf",
+        "is_main_image": true,
+        "shot_type": "packaging",
+        "alt_text": "Three assorted color Sparco wirebound notebooks shown open."
+       }
+      ],
+      "category": {
+       "slug": "notebooks-notepads",
+       "title": "Notebooks & Notepads",
+       "path": [
+        {
+         "slug": "office-supplies",
+         "title": "Office Supplies"
+        },
+        {
+         "slug": "general-office-supplies",
+         "title": "General Office Supplies"
+        },
+        {
+         "slug": "paper-products",
+         "title": "Paper Products"
+        },
+        {
+         "slug": "notebooks-notepads",
+         "title": "Notebooks & Notepads"
+        }
+       ],
+       "has_children": true
+      },
+      "gender": null,
+      "age": "adult",
+      "materials": [],
+      "key_features": [
+       "Three-pack of notebooks",
+       "8\" x 10.5\" page size",
+       "70 college-ruled sheets per notebook",
+       "Perforated design for easy sheet removal",
+       "Three punched holes for binder compatibility",
+       "Wire-bound construction allows pages to lay flat",
+       "Stiff cover and back"
+      ],
+      "colors": [
+       {
+        "hex": "#1049a4",
+        "percentage": 0.3786
+       },
+       {
+        "hex": "#36875a",
+        "percentage": 0.2233
+       },
+       {
+        "hex": "#c73637",
+        "percentage": 0.1909
+       },
+       {
+        "hex": "#b2c6bf",
+        "percentage": 0.1124
+       },
+       {
+        "hex": "#31699b",
+        "percentage": 0.0501
+       }
+      ],
+      "offers": [
+       {
+        "url": "https://buy.trychannel3.com/nI6Tj98-LPzf-4ecE2h?o=01M5ZCDAD8KCAXMPVTS11FMKDV&aid=01M732H97KDRSJQ70APTQWDDN8",
+        "domain": "newegg.com",
+        "price": {
+         "price": 7.99,
+         "compare_at_price": 10.08,
+         "currency": "USD"
+        },
+        "availability": "InStock",
+        "condition": "new",
+        "max_commission_rate": 0.007,
+        "dimensions": {
+         "length": {
+          "number": 10.5,
+          "unit": "in"
+         },
+         "width": {
+          "number": 8,
+          "unit": "in"
+         },
+         "height": {
+          "number": 0.3,
+          "unit": "in"
+         },
+         "weight": null
+        }
+       }
+      ],
+      "variants": null,
+      "structured_attributes": {
+       "notepad-design": [
+        "Spiral-bound"
+       ],
+       "paper-type": [
+        "Lined",
+        "Perforated",
+        "Acid-free"
+       ],
+       "sheet-pattern": [
+        "Solid"
+       ],
+       "pattern": [
+        "Solid"
+       ],
+       "notepad-cover-type": [
+        "Soft front & hard back"
+       ]
+      },
+      "ratings": {
+       "value": 5,
+       "count": 1,
+       "source_count": 1
+      }
+     },
+     {
+      "id": "ORTXCzn",
+      "title": "Mead Spiral Notebook College Rule 10 1/2\" x 8\" 70 Pages 6 Books/Pack 73065",
+      "description": "This pack of 6 Mead spiral notebooks is perfect for school or office use. Each notebook is college-ruled with 70 sheets of white paper and measures 8\" x 10.5\". The notebooks feature a spiral binding for easy page turning and are 3-hole punched to fit in a binder. The covers come in assorted colors, ensuring you have a variety to choose from, though specific color selection is not possible when ordering.",
+      "brands": [
+       {
+        "id": "hO4I",
+        "name": "Mead"
+       }
+      ],
+      "images": [
+       {
+        "url": "https://cdn.trychannel3.com/856d2ebd-2a96-4892-b016-91c81036ac07?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LPzf",
+        "cleaned_url": null,
+        "is_main_image": true,
+        "shot_type": "lifestyle",
+        "alt_text": "Six-pack of colored spiral notebooks in various colors."
+       }
+      ],
+      "category": {
+       "slug": "notebooks-notepads",
+       "title": "Notebooks & Notepads",
+       "path": [
+        {
+         "slug": "office-supplies",
+         "title": "Office Supplies"
+        },
+        {
+         "slug": "general-office-supplies",
+         "title": "General Office Supplies"
+        },
+        {
+         "slug": "paper-products",
+         "title": "Paper Products"
+        },
+        {
+         "slug": "notebooks-notepads",
+         "title": "Notebooks & Notepads"
+        }
+       ],
+       "has_children": true
+      },
+      "gender": null,
+      "age": null,
+      "materials": [
+       "Paper"
+      ],
+      "key_features": [
+       "Sold as 6/Pack",
+       "Spiral binding for smooth page turning",
+       "Double-sided, ruled paper",
+       "Coated paper cover",
+       "College ruled",
+       "Micro perforation",
+       "70 sheets per book",
+       "3-hole punched"
+      ],
+      "colors": [],
+      "offers": [
+       {
+        "url": "https://buy.trychannel3.com/ORTXCzn-LPzf-4ecE2h?o=01M4SAKM633WVJXNE2FYX2DS19&aid=01M732H97KDRSJQ70APTQWDDN8",
+        "domain": "newegg.com",
+        "price": {
+         "price": 19.99,
+         "compare_at_price": null,
+         "currency": "USD"
+        },
+        "availability": "InStock",
+        "condition": "new",
+        "max_commission_rate": 0.007,
+        "dimensions": {
+         "length": {
+          "number": 8,
+          "unit": "in"
+         },
+         "width": null,
+         "height": {
+          "number": 10.5,
+          "unit": "in"
+         },
+         "weight": null
+        }
+       },
+       {
+        "url": "https://buy.trychannel3.com/ORTXCzn-p1PB-4ecE2h?o=01KYC9XXC90Z28S53NZP1KGM26&aid=01M732H97KDRSJQ70APTQWDDN8",
+        "domain": "bestbuy.com",
+        "price": {
+         "price": 25.22,
+         "compare_at_price": null,
+         "currency": "USD"
+        },
+        "availability": "InStock",
+        "condition": "new",
+        "max_commission_rate": 0.005,
+        "dimensions": {
+         "length": {
+          "number": 8,
+          "unit": "in"
+         },
+         "width": {
+          "number": 10.5,
+          "unit": "in"
+         },
+         "height": null,
+         "weight": null
+        }
+       }
+      ],
+      "variants": null,
+      "structured_attributes": {
+       "notepad-design": [
+        "Spiral-bound",
+        "Subject notebook"
+       ],
+       "paper-type": [
+        "Plain white",
+        "Lined",
+        "Perforated"
+       ],
+       "sheet-pattern": [
+        "Solid"
+       ],
+       "notepad-cover-type": [
+        "Soft"
+       ],
+       "pattern": [
+        "Solid"
+       ]
+      },
+      "ratings": {
+       "value": 2,
+       "count": 3,
+       "source_count": 1
+      }
+     },
+     {
+      "id": "KD8BYi7",
+      "title": "Staples 1-Subject Notebooks, 8\" x 10.5\", College Ruled, 70 Sheets, Assorted Colors, 6/Pack",
+      "description": "This is a 6-pack of Staples 1-Subject Notebooks. Each notebook is college-ruled with 70 sheets and measures 8 x 10.5 inches. The notebooks come in assorted colors, with duplex cardstock covers for durability. They are wirebound for easy page turning and are 3-hole punched.",
+      "brands": [
+       {
+        "id": "qKdn",
+        "name": "Staples"
+       }
+      ],
+      "images": [
+       {
+        "url": "https://cdn.trychannel3.com/78c2d86f-b42c-45a2-ad2a-01e7c9205b6b?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LFnL",
+        "cleaned_url": null,
+        "is_main_image": true,
+        "shot_type": "lifestyle",
+        "alt_text": "Six assorted colored notebooks with red covers and yellow spines."
+       },
+       {
+        "url": "https://cdn.trychannel3.com/a339d983-3ff0-4536-9b06-88b125107ec6?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LFnL",
+        "cleaned_url": "https://cdn.trychannel3.com/42e37b6f-2596-4538-950d-fac739460259?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LFnL",
+        "is_main_image": false,
+        "shot_type": "product_information",
+        "alt_text": "Specification details for one Staples 1 Subject Notebook."
+       },
+       {
+        "url": "https://cdn.trychannel3.com/c865f4d9-10ce-4cd3-8b3d-1ed1d82ccfc1?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LFnL",
+        "cleaned_url": null,
+        "is_main_image": false,
+        "shot_type": "lifestyle",
+        "alt_text": "Six notebooks in assorted colors, including a red one."
+       },
+       {
+        "url": "https://cdn.trychannel3.com/af380d26-7db4-44d6-abeb-ff2ae7b6f356?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LFnL",
+        "cleaned_url": "https://cdn.trychannel3.com/2a443f3e-fe1c-44bd-81f8-f10180284810?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LFnL",
+        "is_main_image": false,
+        "shot_type": "detail",
+        "alt_text": "Close-up of the lined pages in a college ruled notebook."
+       },
+       {
+        "url": "https://cdn.trychannel3.com/dac47d8a-4a5c-4ea9-b24c-c7b104f79db0?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LFnL",
+        "cleaned_url": "https://cdn.trychannel3.com/4e27501e-fc5a-427b-a339-8c22414f33b1?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LFnL",
+        "is_main_image": false,
+        "shot_type": "flat_lay",
+        "alt_text": "Open notebook page with a yellow pencil on a gray surface."
+       }
+      ],
+      "category": {
+       "slug": "notebooks-notepads",
+       "title": "Notebooks & Notepads",
+       "path": [
+        {
+         "slug": "office-supplies",
+         "title": "Office Supplies"
+        },
+        {
+         "slug": "general-office-supplies",
+         "title": "General Office Supplies"
+        },
+        {
+         "slug": "paper-products",
+         "title": "Paper Products"
+        },
+        {
+         "slug": "notebooks-notepads",
+         "title": "Notebooks & Notepads"
+        }
+       ],
+       "has_children": true
+      },
+      "gender": null,
+      "age": null,
+      "materials": [
+       "cardstock"
+      ],
+      "key_features": [
+       "1-subject notebook is great for school, home or work projects",
+       "70 sheets of college-ruled paper for efficient use of space",
+       "Duplex cardstock covers in assorted colors",
+       "Wirebound for added durability",
+       "Six per pack",
+       "3-hole punched",
+       "Colors chosen for customer at random"
+      ],
+      "colors": [
+       {
+        "hex": "#ba0c31",
+        "percentage": 0.949
+       },
+       {
+        "hex": "#c98292",
+        "percentage": 0.051
+       }
+      ],
+      "offers": [
+       {
+        "url": "https://buy.trychannel3.com/KD8BYi7-LFnL-4ecE2h?o=01KQJWWK5A588PXV9D4WMXXF0R&aid=01M732H97KDRSJQ70APTQWDDN8",
+        "domain": "staples.com",
+        "price": {
+         "price": 12.89,
+         "compare_at_price": null,
+         "currency": "USD"
+        },
+        "availability": "InStock",
+        "condition": "new",
+        "max_commission_rate": 0.03,
+        "dimensions": null
+       }
+      ],
+      "variants": null,
+      "structured_attributes": {
+       "paper-type": [
+        "Plain white"
+       ]
+      },
+      "ratings": {
+       "value": 4.5,
+       "count": 868,
+       "source_count": 1
+      }
+     },
+     {
+      "id": "qedKtKb",
+      "title": "Staples 1-subject Notebooks, 8\" X 10.5\", College Ruled, 70 Sheets",
+      "description": "This is a 6-pack of black, college-ruled, 1-subject notebooks from Staples. Each notebook contains 70 sheets and features a durable cardstock cover with 3-hole punching for easy binder insertion. The spiral binding allows for easy page turning.",
+      "brands": [
+       {
+        "id": "qKdn",
+        "name": "Staples"
+       }
+      ],
+      "images": [
+       {
+        "url": "https://cdn.trychannel3.com/31392e33-1f82-4bb5-aecf-fe1c80b321a4?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LFnL",
+        "cleaned_url": "https://cdn.trychannel3.com/d85219c1-26ad-4cd6-ac98-8307101d53fd?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LFnL",
+        "is_main_image": true,
+        "shot_type": "hero",
+        "alt_text": "Black subject notebook with spiral binding and Staples branding."
+       },
+       {
+        "url": "https://cdn.trychannel3.com/9a90ed93-9425-4b72-b52b-4ed5ae051b22?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LFnL",
+        "cleaned_url": null,
+        "is_main_image": false,
+        "shot_type": "product_information",
+        "alt_text": "Specifications of a black college ruled notebook."
+       },
+       {
+        "url": "https://cdn.trychannel3.com/dbccb344-033b-4710-bb55-cba0ea793fa6?aid=01M732H97KDRSJQ70APTQWDDN8&mid=LFnL",
+        "cleaned_url": null,
+        "is_main_image": false,
+        "shot_type": "lifestyle",
+        "alt_text": "Six black subject notebooks/packs stacked together."
+       }
+      ],
+      "category": {
+       "slug": "notebooks-notepads",
+       "title": "Notebooks & Notepads",
+       "path": [
+        {
+         "slug": "office-supplies",
+         "title": "Office Supplies"
+        },
+        {
+         "slug": "general-office-supplies",
+         "title": "General Office Supplies"
+        },
+        {
+         "slug": "paper-products",
+         "title": "Paper Products"
+        },
+        {
+         "slug": "notebooks-notepads",
+         "title": "Notebooks & Notepads"
+        }
+       ],
+       "has_children": true
+      },
+      "gender": null,
+      "age": "adult",
+      "materials": [
+       "cardstock"
+      ],
+      "key_features": [
+       "1-subject notebook is great for school, home or work projects",
+       "70 sheets of college-ruled paper for efficient use of space",
+       "Black duplex cardstock cover",
+       "Wirebound for added durability",
+       "Six per pack",
+       "3-hole punched"
+      ],
+      "colors": [
+       {
+        "hex": "#676462",
+        "percentage": 0.2793
+       },
+       {
+        "hex": "#e9eae8",
+        "percentage": 0.256
+       },
+       {
+        "hex": "#8f8c89",
+        "percentage": 0.1262
+       },
+       {
+        "hex": "#aba9a6",
+        "percentage": 0.1259
+       },
+       {
+        "hex": "#c7c5c2",
+        "percentage": 0.1247
+       },
+       {
+        "hex": "#43403d",
+        "percentage": 0.0879
+       }
+      ],
+      "offers": [
+       {
+        "url": "https://buy.trychannel3.com/qedKtKb-LFnL-4ecE2h?o=01KQJWXVE3BB55ZGD6RY0CGV7S&aid=01M732H97KDRSJQ70APTQWDDN8",
+        "domain": "staples.com",
+        "price": {
+         "price": 9.99,
+         "compare_at_price": null,
+         "currency": "USD"
+        },
+        "availability": "InStock",
+        "condition": "new",
+        "max_commission_rate": 0.03,
+        "dimensions": null
+       }
+      ],
+      "variants": {
+       "options": [
+        {
+         "name": "Color",
+         "values": [
+          {
+           "label": "Assorted Colors",
+           "exists": true,
+           "available": null,
+           "thumbnail_url": "https://cdn.trychannel3.com/9133f15a-9985-4c14-9397-ad93d2a267a0",
+           "product_id": "QsdA1du"
+          },
+          {
+           "label": "Assorted",
+           "exists": true,
+           "available": null,
+           "thumbnail_url": "https://cdn.trychannel3.com/15a5617d-dd57-4372-b453-ea0d26be3d32",
+           "product_id": "LXR3gPU"
+          },
+          {
+           "label": "Black",
+           "exists": true,
+           "available": null,
+           "thumbnail_url": "https://cdn.trychannel3.com/31392e33-1f82-4bb5-aecf-fe1c80b321a4",
+           "product_id": "qedKtKb"
+          },
+          {
+           "label": "Blue",
+           "exists": true,
+           "available": null,
+           "thumbnail_url": "https://cdn.trychannel3.com/109f12d7-99d2-441c-845b-9d44d40a763a",
+           "product_id": "BhptdDh"
+          },
+          {
+           "label": "Green",
+           "exists": true,
+           "available": null,
+           "thumbnail_url": "https://cdn.trychannel3.com/7581b6c4-3838-4dbf-94bb-7da88782ea84",
+           "product_id": "hEkxzz4"
+          },
+          {
+           "label": "Red",
+           "exists": true,
+           "available": null,
+           "thumbnail_url": "https://cdn.trychannel3.com/c6f864e7-8148-4897-8af2-c54b459969ec",
+           "product_id": "6kMYLIq"
+          }
+         ]
+        }
+       ],
+       "selected": [
+        {
+         "name": "Rule Type",
+         "label": "College"
+        },
+        {
+         "name": "Color",
+         "label": "Black"
+        }
+       ]
+      },
+      "structured_attributes": {
+       "notepad-cover-type": [
+        "Soft front & hard back"
+       ],
+       "sheet-pattern": [
+        "Solid"
+       ],
+       "target-audience": [
+        "Adults"
+       ],
+       "paper-type": [
+        "Acid-free"
+       ],
+       "notepad-design": [
+        "Spiral-bound"
+       ],
+       "pattern": [
+        "Solid"
+       ]
+      },
+      "ratings": {
+       "value": 3.5,
+       "count": 14,
+       "source_count": 1
+      }
+     },
+     {
+      "id": "u7KgOj7",
+      "title": "Office Depot Wirebound Notebooks",
+      "description": "A pack of six Office Depot wirebound notebooks, each measuring 8 1/2\" x 11\" with 100 college-ruled, perforated sheets. The set comes in assorted cover colors, making them ideal for organizing different subjects or projects.",
+      "brands": [
+       {
+        "id": "0W6p",
+        "name": "Office Essentials"
+       }
+      ],
+      "images": [
+       {
+        "url": "https://cdn.trychannel3.com/9e96fa8e-7475-4216-b5fb-2942b60a41dc?aid=01M732H97KDRSJQ70APTQWDDN8&mid=6Uzl",
+        "cleaned_url": "https://cdn.trychannel3.com/69ddaf86-2583-4b60-999d-76e9a342e776?aid=01M732H97KDRSJQ70APTQWDDN8&mid=6Uzl",
+        "is_main_image": true,
+        "shot_type": "lifestyle",
+        "alt_text": "Group of college ruled notebooks in multiple colors."
+       },
+       {
+        "url": "https://cdn.trychannel3.com/86c923c2-3511-4dad-bd33-44c29868a171?aid=01M732H97KDRSJQ70APTQWDDN8&mid=6Uzl",
+        "cleaned_url": null,
+        "is_main_image": false,
+        "shot_type": "product_information",
+        "alt_text": "Measurement annotation for notebook size."
+       },
+       {
+        "url": "https://cdn.trychannel3.com/9544fded-6a28-4a5b-97ec-2f7913fb5f92?aid=01M732H97KDRSJQ70APTQWDDN8&mid=6Uzl",
+        "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/9544fded-6a28-4a5b-97ec-2f7913fb5f92?aid=01M732H97KDRSJQ70APTQWDDN8&mid=6Uzl",
+        "is_main_image": false,
+        "shot_type": "hero",
+        "alt_text": "Blue college ruled notebook shown from the front."
+       },
+       {
+        "url": "https://cdn.trychannel3.com/a41cc8c8-25d3-4ec3-874f-60e321a6d8c3?aid=01M732H97KDRSJQ70APTQWDDN8&mid=6Uzl",
+        "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/a41cc8c8-25d3-4ec3-874f-60e321a6d8c3?aid=01M732H97KDRSJQ70APTQWDDN8&mid=6Uzl",
+        "is_main_image": false,
+        "shot_type": "hero",
+        "alt_text": "Black college ruled notebook shown from the front."
+       }
+      ],
+      "category": {
+       "slug": "notebooks-notepads",
+       "title": "Notebooks & Notepads",
+       "path": [
+        {
+         "slug": "office-supplies",
+         "title": "Office Supplies"
+        },
+        {
+         "slug": "general-office-supplies",
+         "title": "General Office Supplies"
+        },
+        {
+         "slug": "paper-products",
+         "title": "Paper Products"
+        },
+        {
+         "slug": "notebooks-notepads",
+         "title": "Notebooks & Notepads"
+        }
+       ],
+       "has_children": true
+      },
+      "gender": null,
+      "age": null,
+      "materials": [
+       "Paper"
+      ],
+      "key_features": [
+       "College ruled for easy writing.",
+       "Spiral binding keeps pages in place.",
+       "Perforated pages offer easy removal.",
+       "Assorted colors.",
+       "100 sheets per book.",
+       "8 1/2\" x 11\" sheet size"
+      ],
+      "colors": [
+       {
+        "hex": "#943979",
+        "percentage": 0.1622
+       },
+       {
+        "hex": "#0c7569",
+        "percentage": 0.1588
+       },
+       {
+        "hex": "#0da1ab",
+        "percentage": 0.1442
+       },
+       {
+        "hex": "#202430",
+        "percentage": 0.1398
+       },
+       {
+        "hex": "#bd1b30",
+        "percentage": 0.1384
+       },
+       {
+        "hex": "#616382",
+        "percentage": 0.0967
+       },
+       {
+        "hex": "#87b3ba",
+        "percentage": 0.0856
+       },
+       {
+        "hex": "#55365a",
+        "percentage": 0.0742
+       }
+      ],
+      "offers": [
+       {
+        "url": "https://buy.trychannel3.com/u7KgOj7-6Uzl-4ecE2h?o=01KBPDF18Q5ZCCGEGJDHE0KE47&aid=01M732H97KDRSJQ70APTQWDDN8",
+        "domain": "officedepot.com",
+        "price": {
+         "price": 9.39,
+         "compare_at_price": null,
+         "currency": "USD"
+        },
+        "availability": "InStock",
+        "condition": "new",
+        "max_commission_rate": 0.035,
+        "dimensions": null
+       }
+      ],
+      "variants": {
+       "options": [
+        {
+         "name": "Subjects",
+         "values": [
+          {
+           "label": "1 Subject",
+           "exists": true,
+           "available": null,
+           "thumbnail_url": "https://cdn.trychannel3.com/9e96fa8e-7475-4216-b5fb-2942b60a41dc",
+           "product_id": "u7KgOj7"
+          },
+          {
+           "label": "3 Subjects",
+           "exists": false,
+           "available": null,
+           "thumbnail_url": "https://cdn.trychannel3.com/f0c99f6e-80e2-467c-8d77-675eae9ac6a8",
+           "product_id": "RSpeBqZ"
+          }
+         ]
+        },
+        {
+         "name": "Size",
+         "values": [
+          {
+           "label": "100 Sheets",
+           "exists": true,
+           "available": null,
+           "thumbnail_url": "https://cdn.trychannel3.com/9e96fa8e-7475-4216-b5fb-2942b60a41dc",
+           "product_id": "u7KgOj7"
+          },
+          {
+           "label": "120 Sheets",
+           "exists": false,
+           "available": null,
+           "thumbnail_url": "https://cdn.trychannel3.com/f0c99f6e-80e2-467c-8d77-675eae9ac6a8",
+           "product_id": "RSpeBqZ"
+          }
+         ]
+        }
+       ],
+       "selected": [
+        {
+         "name": "Subjects",
+         "label": "1 Subject"
+        },
+        {
+         "name": "Size",
+         "label": "100 Sheets"
+        }
+       ]
+      },
+      "structured_attributes": {
+       "paper-type": [
+        "Acid-free",
+        "Plain white"
+       ],
+       "notepad-design": [
+        "Spiral-bound"
+       ]
+      },
+      "ratings": {
+       "value": 4.9,
+       "count": 13,
+       "source_count": 1
+      }
+     },
+     {
+      "id": "vcR5e66",
+      "title": "Mead College Ruled Spiral Notebook",
+      "description": "A case of 12 durable college-ruled spiral notebooks measuring 8.5 x 11 inches. These notebooks are designed to last all year with plastic front and back covers, ink-bleed resistant pages, and includes movable pocket tabbed dividers and storage pockets to help keep subjects organized.",
+      "brands": [
+       {
+        "id": "hO4I",
+        "name": "Mead"
+       },
+       {
+        "id": "95cV",
+        "name": "Five Star"
+       }
+      ],
+      "images": [
+       {
+        "url": "https://cdn.trychannel3.com/dd42a8d1-0ea4-4e90-9c1e-af2430682fc2?aid=01M732H97KDRSJQ70APTQWDDN8&mid=p1PB",
+        "cleaned_url": "https://cdn.trychannel3.com/cleaned/v1/dd42a8d1-0ea4-4e90-9c1e-af2430682fc2?aid=01M732H97KDRSJQ70APTQWDDN8&mid=p1PB",
+        "is_main_image": true,
+        "shot_type": "hero",
+        "alt_text": "Red spiral notebook on a plain background."
+       }
+      ],
+      "category": {
+       "slug": "notebooks-notepads",
+       "title": "Notebooks & Notepads",
+       "path": [
+        {
+         "slug": "office-supplies",
+         "title": "Office Supplies"
+        },
+        {
+         "slug": "general-office-supplies",
+         "title": "General Office Supplies"
+        },
+        {
+         "slug": "paper-products",
+         "title": "Paper Products"
+        },
+        {
+         "slug": "notebooks-notepads",
+         "title": "Notebooks & Notepads"
+        }
+       ],
+       "has_children": true
+      },
+      "gender": null,
+      "age": null,
+      "materials": [],
+      "key_features": [
+       "College ruled",
+       "Spiral binding",
+       "Ink-bleed resistant pages",
+       "Plastic front and back covers",
+       "Movable pocket tabbed dividers",
+       "Two full size storage pocket dividers"
+      ],
+      "colors": [
+       {
+        "hex": "#f6f5f3",
+        "percentage": 0.3829
+       },
+       {
+        "hex": "#ca2936",
+        "percentage": 0.162
+       },
+       {
+        "hex": "#db4b50",
+        "percentage": 0.1351
+       },
+       {
+        "hex": "#b74847",
+        "percentage": 0.1164
+       },
+       {
+        "hex": "#cca7a5",
+        "percentage": 0.1037
+       },
+       {
+        "hex": "#9f282b",
+        "percentage": 0.0999
+       }
+      ],
+      "offers": [
+       {
+        "url": "https://buy.trychannel3.com/vcR5e66-p1PB-4ecE2h?o=01M62957NGVRVJ9DBYN3VZDH3Q&aid=01M732H97KDRSJQ70APTQWDDN8",
+        "domain": "bestbuy.com",
+        "price": {
+         "price": 9.79,
+         "compare_at_price": null,
+         "currency": "USD"
+        },
+        "availability": "InStock",
+        "condition": "new",
+        "max_commission_rate": 0.005,
+        "dimensions": {
+         "length": {
+          "number": 11,
+          "unit": "in"
+         },
+         "width": {
+          "number": 8.5,
+          "unit": "in"
+         },
+         "height": null,
+         "weight": null
+        }
+       }
+      ],
+      "variants": null,
+      "structured_attributes": {
+       "paper-type": [
+        "Lined"
+       ],
+       "pattern": [
+        "Solid"
+       ],
+       "notepad-design": [
+        "Spiral-bound"
+       ]
+      },
+      "ratings": null
+     }
+    ],
+    "error": null
+   }
+  },
+  {
+   "svc": "llm",
+   "op": "chat:classify",
+   "res": {
+    "content": "{\"items\":[{\"id\":\"ZYI4han\",\"category\":\"school_supplies\",\"confidence\":0.95},{\"id\":\"FhRuk6R\",\"category\":\"school_supplies\",\"confidence\":0.95},{\"id\":\"nI6Tj98\",\"category\":\"school_supplies\",\"confidence\":0.95},{\"id\":\"ORTXCzn\",\"category\":\"school_supplies\",\"confidence\":0.95},{\"id\":\"KD8BYi7\",\"category\":\"school_supplies\",\"confidence\":0.95},{\"id\":\"qedKtKb\",\"category\":\"school_supplies\",\"confidence\":0.95}]}",
+    "toolCalls": [],
+    "model": "Qwen/Qwen3.8-27B",
+    "ms": 943,
+    "tokens": {
+     "prompt": 989,
+     "completion": 131
+    },
+    "usedFallback": false
+   }
+  },
+  {
+   "svc": "llm",
+   "op": "chat:kip",
+   "res": {
+    "content": "",
+    "toolCalls": [
+     {
+      "id": "call-3500ab93-ffbb-4016-ae1a-b0c57afa9ada",
+      "name": "create_order",
+      "arguments": "{\"product_id\":\"KD8BYi7\",\"why\":\"The 6-pack of college ruled notebooks at $12.89 is the best value here, with a solid 4.5 rating from a lot of buyers. A 3-pack option runs $7.99 if you want fewer, and a 24-notebook bundle is $19.99 if you want to stock up.\",\"also_considered\":[\"nI6Tj98\",\"FhRuk6R\"]}"
+     }
+    ],
+    "model": "Qwen/Qwen3.8-27B",
+    "ms": 1376,
+    "tokens": {
+     "prompt": 2177,
+     "completion": 146
+    },
+    "usedFallback": false
+   }
+  },
+  {
+   "svc": "channel3",
+   "op": "product",
+   "res": {
+    "status": 200,
+    "ms": 135,
+    "products": [
+     {
+      "id": "KD8BYi7",
+      "title": "Staples 1-Subject Notebooks, 8\" x 10.5\", College Ruled, 70 Sheets, Assorted Colors, 6/Pack",
+      "description": "This is a 6-pack of Staples 1-Subject Notebooks. Each notebook is college-ruled with 70 sheets and measures 8 x 10.5 inches. The notebooks come in assorted colors, with duplex cardstock covers for durability. They are wirebound for easy page turning and are 3-hole punched.",
+      "brands": [
+       {
+        "id": "qKdn",
+        "name": "Staples"
+       }
+      ],
+      "images": [
+       {
+        "url": "https://cdn.trychannel3.com/78c2d86f-b42c-45a2-ad2a-01e7c9205b6b?aid=01M732HBYJ8H9Y3KV67R597M8N&mid=LFnL",
+        "cleaned_url": null,
+        "is_main_image": true,
+        "shot_type": "lifestyle",
+        "alt_text": "Six assorted colored notebooks with red covers and yellow spines."
+       },
+       {
+        "url": "https://cdn.trychannel3.com/a339d983-3ff0-4536-9b06-88b125107ec6?aid=01M732HBYJ8H9Y3KV67R597M8N&mid=LFnL",
+        "cleaned_url": "https://cdn.trychannel3.com/42e37b6f-2596-4538-950d-fac739460259?aid=01M732HBYJ8H9Y3KV67R597M8N&mid=LFnL",
+        "is_main_image": false,
+        "shot_type": "product_information",
+        "alt_text": "Specification details for one Staples 1 Subject Notebook."
+       },
+       {
+        "url": "https://cdn.trychannel3.com/c865f4d9-10ce-4cd3-8b3d-1ed1d82ccfc1?aid=01M732HBYJ8H9Y3KV67R597M8N&mid=LFnL",
+        "cleaned_url": null,
+        "is_main_image": false,
+        "shot_type": "lifestyle",
+        "alt_text": "Six notebooks in assorted colors, including a red one."
+       },
+       {
+        "url": "https://cdn.trychannel3.com/af380d26-7db4-44d6-abeb-ff2ae7b6f356?aid=01M732HBYJ8H9Y3KV67R597M8N&mid=LFnL",
+        "cleaned_url": "https://cdn.trychannel3.com/2a443f3e-fe1c-44bd-81f8-f10180284810?aid=01M732HBYJ8H9Y3KV67R597M8N&mid=LFnL",
+        "is_main_image": false,
+        "shot_type": "detail",
+        "alt_text": "Close-up of the lined pages in a college ruled notebook."
+       },
+       {
+        "url": "https://cdn.trychannel3.com/dac47d8a-4a5c-4ea9-b24c-c7b104f79db0?aid=01M732HBYJ8H9Y3KV67R597M8N&mid=LFnL",
+        "cleaned_url": "https://cdn.trychannel3.com/4e27501e-fc5a-427b-a339-8c22414f33b1?aid=01M732HBYJ8H9Y3KV67R597M8N&mid=LFnL",
+        "is_main_image": false,
+        "shot_type": "flat_lay",
+        "alt_text": "Open notebook page with a yellow pencil on a gray surface."
+       }
+      ],
+      "category": {
+       "slug": "notebooks-notepads",
+       "title": "Notebooks & Notepads",
+       "path": [
+        {
+         "slug": "office-supplies",
+         "title": "Office Supplies"
+        },
+        {
+         "slug": "general-office-supplies",
+         "title": "General Office Supplies"
+        },
+        {
+         "slug": "paper-products",
+         "title": "Paper Products"
+        },
+        {
+         "slug": "notebooks-notepads",
+         "title": "Notebooks & Notepads"
+        }
+       ],
+       "has_children": true
+      },
+      "gender": null,
+      "age": null,
+      "materials": [
+       "cardstock"
+      ],
+      "key_features": [
+       "1-subject notebook is great for school, home or work projects",
+       "70 sheets of college-ruled paper for efficient use of space",
+       "Duplex cardstock covers in assorted colors",
+       "Wirebound for added durability",
+       "Six per pack",
+       "3-hole punched",
+       "Colors chosen for customer at random"
+      ],
+      "colors": [
+       {
+        "hex": "#ba0c31",
+        "percentage": 0.949
+       },
+       {
+        "hex": "#c98292",
+        "percentage": 0.051
+       }
+      ],
+      "offers": [
+       {
+        "url": "https://buy.trychannel3.com/KD8BYi7-LFnL-4ecE2h?o=01KQJWWK5A588PXV9D4WMXXF0R&aid=01M732HBYJ8H9Y3KV67R597M8N",
+        "domain": "staples.com",
+        "price": {
+         "price": 12.89,
+         "compare_at_price": null,
+         "currency": "USD"
+        },
+        "availability": "InStock",
+        "condition": "new",
+        "max_commission_rate": 0.03,
+        "dimensions": {
+         "length": {
+          "number": 10.5,
+          "unit": "in"
+         },
+         "width": {
+          "number": 8,
+          "unit": "in"
+         },
+         "height": null,
+         "weight": null
+        }
+       }
+      ],
+      "variants": null,
+      "structured_attributes": {
+       "paper-type": [
+        "Plain white"
+       ]
+      },
+      "ratings": {
+       "value": 4.5,
+       "count": 868,
+       "source_count": 1
+      }
+     }
+    ],
+    "error": null
+   }
+  },
+  {
+   "svc": "paypal",
+   "op": "toolkit.create_order",
+   "res": {
+    "status": 201,
+    "debugId": "88074f899c0aa",
+    "body": {
+     "id": "7JU57631YJ7869905",
+     "intent": "CAPTURE",
+     "status": "COMPLETED",
+     "payment_source": {
+      "paypal": {
+       "email_address": "hackpp-buyer-d173@personal.example.com",
+       "account_id": "SHB5GFLEDVTY6",
+       "account_status": "VERIFIED",
+       "name": {
+        "given_name": "Test",
+        "surname": "Buyer"
+       },
+       "address": {
+        "country_code": "US"
+       }
+      }
+     },
+     "purchase_units": [
+      {
+       "reference_id": "default",
+       "amount": {
+        "currency_code": "USD",
+        "value": "12.89",
+        "breakdown": {
+         "item_total": {
+          "currency_code": "USD",
+          "value": "12.89"
+         },
+         "shipping": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "handling": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "tax_total": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "insurance": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "shipping_discount": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "discount": {
+          "currency_code": "USD",
+          "value": "0.0"
+         }
+        }
+       },
+       "payee": {
+        "email_address": "hackpp-allowance-d173@business.example.com",
+        "merchant_id": "CC59CBB2RNTFS"
+       },
+       "description": "Allowance: Leo's purchase via Kip (rule 2)",
+       "custom_id": "led_a976911a36ce",
+       "invoice_id": "ALW-A976911A36CE",
+       "items": [
+        {
+         "name": "Staples 1-Subject Notebooks, 8\" x 10.5\", College Ruled, 70 Sheets, Assorted Colors, 6/Pack",
+         "unit_amount": {
+          "currency_code": "USD",
+          "value": "12.89"
+         },
+         "tax": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "quantity": "1",
+         "description": "Allowance: Leo's purchase via Kip (rule 2)"
+        }
+       ],
+       "payments": {
+        "captures": [
+         {
+          "id": "7KP338504T699081H",
+          "status": "COMPLETED",
+          "amount": {
+           "currency_code": "USD",
+           "value": "12.89"
+          },
+          "final_capture": true,
+          "seller_protection": {
+           "status": "ELIGIBLE",
+           "dispute_categories": [
+            "ITEM_NOT_RECEIVED",
+            "UNAUTHORIZED_TRANSACTION"
+           ]
+          },
+          "seller_receivable_breakdown": {
+           "gross_amount": {
+            "currency_code": "USD",
+            "value": "12.89"
+           },
+           "paypal_fee": {
+            "currency_code": "USD",
+            "value": "0.94"
+           },
+           "net_amount": {
+            "currency_code": "USD",
+            "value": "11.95"
+           }
+          },
+          "invoice_id": "ALW-A976911A36CE",
+          "custom_id": "led_a976911a36ce",
+          "links": [
+           {
+            "href": "https://api.sandbox.paypal.com/v2/payments/captures/7KP338504T699081H",
+            "rel": "self",
+            "method": "GET"
+           },
+           {
+            "href": "https://api.sandbox.paypal.com/v2/payments/captures/7KP338504T699081H/refund",
+            "rel": "refund",
+            "method": "POST"
+           },
+           {
+            "href": "https://api.sandbox.paypal.com/v2/checkout/orders/7JU57631YJ7869905",
+            "rel": "up",
+            "method": "GET"
+           }
+          ],
+          "create_time": "2026-11-10T15:51:59Z",
+          "update_time": "2026-11-10T15:51:59Z"
+         }
+        ]
+       }
+      }
+     ],
+     "payer": {
+      "name": {
+       "given_name": "Test",
+       "surname": "Buyer"
+      },
+      "email_address": "hackpp-buyer-d173@personal.example.com",
+      "payer_id": "SHB5GFLEDVTY6",
+      "address": {
+       "country_code": "US"
+      }
+     },
+     "create_time": "2026-11-10T15:51:58Z",
+     "update_time": "2026-11-10T15:51:59Z",
+     "links": [
+      {
+       "href": "https://api.sandbox.paypal.com/v2/checkout/orders/7JU57631YJ7869905",
+       "rel": "self",
+       "method": "GET"
+      }
+     ]
+    },
+    "ms": 2291,
+    "calls": [
+     {
+      "method": "POST",
+      "path": "/v1/oauth2/token",
+      "status": 200,
+      "debugId": "7a84680fe495e",
+      "ms": 545,
+      "data": null,
+      "network": false
+     },
+     {
+      "method": "POST",
+      "path": "/v2/checkout/orders",
+      "status": 201,
+      "debugId": "88074f899c0aa",
+      "ms": 2291,
+      "data": null,
+      "network": false
+     }
+    ],
+    "error": null,
+    "unknown": false
+   }
+  },
+  {
+   "svc": "paypal",
+   "op": "toolkit.get_order",
+   "res": {
+    "status": 200,
+    "debugId": "44cc126ee952f",
+    "body": {
+     "id": "7JU57631YJ7869905",
+     "intent": "CAPTURE",
+     "status": "COMPLETED",
+     "payment_source": {
+      "paypal": {
+       "email_address": "hackpp-buyer-d173@personal.example.com",
+       "account_id": "SHB5GFLEDVTY6",
+       "account_status": "VERIFIED",
+       "name": {
+        "given_name": "Test",
+        "surname": "Buyer"
+       },
+       "address": {
+        "country_code": "US"
+       }
+      }
+     },
+     "purchase_units": [
+      {
+       "reference_id": "default",
+       "amount": {
+        "currency_code": "USD",
+        "value": "12.89",
+        "breakdown": {
+         "item_total": {
+          "currency_code": "USD",
+          "value": "12.89"
+         },
+         "shipping": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "tax_total": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "discount": {
+          "currency_code": "USD",
+          "value": "0.00"
+         }
+        }
+       },
+       "payee": {
+        "email_address": "hackpp-allowance-d173@business.example.com",
+        "merchant_id": "CC59CBB2RNTFS"
+       },
+       "description": "Allowance: Leo's purchase via Kip (rule 2)",
+       "custom_id": "led_a976911a36ce",
+       "invoice_id": "ALW-A976911A36CE",
+       "items": [
+        {
+         "name": "Staples 1-Subject Notebooks, 8\" x 10.5\", College Ruled, 70 Sheets, Assorted Colors, 6/Pack",
+         "unit_amount": {
+          "currency_code": "USD",
+          "value": "12.89"
+         },
+         "tax": {
+          "currency_code": "USD",
+          "value": "0.00"
+         },
+         "quantity": "1",
+         "description": "Allowance: Leo's purchase via Kip (rule 2)"
+        }
+       ],
+       "payments": {
+        "captures": [
+         {
+          "id": "7KP338504T699081H",
+          "status": "COMPLETED",
+          "amount": {
+           "currency_code": "USD",
+           "value": "12.89"
+          },
+          "final_capture": true,
+          "seller_protection": {
+           "status": "ELIGIBLE",
+           "dispute_categories": [
+            "ITEM_NOT_RECEIVED",
+            "UNAUTHORIZED_TRANSACTION"
+           ]
+          },
+          "seller_receivable_breakdown": {
+           "gross_amount": {
+            "currency_code": "USD",
+            "value": "12.89"
+           },
+           "paypal_fee": {
+            "currency_code": "USD",
+            "value": "0.94"
+           },
+           "net_amount": {
+            "currency_code": "USD",
+            "value": "11.95"
+           }
+          },
+          "invoice_id": "ALW-A976911A36CE",
+          "custom_id": "led_a976911a36ce",
+          "links": [
+           {
+            "href": "https://api.sandbox.paypal.com/v2/payments/captures/7KP338504T699081H",
+            "rel": "self",
+            "method": "GET"
+           },
+           {
+            "href": "https://api.sandbox.paypal.com/v2/payments/captures/7KP338504T699081H/refund",
+            "rel": "refund",
+            "method": "POST"
+           },
+           {
+            "href": "https://api.sandbox.paypal.com/v2/checkout/orders/7JU57631YJ7869905",
+            "rel": "up",
+            "method": "GET"
+           }
+          ],
+          "create_time": "2026-11-10T15:51:59Z",
+          "update_time": "2026-11-10T15:51:59Z"
+         }
+        ]
+       }
+      }
+     ],
+     "payer": {
+      "name": {
+       "given_name": "Test",
+       "surname": "Buyer"
+      },
+      "email_address": "hackpp-buyer-d173@personal.example.com",
+      "payer_id": "SHB5GFLEDVTY6",
+      "address": {
+       "country_code": "US"
+      }
+     },
+     "create_time": "2026-11-10T15:51:59Z",
+     "update_time": "2026-11-10T15:51:59Z",
+     "links": [
+      {
+       "href": "https://api.sandbox.paypal.com/v2/checkout/orders/7JU57631YJ7869905",
+       "rel": "self",
+       "method": "GET"
+      }
+     ]
+    },
+    "ms": 544,
+    "calls": [
+     {
+      "method": "GET",
+      "path": "/v2/checkout/orders/7JU57631YJ7869905",
+      "status": 200,
+      "debugId": "44cc126ee952f",
+      "ms": 544,
+      "data": null,
+      "network": false
+     }
+    ],
+    "error": null,
+    "unknown": false
+   }
+  }
+ ]
 }

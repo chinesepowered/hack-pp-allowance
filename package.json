@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "seed": "tsx scripts/seed.ts",
-    "paypal:webhook": "tsx scripts/paypal-webhook.ts"
+    "paypal:webhook": "tsx scripts/paypal-webhook.ts",
+    "replay:record": "tsx scripts/record-replay.ts"
   },
   "dependencies": {
     "@channel3/sdk": "^4.9.0",

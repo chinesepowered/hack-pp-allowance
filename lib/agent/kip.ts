@@ -11,6 +11,7 @@
  */
 import { randomUUID } from "node:crypto";
 import { kipSays } from "../actions";
+import { classifyRequest } from "../ai/classify";
 import { chat, type Msg, type ToolCall, type ToolDef } from "../ai/llm";
 import { CatalogError, findSimilar, getProduct, searchByImage, searchProducts, type SearchResult } from "../channel3/client";
 import { ctx, logStep, status } from "../context";
@@ -217,6 +218,69 @@ type TurnState = {
   slug: string | null;
 };
 
+/** Records a request that the rules block outright: a card for the teen and a line in the parent's ledger. */
+async function recordBlockedRequest(t: TurnState, s: SessionState, category: Category, what: string, blocked: Decision): Promise<void> {
+  if (t.cards.some((card) => card.type === "blocked")) return;
+  const c = ctx();
+  logStep({ kind: "policy", title: "Policy check on the request: blocked", detail: blocked.summary, ms: null, model: null, data: { checks: blocked.checks } });
+  t.cards.push({ type: "blocked", ruleN: blocked.ruleN, ruleText: blocked.ruleText, title: `${CATEGORY_LABEL[category]}: not allowed by the rules` });
+  const now = new Date().toISOString();
+  await mutateSession(c.sid, c.mode, (st) => {
+    st.ledger.unshift({
+      id: "led_" + randomUUID().replace(/-/g, "").slice(0, 12),
+      createdAt: now,
+      requestText: t.requestText,
+      product: { id: "request", title: `Request: ${what.slice(0, 80)}`, brand: null, image: null, merchant: "no store", buyUrl: null, price: 0 },
+      amount: { value: "0.00", currency: "USD" },
+      category,
+      status: "blocked",
+      decision: blocked,
+      approvedBy: null,
+      approvalId: null,
+      paypal: { orderId: null, captureId: null, orderStatus: null, captureStatus: null, refundId: null, refundStatus: null, payerEmail: null, invoiceId: null, lastSyncedAt: null, via: null },
+      retailerHandoff: { simulated: true, buyUrl: null, note: "Nothing was searched or bought." },
+      kipReason: null,
+      undoUntil: null,
+      seeded: false,
+      replaySlug: t.slug,
+      events: [{ at: now, text: blocked.summary }],
+    });
+  });
+}
+
+function blockedFacts(s: SessionState, blocked: Decision) {
+  return {
+    blocked: true,
+    rule_number: blocked.ruleN,
+    rule_text: blocked.ruleText,
+    nothing_was_searched: true,
+    allowed_instead: (s.mandate?.rules ?? []).filter((r) => r.kind === "allow").map((r) => r.text),
+    budget_left: usd(blocked.budget.remaining),
+  };
+}
+
+/** Kip's kind explanation of a block. The rule itself is quoted by the card, from code. */
+async function blockedReply(s: SessionState, requestText: string, blocked: Decision): Promise<{ text: string; model: string | null }> {
+  try {
+    const r = await chat("kip-blocked", {
+      messages: [
+        {
+          role: "system",
+          content: `You are Kip, a young capybara who shops for ${s.family.teen.name}, a teenager, inside rules ${s.family.parent.name} signed. ${s.family.teen.name} asked for something the rules do not allow. Reply to ${s.family.teen.name} in one or two short sentences: casual and kind, say you can't get it, mention the rule number, and suggest something the rules do allow. No lecture, no workaround, no emoji, no dashes used as punctuation, plain text.`,
+        },
+        { role: "user", content: JSON.stringify({ request: requestText, ...blockedFacts(s, blocked) }) },
+      ],
+      maxTokens: 300,
+      temperature: 0.3,
+      effort: "none",
+    });
+    logStep({ kind: "model", title: "Kip wrote a reply", detail: r.content.slice(0, 160), ms: r.ms, model: r.model });
+    return { text: cleanReply(r.content) || blocked.teenLine, model: r.model };
+  } catch {
+    return { text: blocked.teenLine, model: null };
+  }
+}
+
 async function runTool(call: ToolCall, t: TurnState): Promise<string> {
   const c = ctx();
   let args: Record<string, unknown> = {};
@@ -239,31 +303,8 @@ async function runTool(call: ToolCall, t: TurnState): Promise<string> {
       if (category && s.mandate) {
         const blocked = screenRequest({ mandate: s.mandate, paused: false, what: query, classification: { category, confidence: 0.9 }, ledger: s.ledger });
         if (blocked) {
-          logStep({ kind: "policy", title: "Policy check on the request: blocked", detail: blocked.summary, ms: null, model: null, data: { checks: blocked.checks } });
-          t.cards.push({ type: "blocked", ruleN: blocked.ruleN, ruleText: blocked.ruleText, title: `${CATEGORY_LABEL[category]} are not allowed` });
-          await mutateSession(c.sid, c.mode, (st) => {
-            st.ledger.unshift({
-              id: "led_" + randomUUID().replace(/-/g, "").slice(0, 12),
-              createdAt: new Date().toISOString(),
-              requestText: t.requestText,
-              product: { id: "request", title: `Request: ${query}`, brand: null, image: null, merchant: "no store", buyUrl: null, price: 0 },
-              amount: { value: "0.00", currency: "USD" },
-              category,
-              status: "blocked",
-              decision: blocked,
-              approvedBy: null,
-              approvalId: null,
-              paypal: { orderId: null, captureId: null, orderStatus: null, captureStatus: null, refundId: null, refundStatus: null, payerEmail: null, invoiceId: null, lastSyncedAt: null, via: null },
-              retailerHandoff: { simulated: true, buyUrl: null, note: "Nothing was searched or bought." },
-              kipReason: null,
-              undoUntil: null,
-              seeded: false,
-              replaySlug: t.slug,
-              events: [{ at: new Date().toISOString(), text: blocked.summary }],
-            });
-          });
-          const allowed = s.mandate.rules.filter((r) => r.kind === "allow").map((r) => r.text);
-          return JSON.stringify({ blocked: true, rule_number: blocked.ruleN, rule_text: blocked.ruleText, nothing_was_searched: true, allowed_instead: allowed, budget_left: usd(blocked.budget.remaining) });
+          await recordBlockedRequest(t, s, category, query, blocked);
+          return JSON.stringify(blockedFacts(s, blocked));
         }
       }
 
@@ -406,12 +447,17 @@ export async function handleTeenMessage(input: { text: string; image?: { base64:
     }
     messages.push({ role: "user", content: userContent });
 
+    // Screen the request in code, alongside the model's first turn. What a
+    // rule blocks is refused here whatever tool the model reaches for.
+    const shopping = !input.image && looksLikeShopping(teenMsg.text);
+    const screening = shopping && s.mandate ? classifyRequest(teenMsg.text).catch(() => null) : Promise.resolve(null);
+
     let finalText: string | null = null;
     for (let turn = 0; turn < MAX_MODEL_TURNS && !t.finished && finalText === null; turn++) {
       if (turn === 0) status("Kip is thinking", "thinking");
       // A shopping request must go through a tool, so the rules are
       // checked by code and not answered from the model's memory of them.
-      const mustUseTool = turn === 0 && !input.image && looksLikeShopping(teenMsg.text);
+      const mustUseTool = turn === 0 && shopping;
       let r = await chat("kip", { messages, tools: TOOLS, toolChoice: mustUseTool ? "required" : "auto", maxTokens: mustUseTool ? 500 : 1400, temperature: 0.2, effort: "none" });
       if (r.toolCalls.length === 0 && (mustUseTool || cleanReply(r.content).length < 2)) {
         // Now and then the model emits a broken tool call. Ask again, this
@@ -420,6 +466,20 @@ export async function handleTeenMessage(input: { text: string; image?: { base64:
         r = await chat("kip:retry", { messages, tools: TOOLS, toolChoice: "auto", maxTokens: 1400, temperature: 0.2, effort: "low" });
       }
       model = r.model;
+      if (turn === 0) {
+        const label = await screening;
+        if (label && s.mandate) {
+          logStep({ kind: "model", title: "Labeled what the request is about", detail: `${label.category} ${(label.confidence * 100).toFixed(0)}%`, ms: null, model: label.model });
+          const blocked = screenRequest({ mandate: s.mandate, paused: false, what: teenMsg.text, classification: label, ledger: s.ledger });
+          if (blocked) {
+            await recordBlockedRequest(t, s, label.category, teenMsg.text, blocked);
+            const kind = await blockedReply(s, teenMsg.text, blocked);
+            t.finished = { message: { text: kind.text, ai: kind.model ? { model: kind.model } : null, mood: "sorry", voice: "blocked" } };
+            model = kind.model ?? model;
+            break;
+          }
+        }
+      }
       logStep({
         kind: "model",
         title: r.toolCalls.length > 0 ? `Kip decided to call ${r.toolCalls.map((x) => x.name).join(", ")}` : "Kip wrote a reply",

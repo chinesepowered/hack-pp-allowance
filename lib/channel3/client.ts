@@ -80,6 +80,13 @@ export function isBuyable(o: Offer): boolean {
   return o.availability === "InStock" && o.currency === "USD" && (o.condition === null || o.condition === "new");
 }
 
+const LONG_DASH = new RegExp("[" + String.fromCharCode(0x2014, 0x2013) + "]", "g");
+
+/** Catalog text goes on screen as is, apart from house typography. */
+function plain(text: string): string {
+  return text.replace(LONG_DASH, "-").replace(/\s+/g, " ").trim();
+}
+
 export function toCard(p: Channel3Api.Product, maxPrice: number | null = null): ProductCard {
   const offers: Offer[] = (p.offers ?? [])
     .filter((o) => o && o.price && typeof o.price.price === "number")
@@ -97,12 +104,12 @@ export function toCard(p: Channel3Api.Product, maxPrice: number | null = null): 
   const main = (p.images ?? []).find((i) => i.is_main_image) ?? (p.images ?? [])[0];
   return {
     id: p.id,
-    title: p.title,
+    title: plain(p.title),
     brand: p.brands?.[0]?.name ?? null,
     image: main?.url ?? null,
-    description: p.description ? p.description.slice(0, 400) : null,
+    description: p.description ? plain(p.description).slice(0, 400) : null,
     sourceCategory: p.category?.title ?? null,
-    keyFeatures: (p.key_features ?? []).slice(0, 4).map((f) => f.slice(0, 120)),
+    keyFeatures: (p.key_features ?? []).slice(0, 4).map((f) => plain(f).slice(0, 120)),
     offers,
     best: usable[0] ?? null,
     rating: p.ratings && p.ratings.count > 0 ? { average: Math.round(p.ratings.value * 10) / 10, count: p.ratings.count } : null,

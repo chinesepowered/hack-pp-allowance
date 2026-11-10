@@ -1,0 +1,45 @@
+{
+ "scenario": "undo-sneakers",
+ "recordedAt": "2026-11-10T15:52:14.829Z",
+ "note": "Dana taps Undo on the approved sneakers. A full PayPal refund.",
+ "exchanges": [
+  {
+   "svc": "paypal",
+   "op": "toolkit.create_refund",
+   "res": {
+    "status": 201,
+    "debugId": "a6c998cd03b17",
+    "body": {
+     "id": "6JB13769NG1983246",
+     "status": "COMPLETED",
+     "links": [
+      {
+       "href": "https://api.sandbox.paypal.com/v2/payments/refunds/6JB13769NG1983246",
+       "rel": "self",
+       "method": "GET"
+      },
+      {
+       "href": "https://api.sandbox.paypal.com/v2/payments/captures/6FP72802DX400011A",
+       "rel": "up",
+       "method": "GET"
+      }
+     ]
+    },
+    "ms": 1930,
+    "calls": [
+     {
+      "method": "POST",
+      "path": "/v2/payments/captures/6FP72802DX400011A/refund",
+      "status": 201,
+      "debugId": "a6c998cd03b17",
+      "ms": 1930,
+      "data": null,
+      "network": false
+     }
+    ],
+    "error": null,
+    "unknown": false
+   }
+  }
+ ]
+}

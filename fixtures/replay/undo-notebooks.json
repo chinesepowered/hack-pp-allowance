@@ -1,6 +1,45 @@
 {
  "scenario": "undo-notebooks",
- "recordedAt": "",
- "note": "placeholder, replaced by pnpm replay:record",
- "exchanges": []
+ "recordedAt": "2026-11-10T15:52:12.049Z",
+ "note": "Dana taps Undo on the notebooks. A full PayPal refund.",
+ "exchanges": [
+  {
+   "svc": "paypal",
+   "op": "toolkit.create_refund",
+   "res": {
+    "status": 201,
+    "debugId": "1ad209bfdf5da",
+    "body": {
+     "id": "71X87627DF9951113",
+     "status": "COMPLETED",
+     "links": [
+      {
+       "href": "https://api.sandbox.paypal.com/v2/payments/refunds/71X87627DF9951113",
+       "rel": "self",
+       "method": "GET"
+      },
+      {
+       "href": "https://api.sandbox.paypal.com/v2/payments/captures/7KP338504T699081H",
+       "rel": "up",
+       "method": "GET"
+      }
+     ]
+    },
+    "ms": 2032,
+    "calls": [
+     {
+      "method": "POST",
+      "path": "/v2/payments/captures/7KP338504T699081H/refund",
+      "status": 201,
+      "debugId": "1ad209bfdf5da",
+      "ms": 2032,
+      "data": null,
+      "network": false
+     }
+    ],
+    "error": null,
+    "unknown": false
+   }
+  }
+ ]
 }

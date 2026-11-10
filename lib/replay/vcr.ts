@@ -32,6 +32,8 @@ export class ReplayMiss extends Error {
   }
 }
 
+const REPLAY_PACE_MS = process.env.NODE_ENV === "test" ? 0 : 280;
+
 export function isReplay(): boolean {
   return ctx().tape.mode === "replay";
 }
@@ -50,6 +52,8 @@ export async function external<T>(svc: Service, op: string, live: () => Promise<
   const idx = t.tape.exchanges.findIndex((e, i) => !t.used.has(i) && e.svc === svc && e.op === op);
   if (idx === -1) throw new ReplayMiss(svc, op);
   t.used.add(idx);
+  // A short pause per recorded call, so the steps can be followed on screen.
+  if (REPLAY_PACE_MS > 0) await new Promise((r) => setTimeout(r, REPLAY_PACE_MS));
   return JSON.parse(JSON.stringify(t.tape.exchanges[idx].res)) as T;
 }
 

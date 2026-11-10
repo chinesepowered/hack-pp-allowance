@@ -1,6 +1,58 @@
 {
  "scenario": "chat-gaming",
- "recordedAt": "",
- "note": "placeholder, replaced by pnpm replay:record",
- "exchanges": []
+ "recordedAt": "2026-11-10T15:52:10.617Z",
+ "note": "Leo asks for a gaming gift card. Blocked by the rules, nothing is searched or charged.",
+ "exchanges": [
+  {
+   "svc": "llm",
+   "op": "chat:classify-request",
+   "res": {
+    "content": "{\"category\": \"gift_cards\", \"confidence\": 1.0}",
+    "toolCalls": [],
+    "model": "Qwen/Qwen3.8-27B",
+    "ms": 433,
+    "tokens": {
+     "prompt": 408,
+     "completion": 16
+    },
+    "usedFallback": false
+   }
+  },
+  {
+   "svc": "llm",
+   "op": "chat:kip",
+   "res": {
+    "content": "",
+    "toolCalls": [
+     {
+      "id": "call-135f65f9-0406-4d10-8a12-62d037b02d9a",
+      "name": "create_order",
+      "arguments": "{\"product_id\": \"gaming_gift_card_20\", \"why\": \"This $20 gaming gift card is exactly what you asked for, but Dana's rules block gaming and gift cards, so the app will refuse it.\"}"
+     }
+    ],
+    "model": "Qwen/Qwen3.8-27B",
+    "ms": 951,
+    "tokens": {
+     "prompt": 1911,
+     "completion": 62
+    },
+    "usedFallback": false
+   }
+  },
+  {
+   "svc": "llm",
+   "op": "chat:kip-blocked",
+   "res": {
+    "content": "Hey Leo, I can't get that gaming card because Rule 4 says no gaming or gift cards. I could grab some school supplies or a book for you instead if you want.",
+    "toolCalls": [],
+    "model": "Qwen/Qwen3.8-27B",
+    "ms": 468,
+    "tokens": {
+     "prompt": 174,
+     "completion": 38
+    },
+    "usedFallback": false
+   }
+  }
+ ]
 }
