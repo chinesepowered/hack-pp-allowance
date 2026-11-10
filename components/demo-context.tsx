@@ -61,6 +61,19 @@ function readSafeFlag(): boolean {
   return window.localStorage.getItem("alw_safe") === "1";
 }
 
+/**
+ * ?zoom=1.25 enlarges the whole UI for screen recording. The shell divides
+ * its height by the same factor so it still fills the window exactly.
+ */
+function applyZoomParam(): void {
+  if (typeof window === "undefined") return;
+  const z = Number(new URLSearchParams(window.location.search).get("zoom"));
+  if (z >= 1 && z <= 2) {
+    document.documentElement.style.setProperty("zoom", String(z));
+    document.documentElement.style.setProperty("--alw-zoom", String(z));
+  }
+}
+
 function readSoundFlag(): boolean {
   return typeof window !== "undefined" && window.localStorage.getItem("alw_sound") === "1";
 }
@@ -101,6 +114,7 @@ export function DemoProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     // First load re-reads money state from PayPal, then a light poll keeps
     // both roles in step (the parent sees new requests, the teen sees answers).
+    applyZoomParam();
     const first = window.setTimeout(() => void refresh(true), 0);
     const t = window.setInterval(() => {
       if (document.visibilityState === "visible" && !workingRef.current && !busyRef.current) void refresh(false);

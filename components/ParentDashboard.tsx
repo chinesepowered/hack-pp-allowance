@@ -38,7 +38,7 @@ export function RulesEditor({ initialText, onDone, onCancel }: { initialText: st
         readOnly={replay}
         rows={5}
         maxLength={1500}
-        className="mt-1 w-full rounded-2xl border-[1.5px] border-[var(--color-line)] bg-white p-3 text-[15px]"
+        className="mt-1 w-full rounded-2xl border-[1.5px] border-[var(--color-field)] bg-white p-3 text-[15px]"
         aria-describedby="rules-help"
       />
       <p id="rules-help" className="mt-1 text-xs text-[var(--color-ink-2)]">
@@ -121,7 +121,7 @@ function Setup({ state }: { state: ClientState }) {
         )}
       </section>
 
-      <section className={`card p-4 sm:p-5 ${step === 2 ? "ring-2 ring-[var(--color-pond)]" : "opacity-70"}`} aria-labelledby="setup-2">
+      <section className={`card p-4 sm:p-5 ${step === 2 ? "ring-2 ring-[var(--color-pond)]" : "bg-[var(--color-sand)] shadow-none"}`} aria-labelledby="setup-2">
         <h3 id="setup-2" className="font-display text-base font-extrabold">
           2. Write the rules and sign
         </h3>
@@ -323,7 +323,7 @@ export function ParentDashboard({ onOpenHood }: { onOpenHood?: (tab: string) => 
             disabled={busy === "pause"}
             onClick={() => void pause(!state.paused)}
             data-testid="pause-switch"
-            className={`relative h-8 w-14 shrink-0 rounded-full transition-colors ${state.paused ? "bg-[#9aa3ad]" : "bg-[var(--color-pond)]"}`}
+            className={`relative h-8 w-14 shrink-0 rounded-full transition-colors ${state.paused ? "bg-[#74808d]" : "bg-[var(--color-pond)]"}`}
           >
             <span className={`absolute top-1 h-6 w-6 rounded-full bg-white shadow transition-all ${state.paused ? "left-1" : "left-7"}`} />
           </button>

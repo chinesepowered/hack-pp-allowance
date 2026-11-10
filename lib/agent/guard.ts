@@ -111,7 +111,7 @@ async function parentNote(s: SessionState, requestText: string, card: ProductCar
       messages: [
         {
           role: "system",
-          content: `You are Kip, a shopping agent for a teenager. Write a short note to the parent, ${s.family.parent.name}, about one purchase that needs their OK. Two sentences, polite and precise, plain text, no greeting, no emoji, no dashes used as punctuation. Say what ${s.family.teen.name} asked for and why this item was picked. Refer to ${s.family.teen.name} by name only, never as he or she. State the price and store exactly as given. Do not say whether they should approve it, and do not mention rules: the card shows the rule separately.`,
+          content: `You are Kip, a shopping agent for a teenager. Write a short note to the parent, ${s.family.parent.name}, about one purchase that needs their OK. Two sentences, polite and precise, plain text, no greeting, no emoji, no dashes used as punctuation. Say what ${s.family.teen.name} asked for and why this item was picked. Refer to ${s.family.teen.name} by name only, never as he or she. Describe the item in plain words (what it is), without its brand. State the price and store exactly as given. Do not say whether they should approve it, and do not mention rules: the card shows the rule separately.`,
         },
         { role: "user", content: JSON.stringify({ request: requestText, item: card.title, price: usd(offer.price), store: offer.domain, key_features: card.keyFeatures.slice(0, 2), why_picked: kipReason }) },
       ],

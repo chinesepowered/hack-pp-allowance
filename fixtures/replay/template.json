@@ -3,7 +3,7 @@
  "vault": {
   "paymentTokenId": "replay0vault0token",
   "customerId": "replay",
-  "payerEmail": "hackpp-buyer-d173@personal.example.com",
+  "payerEmail": "sandbox-buyer@personal.example.com",
   "payerName": "Test Buyer",
   "savedAt": "2026-11-10T15:08:45.492Z",
   "source": "replay",
@@ -123,7 +123,7 @@
      "captureStatus": "COMPLETED",
      "refundId": null,
      "refundStatus": null,
-     "payerEmail": "hackpp-buyer-d173@personal.example.com",
+     "payerEmail": "sandbox-buyer@personal.example.com",
      "invoiceId": "ALW-SEED-NOVEL-MWATRSP0",
      "lastSyncedAt": "2026-11-10T15:08:45.494Z",
      "via": "server-sdk"
@@ -253,7 +253,7 @@
      "captureStatus": "COMPLETED",
      "refundId": null,
      "refundStatus": null,
-     "payerEmail": "hackpp-buyer-d173@personal.example.com",
+     "payerEmail": "sandbox-buyer@personal.example.com",
      "invoiceId": "ALW-SEED-GRAPH-PAPER-MWATRSP0",
      "lastSyncedAt": "2026-11-10T15:08:48.072Z",
      "via": "server-sdk"
@@ -383,7 +383,7 @@
      "captureStatus": "COMPLETED",
      "refundId": null,
      "refundStatus": null,
-     "payerEmail": "hackpp-buyer-d173@personal.example.com",
+     "payerEmail": "sandbox-buyer@personal.example.com",
      "invoiceId": "ALW-SEED-TSHIRT-MWATRSP0",
      "lastSyncedAt": "2026-11-10T15:08:50.261Z",
      "via": "server-sdk"

@@ -15,7 +15,8 @@
   --color-line: #e3d7c3;
   --color-ink: #1c2530;
   --color-ink-2: #46515f;
-  --color-ink-3: #5f6b7a;
+  --color-ink-3: #566270;
+  --color-field: #8a7d66;
 
   /* Pond: the product's own color (not PayPal's blue) */
   --color-pond: #0b6b62;
@@ -53,7 +54,14 @@ body {
   font-family: var(--font-sans);
   font-size: 15px;
   line-height: 1.5;
-  min-height: 100dvh;
+}
+
+/* The app is one full-height shell whose panes scroll on their own, so the
+   page itself never scrolls. */
+html,
+body {
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 
 h1,

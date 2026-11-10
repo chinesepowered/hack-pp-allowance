@@ -102,7 +102,7 @@ How you work:
 - Results come back with a "policy" label per item: can_buy_now, needs_parent_ok or blocked. Code computes these from ${parent}'s rules. You cannot change or argue with them.
 - When ${teen} clearly wants something bought ("I need", "get me", "can you get", "buy"), search, pick the best fit and call create_order in the same turn. Prefer items labelled can_buy_now, unless ${teen} asked for something specific that needs an OK. If they want cheap, pick the cheapest good fit. If they name a price ("around $55"), pick the matching item closest to that price, even when it needs an OK: asking ${parent} is the app's job, not yours to avoid.
 - In create_order, "why" is one or two sentences to ${teen} comparing your pick with one or two other options (price, one key spec, rating). Describe items by what they are and their price, never by brand or store name. Do not say whether it was paid; the app shows the result.
-- If ${teen} is only browsing, or the request is unclear, show options and ask one short question instead of buying.
+- If ${teen} is only browsing, or the request is unclear, show options and ask one short question instead of buying. The app shows the products as cards, so never list them: write one or two sentences about what you found and what stands out.
 - You never see or handle payment details. The app pays, and checks every purchase against the rules in code.
 - If a tool says blocked, explain kindly in one or two sentences, mention the rule number, and suggest something the rules do allow. Never offer a workaround.
 - Never write text in square brackets, and never say something was paid, ordered or bought. Only the app can say that, after it has paid.
@@ -211,6 +211,12 @@ function priceInText(text: string): number | null {
   return m ? Number(m[1]) : null;
 }
 
+/** "around $55" means a price window, not "anything cheaper". */
+function aroundPrice(text: string): number | null {
+  const m = text.match(/(?:around|about|roughly|close to)\s*\$?\s*(\d{1,4}(?:\.\d{1,2})?)/i);
+  return m ? Number(m[1]) : null;
+}
+
 type TurnState = {
   cards: ChatCard[];
   finished: { message: Partial<ChatMessage> & { text: string } } | null;
@@ -309,14 +315,16 @@ async function runTool(call: ToolCall, t: TurnState): Promise<string> {
       }
 
       const maxPrice = priceCapFor(s, category, userMax);
+      const around = aroundPrice(t.requestText);
+      const minPrice = around !== null && maxPrice !== null && around * 0.8 < maxPrice ? Math.round(around * 0.8) : null;
       status("Kip is searching Channel3", "thinking");
-      const result = await searchProducts({ query, maxPrice });
-      logStep({ kind: "channel3", title: `Channel3 text search: "${query}"`, detail: `${result.products.length} in-stock results${maxPrice !== null ? `, max ${usd(maxPrice)} (from the mandate)` : ""}${result.cached ? ", served from cache" : ""}.`, ms: null, model: null });
+      const result = await searchProducts({ query, maxPrice, minPrice });
+      logStep({ kind: "channel3", title: `Channel3 text search: "${query}"`, detail: `${result.products.length} in-stock results${minPrice !== null ? `, from ${usd(minPrice)}` : ""}${maxPrice !== null ? `, max ${usd(maxPrice)} (from the mandate)` : ""}${result.cached ? ", served from cache" : ""}.`, ms: null, model: null });
       if (result.products.length === 0) return JSON.stringify({ products: [], note: "No in-stock results under that price. Try a different query." });
       status("Kip is checking the rules", "thinking");
       const { card, forModel } = await withPolicy(result);
       t.cards.push(card);
-      return JSON.stringify({ filters_applied: { in_stock: true, max_price: maxPrice }, products: forModel });
+      return JSON.stringify({ filters_applied: { in_stock: true, min_price: minPrice, max_price: maxPrice }, products: forModel });
     }
 
     case "find_similar": {

@@ -12,7 +12,13 @@
     "test": "vitest run",
     "seed": "tsx scripts/seed.ts",
     "paypal:webhook": "tsx scripts/paypal-webhook.ts",
-    "replay:record": "tsx scripts/record-replay.ts"
+    "replay:record": "tsx scripts/record-replay.ts",
+    "video:record": "tsx scripts/video/record.ts",
+    "video:compose": "tsx scripts/video/compose.ts",
+    "video": "pnpm video:record && pnpm video:cards && pnpm video:compose",
+    "screenshots": "tsx scripts/screenshots.ts",
+    "video:cards": "tsx scripts/video/cards.ts",
+    "a11y": "tsx scripts/a11y-check.ts"
   },
   "dependencies": {
     "@channel3/sdk": "^4.9.0",
@@ -30,6 +36,7 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
     "@tailwindcss/turbopack": "4.3.3",
     "@types/node": "^22",
     "@types/react": "^19",

@@ -39,11 +39,19 @@ async function record<T>(scenario: string, note: string, fn: () => Promise<T>): 
 }
 
 const LONG_DASH = new RegExp("[" + String.fromCharCode(0x2014, 0x2013) + "]", "g");
+const PLACEHOLDER_EMAIL = "sandbox-buyer@personal.example.com";
 
-function save(tape: Tape) {
+/** What goes into the repository: no account email, house typography. */
+function scrub(json: string): string {
+  const email = process.env.PAYPAL_SANDBOX_BUYER_EMAIL;
+  const out = email ? json.split(email).join(PLACEHOLDER_EMAIL) : json;
   // Catalog descriptions are third-party text; normalize their dashes so
   // the repository keeps to its own writing rules.
-  writeFileSync(path.join(OUT, `${tape.scenario}.json`), JSON.stringify(tape, null, 1).replace(LONG_DASH, "-") + "\n");
+  return out.replace(LONG_DASH, "-");
+}
+
+function save(tape: Tape) {
+  writeFileSync(path.join(OUT, `${tape.scenario}.json`), scrub(JSON.stringify(tape, null, 1)) + "\n");
 }
 
 async function attempt(): Promise<Tape[] | null> {
@@ -127,7 +135,7 @@ async function main() {
     vault: { ...template.vault, paymentTokenId: REDACTED_TOKEN, customerId: "replay", source: "replay", savedAt: template.vault.savedAt },
     purchases: template.purchases,
   };
-  writeFileSync(path.join(OUT, "template.json"), JSON.stringify(replayTemplate, null, 1) + "\n");
+  writeFileSync(path.join(OUT, "template.json"), scrub(JSON.stringify(replayTemplate, null, 1)) + "\n");
   console.log(`\nSaved ${tapes.length} tapes and template.json to fixtures/replay/`);
 }
 

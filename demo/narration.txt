@@ -1,0 +1,42 @@
+Allowance: demo video narration
+Narrator: ElevenLabs premade voice nPczCjzI2devNBz1zQrb, model eleven_multilingual_v2.
+Kip: ElevenLabs premade voice bIHbv24MWmeRgasZH58o (the same pre-rendered lines the app plays).
+No music.
+
+[01-problem] Cold open: the problem
+NARRATOR: A teenager needs things. Notebooks. Sneakers. A calculator. Today a parent has two bad options: hand over a card with no limits, or be asked before every single purchase.
+
+[02-intro] What Allowance is, and who it is for
+NARRATOR: Allowance is a shopping agent for teenagers, and for the parents who pay for their school things. It pays with the family's PayPal, but only inside rules a parent signs. Meet Kip.
+KIP: Hey, I'm Kip. What do you need?
+
+[03-save-paypal] Dana saves her PayPal (Vault v3, JS SDK v6)
+NARRATOR: Dana saves her PayPal once, in PayPal's own window. That is the Vault API: a setup token, then a payment token that stays on the server.
+
+[04-rules-to-mandate] Plain-English rules become a signed mandate
+NARRATOR: Then she writes the rules in plain English. The AI turns them into a structured mandate: a weekly budget, allowed and blocked categories, per item caps, and when to ask. A schema validates it, and Dana signs it. Change one rule later, and the signature breaks.
+
+[05-notebooks] Request one: notebooks, paid at once
+NARRATOR: Leo, who is fifteen, asks Kip for notebooks. Kip searches real stores through Channel3, with the price cap taken from the mandate. Code checks the rules, and Kip pays at once with the saved PayPal. No popup.
+KIP: Done! It's inside the rules, so I paid.
+NARRATOR: The receipt quotes the rule that allowed it.
+
+[06-sneakers] Request two: sneakers over the cap wait for Dana
+NARRATOR: Sneakers around fifty-five dollars are over the forty dollar clothes cap, so Kip does not pay. Dana gets a card with Kip's reasoning and the exact rule. One tap, and PayPal captures the payment.
+
+[07-gaming] Request three: a gaming gift card is blocked
+NARRATOR: A gaming gift card? Blocked, kindly, with the rule quoted. Nothing is searched, and nothing is charged.
+
+[08-under-the-hood] Under the hood: PayPal calls and the agent trail
+NARRATOR: Under the hood, every PayPal call is listed with its debug I D. The Agent Toolkit's create order tool is wrapped: the model can never reach it unless the mandate check passes in code.
+
+[09-undo-and-pause] Undo (refund), the weekly note, and pause
+NARRATOR: Dana can undo a purchase for twenty-four hours, which refunds it through PayPal. Kip writes her a weekly note from the ledger. And one switch pauses Kip at once.
+
+[10-limit] One honest limitation
+NARRATOR: One honest limit. In this prototype, Allowance charges the family's PayPal through its own sandbox merchant account, and the retailer order step is simulated.
+
+[11-end] End card
+NARRATOR: Allowance. An agent that pays, inside your rules.
+
+ElevenLabs characters used by this build so far: 2599 of 15000.

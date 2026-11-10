@@ -75,7 +75,7 @@ function Menu({ onHood }: { onHood: () => void }) {
             Start from an empty family
             <span className="block text-xs font-normal text-[var(--color-ink-2)]">Walk through the two-minute parent setup</span>
           </button>
-          <button type="button" className={item} role="menuitemcheckbox" aria-checked={sound} onClick={() => setSound(!sound)} data-testid="menu-sound">
+          <button type="button" className={item} aria-pressed={sound} onClick={() => setSound(!sound)} data-testid="menu-sound">
             Kip&apos;s voice: {sound ? "on" : "off"}
             <span className="block text-xs font-normal text-[var(--color-ink-2)]">Short pre-recorded lines, no live text to speech</span>
           </button>
@@ -134,7 +134,7 @@ function Shell({ initialView }: { initialView: View }) {
   const replay = state?.mode === "replay";
 
   return (
-    <div className="flex h-dvh flex-col">
+    <div className="flex flex-col" style={{ height: "calc(100dvh / var(--alw-zoom, 1))" }}>
       <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-lg focus:bg-white focus:px-3 focus:py-2">
         Skip to content
       </a>

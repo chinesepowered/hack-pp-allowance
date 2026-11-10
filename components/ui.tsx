@@ -94,10 +94,29 @@ function storeAlias(domain: string): string {
   return `store ${String.fromCharCode(65 + (h % 26))}${(h >> 5) % 9 + 1}`;
 }
 
-function collect(state: ClientState | null): { stores: string[]; brands: string[] } {
+/**
+ * Recording mode only: well-known names that can sit inside a product title
+ * without being the listed brand. Not used in the live app.
+ */
+const EXTRA_BRANDS = [
+  "Jack Purcell", "Converse", "Vans", "Keds", "Champion", "Tommy Hilfiger", "Hilfiger", "H&M", "Nike", "Adidas", "Puma", "Reebok", "New Balance", "Skechers", "Superga", "Tretorn", "Lacoste", "Ralph Lauren", "Calvin Klein", "Steve Madden", "TOMS", "Sperry",
+  "Levi's", "Old Navy", "Gap", "Zara", "Uniqlo", "Under Armour", "Crocs", "Patagonia", "The North Face", "Columbia", "JanSport", "Vera Bradley", "Mead", "Five Star", "Staples", "Office Depot", "Sparco", "Oxford", "Pilot", "Sharpie", "Crayola",
+  "Texas Instruments", "Casio", "Sharp", "Canon", "HP", "Amazon Basics", "Walmart", "Target", "Kohl's", "Macy's", "Best Buy", "Newegg", "Michaels", "Lowe's",
+];
+
+type Masks = { stores: string[]; brands: string[]; titles: { find: string; label: string }[] };
+
+/** How the app shortens a title inside a sentence (see lib/actions.ts). */
+function shortForm(title: string): string {
+  const t = title.replace(/\s+/g, " ").trim();
+  return t.length <= 48 ? t : t.slice(0, 45).trimEnd() + "...";
+}
+
+function collect(state: ClientState | null): Masks {
   const stores = new Set<string>();
-  const brands = new Set<string>();
-  if (!state) return { stores: [], brands: [] };
+  const brands = new Set<string>(EXTRA_BRANDS);
+  const titles = new Map<string, string>();
+  if (!state) return { stores: [], brands: [], titles: [] };
   const addProduct = (p: { merchant?: string; brand?: string | null }) => {
     if (p.merchant && !p.merchant.endsWith(".example") && p.merchant.includes(".")) stores.add(p.merchant);
     if (p.brand) brands.add(p.brand);
@@ -110,24 +129,36 @@ function collect(state: ClientState | null): { stores: string[]; brands: string[
         for (const p of c.products) {
           if (p.brand) brands.add(p.brand);
           for (const o of p.offers) if (o.domain.includes(".")) stores.add(o.domain);
+          // A real product title can carry a model name that is someone's
+          // mark. In recording mode the generic catalog category stands in.
+          const label = p.sourceCategory ?? "Item";
+          titles.set(p.title, label);
+          titles.set(shortForm(p.title), label);
+          titles.set(p.title.slice(0, 80), label);
         }
   for (const d of state.knownMerchants) if (!d.endsWith(".example") && d.includes(".")) stores.add(d);
-  return { stores: [...stores].sort((a, b) => b.length - a.length), brands: [...brands].filter((b) => b.length > 2).sort((a, b) => b.length - a.length) };
+  return {
+    stores: [...stores].sort((x, y) => y.length - x.length),
+    brands: [...brands].filter((x) => x.length > 2).sort((x, y) => y.length - x.length),
+    titles: [...titles.entries()].map(([find, label]) => ({ find, label })).sort((x, y) => y.find.length - x.find.length),
+  };
 }
 
 /**
  * Recording mode (?safe=1): keeps other companies' names out of frame for
- * the demo video by replacing store domains with a neutral alias and
- * dropping brand names from titles. The live demo shows real names.
+ * the demo video by replacing store domains with a neutral alias, product
+ * titles with their generic catalog category, and dropping brand names.
+ * The live demo shows real names.
  */
 export function useSafeText(): (text: string) => string {
   const { safe, state } = useDemo();
   if (!safe) return identity;
-  const { stores, brands } = collect(state);
+  const { stores, brands, titles } = collect(state);
   const storeRe = stores.length > 0 ? new RegExp(stores.map(escapeRe).join("|"), "gi") : null;
   const brandRe = brands.length > 0 ? new RegExp(`(?:^|\\b)(?:${brands.map(escapeRe).join("|")})(?:[\u00ae\u2122]|'s)?\\s*`, "gi") : null;
   return (t: string) => {
     let out = t;
+    for (const { find, label } of titles) if (out.includes(find)) out = out.split(find).join(label);
     if (storeRe) out = out.replace(storeRe, (m) => storeAlias(m.toLowerCase()));
     if (brandRe) out = out.replace(brandRe, "");
     out = out.replace(/[\u00ae\u2122]/g, "").replace(/\s{2,}/g, " ").trim();

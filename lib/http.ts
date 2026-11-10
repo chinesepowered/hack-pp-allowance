@@ -80,9 +80,10 @@ export function errorResponse(err: unknown): NextResponse {
     return NextResponse.json({ error: err.message, issue: err.issue, debugId: err.debugId }, { status: err.status });
   }
   if (err instanceof CatalogError) return NextResponse.json({ error: "The product catalog (Channel3) did not answer." }, { status: 502 });
-  const message = err instanceof Error ? err.message : "Something went wrong.";
+  // Anything unmapped is ours. The detail goes to the server log, never to
+  // the caller: an SDK or library message can name internal URLs.
   console.error("[api]", err);
-  return NextResponse.json({ error: message.slice(0, 300) }, { status: 500 });
+  return NextResponse.json({ error: "Something went wrong on our side. Nothing was charged by this step." }, { status: 500 });
 }
 
 /* ----------------------------- the wrapper ----------------------------- */

@@ -6,8 +6,7 @@
  *   (parent approves in PayPal's window: JS SDK v6 save-payment session,
  *    or the approve link when Playwright drives it in `pnpm seed`)
  *   POST /v3/vault/payment-tokens    exchange the approved setup token
- *   GET  /v3/vault/payment-tokens/{id}   re-read the saved method
- *   DELETE /v3/vault/payment-tokens/{id} remove it
+ *   GET  /v3/vault/payment-tokens/{id}   re-read the saved method (pnpm seed)
  *   POST /v1/oauth2/token (response_type=client_token)  browser-safe token
  *        for the JS SDK v6, which needs a client token for vault flows
  */
@@ -75,11 +74,6 @@ export function approveLink(token: SetupToken): string | null {
   return token.links?.find((l) => l.rel === "approve")?.href ?? null;
 }
 
-export async function getSetupToken(id: string): Promise<SetupToken> {
-  const res = await sdkCall<SetupToken>({ op: "vault.getSetupToken", method: "GET", path: `/v3/vault/setup-tokens/${id}` }, () => new VaultController(sdk()).getSetupToken(id));
-  return res.body;
-}
-
 /** Exchanges an approved setup token for the long-lived payment token. */
 export async function createPaymentToken(setupTokenId: string, source: VaultInfo["source"]): Promise<VaultInfo> {
   // The same setup token always maps to the same request id, so a double
@@ -114,15 +108,6 @@ export async function getPaymentToken(id: string): Promise<PaymentToken | null> 
     return res.body;
   } catch (err) {
     if (err instanceof PayPalError && err.status === 404) return null;
-    throw err;
-  }
-}
-
-export async function deletePaymentToken(id: string): Promise<void> {
-  try {
-    await sdkCall({ op: "vault.deletePaymentToken", method: "DELETE", path: `/v3/vault/payment-tokens/${id}` }, () => new VaultController(sdk()).deletePaymentToken(id));
-  } catch (err) {
-    if (err instanceof PayPalError && err.status === 404) return;
     throw err;
   }
 }

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-label="A green school backpack hanging on a chair">
+  <!-- Original illustration made for the Allowance demo. No real product. -->
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#efe6d6"/>
+      <stop offset="1" stop-color="#e2d5bf"/>
+    </linearGradient>
+    <linearGradient id="bag" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f8a6b"/>
+      <stop offset="1" stop-color="#2f6249"/>
+    </linearGradient>
+    <linearGradient id="pocket" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5a9878"/>
+      <stop offset="1" stop-color="#3a7257"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" fill="url(#wall)"/>
+  <rect y="520" width="640" height="120" fill="#c9b594"/>
+  <!-- chair back -->
+  <rect x="150" y="90" width="26" height="470" rx="10" fill="#8a6a45"/>
+  <rect x="464" y="90" width="26" height="470" rx="10" fill="#8a6a45"/>
+  <rect x="150" y="96" width="340" height="34" rx="12" fill="#9b7950"/>
+  <!-- shadow -->
+  <ellipse cx="325" cy="566" rx="170" ry="20" fill="#000" opacity="0.14"/>
+  <!-- top handle -->
+  <path d="M278 150 C278 104 362 104 362 150" fill="none" stroke="#244a38" stroke-width="16" stroke-linecap="round"/>
+  <!-- straps behind -->
+  <path d="M214 210 C176 300 180 430 206 520" fill="none" stroke="#244a38" stroke-width="22" stroke-linecap="round"/>
+  <path d="M426 210 C464 300 460 430 434 520" fill="none" stroke="#244a38" stroke-width="22" stroke-linecap="round"/>
+  <!-- body -->
+  <path d="M200 228 C200 168 250 140 320 140 C390 140 440 168 440 228 L452 500 C454 536 430 552 396 552 L244 552 C210 552 186 536 188 500 Z" fill="url(#bag)"/>
+  <!-- top zipper -->
+  <path d="M214 232 C232 186 276 172 320 172 C364 172 408 186 426 232" fill="none" stroke="#1d3d2e" stroke-width="6" stroke-linecap="round" stroke-dasharray="3 9"/>
+  <rect x="418" y="226" width="12" height="30" rx="5" fill="#d9b24a"/>
+  <!-- front pocket -->
+  <path d="M226 352 C226 330 244 320 266 320 L374 320 C396 320 414 330 414 352 L420 492 C421 512 408 522 388 522 L252 522 C232 522 219 512 220 492 Z" fill="url(#pocket)"/>
+  <path d="M236 356 L404 356" stroke="#1d3d2e" stroke-width="6" stroke-linecap="round" stroke-dasharray="3 9"/>
+  <rect x="250" y="346" width="12" height="28" rx="5" fill="#d9b24a"/>
+  <!-- plain tag, no logo -->
+  <rect x="292" y="414" width="56" height="34" rx="6" fill="#efe6d6"/>
+  <rect x="302" y="424" width="36" height="5" rx="2" fill="#b9a988"/>
+  <rect x="302" y="434" width="24" height="5" rx="2" fill="#b9a988"/>
+  <!-- side pocket with a bottle -->
+  <path d="M448 396 L480 402 L474 500 L452 506 Z" fill="#2a5741"/>
+  <rect x="455" y="340" width="20" height="74" rx="9" fill="#e9eef0"/>
+  <rect x="457" y="330" width="16" height="14" rx="4" fill="#3d6fb0"/>
+  <!-- highlights -->
+  <path d="M232 220 C240 188 262 174 290 166" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity="0.18"/>
+</svg>

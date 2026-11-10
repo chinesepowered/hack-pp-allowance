@@ -93,7 +93,7 @@ function ProductTile({ p, card, onAsk, disabled }: { p: ProductCard; card: Produ
       <div className="mt-2 flex flex-1 flex-col justify-end gap-2">
         {policy ? <OutcomeBadge outcome={policy.outcome} label={policy.label} /> : null}
         {policy && policy.outcome !== "blocked" ? (
-          <button type="button" className="btn btn-quiet btn-sm w-full" onClick={() => onAsk(p)} disabled={disabled} aria-label={`Ask Kip to get ${title} for ${p.best ? usd(p.best.price) : ""}`}>
+          <button type="button" className="btn btn-quiet btn-sm w-full" onClick={() => onAsk(p)} disabled={disabled} aria-label={`Ask Kip to get this: ${title}, ${p.best ? usd(p.best.price) : ""}`}>
             Ask Kip to get this
           </button>
         ) : null}
@@ -114,7 +114,8 @@ function ProductsBlock({ card, onAsk, disabled }: { card: ProductsCard; onAsk: (
         {card.cached ? <span className="rounded-full bg-[var(--color-sand)] px-2 py-0.5 text-[11px] font-semibold text-[var(--color-ink-2)]">cached result</span> : null}
       </div>
       <p className="mb-2 text-xs text-[var(--color-ink-2)]">
-        Filters from the mandate: in stock{card.filters.maxPrice !== null ? `, up to ${usd(card.filters.maxPrice)}` : ""}. Labels are computed by code from the rules.
+        Filters: in stock{card.filters.minPrice ? `, from ${usd(card.filters.minPrice)}` : ""}
+        {card.filters.maxPrice !== null ? `${card.filters.minPrice ? " " : ", "}up to ${usd(card.filters.maxPrice)} (the cap comes from the mandate)` : ""}. Labels are computed by code from the rules.
       </p>
       <ul className="scroll-soft -mx-1 flex snap-x gap-3 overflow-x-auto px-1 pb-2" tabIndex={0} aria-label={`${card.products.length} products, scroll sideways`}>
         {card.products.map((p) => (
@@ -307,6 +308,18 @@ export function TeenChat({ compact = false }: { compact?: boolean }) {
     setPhoto(null);
   };
 
+  const sendSamplePhoto = async () => {
+    if (busy) return;
+    setPhotoError(null);
+    try {
+      const blob = await (await fetch("/demo/backpack.jpg")).blob();
+      const photoFile = await fileToJpegBase64(new File([blob], "backpack.jpg", { type: "image/jpeg" }));
+      void send("Something like this backpack, under $40", { image: photoFile });
+    } catch (err) {
+      setPhotoError((err as Error).message);
+    }
+  };
+
   const onAsk = (p: ProductCard) => {
     if (busy) return;
     void send(`Get me this one: ${p.title.slice(0, 80)} for ${p.best ? usd(p.best.price) : "the listed price"} (product ${p.id})`);
@@ -343,7 +356,8 @@ export function TeenChat({ compact = false }: { compact?: boolean }) {
             </p>
           </div>
         ) : null}
-        <ol className="flex flex-col gap-4" role="log" aria-live="polite" aria-relevant="additions" aria-label="Messages">
+        <div role="log" aria-live="polite" aria-relevant="additions" aria-label="Messages">
+        <ol className="flex flex-col gap-4">
           {state.chat.map((m) => (
             <Message key={m.id} m={m} state={state} onAsk={onAsk} disabled={busy} />
           ))}
@@ -381,6 +395,7 @@ export function TeenChat({ compact = false }: { compact?: boolean }) {
             </>
           ) : null}
         </ol>
+        </div>
       </div>
 
       <div className="border-t border-[var(--color-line)] bg-white/80 px-4 pb-4 pt-3">
@@ -390,6 +405,11 @@ export function TeenChat({ compact = false }: { compact?: boolean }) {
               {p.label}
             </button>
           ))}
+          {state.mode === "live" ? (
+            <button type="button" className="btn btn-quiet btn-sm shrink-0" disabled={busy} onClick={() => void sendSamplePhoto()} data-testid="prompt-photo" title="Sends a sample photo (an illustration made for this demo) to Channel3 image search">
+              Photo: something like this
+            </button>
+          ) : null}
         </div>
         {photo ? (
           <div className="mb-2 flex items-center gap-2 text-xs text-[var(--color-ink-2)]">
@@ -413,6 +433,8 @@ export function TeenChat({ compact = false }: { compact?: boolean }) {
             accept="image/*"
             className="sr-only"
             id="kip-photo"
+            aria-label="Photo to attach"
+            tabIndex={-1}
             data-testid="photo-input"
             onChange={async (e) => {
               const f = e.target.files?.[0];
@@ -448,7 +470,7 @@ export function TeenChat({ compact = false }: { compact?: boolean }) {
               }
             }}
             placeholder={state.mode === "replay" ? "Replay: pick a request above" : "Ask Kip for something"}
-            className="max-h-28 min-h-11 flex-1 resize-none rounded-3xl border-[1.5px] border-[var(--color-line)] bg-white px-4 py-2.5 text-[15px] placeholder:text-[var(--color-ink-3)]"
+            className="max-h-28 min-h-11 flex-1 resize-none rounded-3xl border-[1.5px] border-[var(--color-field)] bg-white px-4 py-2.5 text-[15px] placeholder:text-[var(--color-ink-3)]"
             maxLength={600}
           />
           <button type="submit" className="btn btn-primary h-11 shrink-0" disabled={busy || (!text.trim() && !photo)} data-testid="chat-send">

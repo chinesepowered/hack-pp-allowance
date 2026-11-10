@@ -6,7 +6,6 @@
  *   GET  /v2/checkout/orders/{id}       re-read (PayPal is the source of truth)
  *   GET  /v2/payments/captures/{id}     re-read a capture
  *   POST /v2/payments/captures/{id}/refund  the parent's Undo
- *   GET  /v2/payments/refunds/{id}      re-read a refund
  *
  * Sandbox fact worth knowing: an order created with intent CAPTURE and a
  * vaulted PayPal as the payment source is charged in that same call. The
@@ -145,11 +144,6 @@ export async function refundCapture(input: { captureId: string; requestId: strin
     new PaymentsController(sdk()).refundCapturedPayment({ captureId: input.captureId, paypalRequestId: input.requestId, prefer: "return=representation", body: { noteToPayer: clip(input.note, 250) } }),
   );
   return { refund: res.body, via: "server-sdk" };
-}
-
-export async function getRefund(refundId: string): Promise<Refund> {
-  const res = await sdkCall<Refund>({ op: "payments.getRefund", method: "GET", path: `/v2/payments/refunds/${refundId}` }, () => new PaymentsController(sdk()).getRefund({ refundId }));
-  return res.body;
 }
 
 /** True when PayPal says this capture was already fully refunded. */

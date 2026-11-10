@@ -58,7 +58,7 @@
        "description": "Allowance: agent purchases inside your signed mandate",
        "usage_type": "MERCHANT",
        "customer_type": "CONSUMER",
-       "email_address": "hackpp-buyer-d173@personal.example.com",
+       "email_address": "sandbox-buyer@personal.example.com",
        "payer_id": "SHB5GFLEDVTY6",
        "name": {
         "given_name": "Test",

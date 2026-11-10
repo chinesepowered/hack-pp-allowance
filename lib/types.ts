@@ -250,7 +250,7 @@ export type ChatCard =
       source: "channel3";
       mode: "text" | "image" | "similar";
       query: string;
-      filters: { maxPrice: number | null; availability: string[] };
+      filters: { maxPrice: number | null; minPrice?: number | null; availability: string[] };
       cached: boolean;
       products: ProductCard[];
       pickId: string | null;

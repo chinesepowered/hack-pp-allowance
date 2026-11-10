@@ -15,7 +15,7 @@
      "status": "COMPLETED",
      "payment_source": {
       "paypal": {
-       "email_address": "hackpp-buyer-d173@personal.example.com",
+       "email_address": "sandbox-buyer@personal.example.com",
        "account_id": "SHB5GFLEDVTY6",
        "account_status": "VERIFIED",
        "name": {
@@ -148,7 +148,7 @@
        "given_name": "Test",
        "surname": "Buyer"
       },
-      "email_address": "hackpp-buyer-d173@personal.example.com",
+      "email_address": "sandbox-buyer@personal.example.com",
       "payer_id": "SHB5GFLEDVTY6",
       "address": {
        "country_code": "US"
@@ -192,7 +192,7 @@
      "status": "COMPLETED",
      "payment_source": {
       "paypal": {
-       "email_address": "hackpp-buyer-d173@personal.example.com",
+       "email_address": "sandbox-buyer@personal.example.com",
        "account_id": "SHB5GFLEDVTY6",
        "account_status": "VERIFIED",
        "name": {
@@ -313,7 +313,7 @@
        "given_name": "Test",
        "surname": "Buyer"
       },
-      "email_address": "hackpp-buyer-d173@personal.example.com",
+      "email_address": "sandbox-buyer@personal.example.com",
       "payer_id": "SHB5GFLEDVTY6",
       "address": {
        "country_code": "US"

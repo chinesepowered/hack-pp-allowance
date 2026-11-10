@@ -1,0 +1,167 @@
+{
+ "budget": 15000,
+ "total": 2599,
+ "items": [
+  {
+   "file": "public/audio/kip-hello.mp3",
+   "chars": 31,
+   "voice": "bIHbv24MWmeRgasZH58o",
+   "hash": "f2e51b509fcf30f5",
+   "at": "2026-11-10T15:56:35.325Z"
+  },
+  {
+   "file": "public/audio/kip-paid.mp3",
+   "chars": 39,
+   "voice": "bIHbv24MWmeRgasZH58o",
+   "hash": "c5be820e9f5db4af",
+   "at": "2026-11-10T15:56:35.753Z"
+  },
+  {
+   "file": "public/audio/kip-ask.mp3",
+   "chars": 41,
+   "voice": "bIHbv24MWmeRgasZH58o",
+   "hash": "4312a5cde5300bfd",
+   "at": "2026-11-10T15:56:36.170Z"
+  },
+  {
+   "file": "public/audio/kip-approved.mp3",
+   "chars": 20,
+   "voice": "bIHbv24MWmeRgasZH58o",
+   "hash": "8c49956531d98425",
+   "at": "2026-11-10T15:56:36.524Z"
+  },
+  {
+   "file": "public/audio/kip-declined.mp3",
+   "chars": 26,
+   "voice": "bIHbv24MWmeRgasZH58o",
+   "hash": "1c7c9b85e392316f",
+   "at": "2026-11-10T15:56:36.886Z"
+  },
+  {
+   "file": "public/audio/kip-blocked.mp3",
+   "chars": 38,
+   "voice": "bIHbv24MWmeRgasZH58o",
+   "hash": "813c61fcbd96fac9",
+   "at": "2026-11-10T15:56:37.284Z"
+  },
+  {
+   "file": "public/audio/kip-paused.mp3",
+   "chars": 27,
+   "voice": "bIHbv24MWmeRgasZH58o",
+   "hash": "6fc85bb292ce9e24",
+   "at": "2026-11-10T15:56:37.620Z"
+  },
+  {
+   "file": "public/audio/kip-undo.mp3",
+   "chars": 38,
+   "voice": "bIHbv24MWmeRgasZH58o",
+   "hash": "707ae9a531064760",
+   "at": "2026-11-10T15:56:37.990Z"
+  },
+  {
+   "file": "demo/raw/audio/n01.mp3",
+   "chars": 170,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "b69726ee02b92cc9",
+   "at": "2026-11-10T16:14:07.674Z"
+  },
+  {
+   "file": "demo/raw/audio/n02.mp3",
+   "chars": 126,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "fa375871dda3e114",
+   "at": "2026-11-10T16:14:08.646Z"
+  },
+  {
+   "file": "demo/raw/audio/n03.mp3",
+   "chars": 136,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "beef91478d6fb209",
+   "at": "2026-11-10T16:14:09.523Z"
+  },
+  {
+   "file": "demo/raw/audio/n04.mp3",
+   "chars": 179,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "e2d54a27bf1494c7",
+   "at": "2026-11-10T16:14:10.423Z"
+  },
+  {
+   "file": "demo/raw/audio/n05a.mp3",
+   "chars": 207,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "1d8e4de5e6a66bab",
+   "at": "2026-11-10T16:14:11.497Z"
+  },
+  {
+   "file": "demo/raw/audio/n05b.mp3",
+   "chars": 44,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "4b1bffc40c98471f",
+   "at": "2026-11-10T16:14:11.891Z"
+  },
+  {
+   "file": "demo/raw/audio/n06.mp3",
+   "chars": 190,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "db7856b07cbcf0de",
+   "at": "2026-11-10T16:14:12.849Z"
+  },
+  {
+   "file": "demo/raw/audio/n07.mp3",
+   "chars": 103,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "1c11b9cb3557e40d",
+   "at": "2026-11-10T16:14:13.324Z"
+  },
+  {
+   "file": "demo/raw/audio/n08.mp3",
+   "chars": 183,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "0eaaf20b53b2e115",
+   "at": "2026-11-10T16:14:14.077Z"
+  },
+  {
+   "file": "demo/raw/audio/n09.mp3",
+   "chars": 161,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "d505f63cc7dd0c73",
+   "at": "2026-11-10T16:14:14.845Z"
+  },
+  {
+   "file": "demo/raw/audio/n10.mp3",
+   "chars": 158,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "59fc816639b6f029",
+   "at": "2026-11-10T16:14:15.638Z"
+  },
+  {
+   "file": "demo/raw/audio/n11.mp3",
+   "chars": 49,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "e012bbf3b77a05f6",
+   "at": "2026-11-10T16:14:16.048Z"
+  },
+  {
+   "file": "demo/raw/audio/n02.mp3",
+   "chars": 179,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "d7b2d37e0c784f2a",
+   "at": "2026-11-10T16:26:18.597Z"
+  },
+  {
+   "file": "demo/raw/audio/n04.mp3",
+   "chars": 260,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "35ec88cc7a81c0df",
+   "at": "2026-11-10T16:26:19.925Z"
+  },
+  {
+   "file": "demo/raw/audio/n06.mp3",
+   "chars": 194,
+   "voice": "nPczCjzI2devNBz1zQrb",
+   "hash": "667da3a439c006c6",
+   "at": "2026-11-10T16:26:20.745Z"
+  }
+ ]
+}

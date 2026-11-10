@@ -24,7 +24,9 @@ import { store } from "../store";
 import type { Offer, ProductCard } from "../types";
 
 const TIMEOUT_S = 12;
-const FRESH_MS = process.env.NODE_ENV === "production" ? 10 * 60 * 1000 : 24 * 60 * 60 * 1000;
+// Development replays a search for a day to save credits. Production calls
+// Channel3 live and only reuses an identical request made in the last minute.
+const FRESH_MS = process.env.NODE_ENV === "production" ? 60 * 1000 : 24 * 60 * 60 * 1000;
 
 let client: Channel3 | null = null;
 function c3(): Channel3 {
@@ -35,7 +37,7 @@ function c3(): Channel3 {
 export type SearchResult = {
   mode: "text" | "image" | "similar";
   query: string;
-  filters: { maxPrice: number | null; availability: string[] };
+  filters: { maxPrice: number | null; minPrice?: number | null; availability: string[] };
   products: ProductCard[];
   cached: boolean;
   cachedAt: string | null;
@@ -161,27 +163,30 @@ export class CatalogError extends Error {
 }
 
 function summarize(request: unknown): string {
-  const r = request as { query?: string; product_id?: string; image?: string; filters?: { price?: { max_price?: number }; availability?: string[] } };
+  const r = request as { query?: string; product_id?: string; image?: string; filters?: { price?: { max_price?: number; min_price?: number }; availability?: string[] } };
   const bits: string[] = [];
   if (r.query) bits.push(`"${r.query}"`);
   if (r.image) bits.push("photo");
   if (r.product_id) bits.push(`product ${r.product_id}`);
+  if (r.filters?.price?.min_price !== undefined) bits.push(`min $${r.filters.price.min_price}`);
   if (r.filters?.price?.max_price !== undefined) bits.push(`max $${r.filters.price.max_price}`);
   if (r.filters?.availability?.length) bits.push(r.filters.availability.join("+"));
   return bits.join(", ");
 }
 
-function filtersFor(maxPrice: number | null): Channel3Api.SearchFilters {
-  return { availability: ["InStock"], conditions: ["new"], ...(maxPrice !== null ? { price: { max_price: maxPrice } } : {}) };
+function filtersFor(maxPrice: number | null, minPrice: number | null = null): Channel3Api.SearchFilters {
+  const price = { ...(maxPrice !== null ? { max_price: maxPrice } : {}), ...(minPrice !== null ? { min_price: minPrice } : {}) };
+  return { availability: ["InStock"], conditions: ["new"], ...(Object.keys(price).length > 0 ? { price } : {}) };
 }
 
 const CONFIG = { country: "US", currency: "USD", language: "en" } as const;
 
 /** Text search. maxPrice comes from the mandate (budget left, item caps). */
-export async function searchProducts(input: { query: string; maxPrice: number | null; limit?: number }): Promise<SearchResult> {
-  const request = { query: input.query.trim().slice(0, 200), limit: input.limit ?? 8, filters: filtersFor(input.maxPrice), config: CONFIG };
+export async function searchProducts(input: { query: string; maxPrice: number | null; minPrice?: number | null; limit?: number }): Promise<SearchResult> {
+  const minPrice = input.minPrice ?? null;
+  const request = { query: input.query.trim().slice(0, 200), limit: input.limit ?? 8, filters: filtersFor(input.maxPrice, minPrice), config: CONFIG };
   const r = await call("POST /v1/search", "search", request, async () => (await c3().products.search(request, { timeoutInSeconds: TIMEOUT_S, maxRetries: 1 })).response.products);
-  return { mode: "text", query: request.query, filters: { maxPrice: input.maxPrice, availability: ["InStock"] }, products: usable(r.products, input.maxPrice), cached: r.cached, cachedAt: r.cachedAt };
+  return { mode: "text", query: request.query, filters: { maxPrice: input.maxPrice, minPrice, availability: ["InStock"] }, products: usable(r.products, input.maxPrice), cached: r.cached, cachedAt: r.cachedAt };
 }
 
 /** Image search from a photo the teen attached (base64, no data: prefix). */

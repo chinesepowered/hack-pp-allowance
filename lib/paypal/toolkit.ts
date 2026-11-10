@@ -138,8 +138,8 @@ function toolkit(): PayPalAgentToolkit {
       clientId: requireEnv("PAYPAL_CLIENT_ID"),
       clientSecret: requireEnv("PAYPAL_CLIENT_SECRET"),
       configuration: {
-        // Only the three tools this product needs, plus get_refund for polling.
-        actions: { orders: { create: true, get: true }, payments: { createRefund: true, getRefunds: true } },
+        // Only the three tools this product needs.
+        actions: { orders: { create: true, get: true }, payments: { createRefund: true } },
         context: { sandbox: true },
       },
     }),
@@ -147,7 +147,7 @@ function toolkit(): PayPalAgentToolkit {
   return kit.instance;
 }
 
-export type ToolkitTool = "create_order" | "get_order" | "create_refund" | "get_refund";
+export type ToolkitTool = "create_order" | "get_order" | "create_refund";
 
 /** Names and JSON schemas of the toolkit tools in use, for the README and the drawer. */
 export function toolkitToolNames(): string[] {

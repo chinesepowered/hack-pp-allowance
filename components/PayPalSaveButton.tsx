@@ -186,7 +186,7 @@ export function PayPalSaveButton({ onSaved }: { onSaved?: () => void }) {
       <p className="mt-2 text-xs text-[var(--color-ink-2)]">
         {replay
           ? "Replay mode: PayPal's approval window is skipped and the recorded Vault responses are used."
-          : "Opens PayPal's own window. You log in and approve there. This is the PayPal sandbox: use the test buyer login from the README, never a real account."}
+          : "Opens PayPal's own window. You log in and approve there. This is the PayPal sandbox: use the sandbox test buyer login, never a real account."}
       </p>
       {message ? (
         <p className={`mt-2 text-sm font-semibold ${phase === "error" || phase === "ineligible" ? "text-[var(--color-stop)]" : "text-[var(--color-ink-2)]"}`} role={phase === "error" || phase === "ineligible" ? "alert" : "status"}>
