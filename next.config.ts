@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
     },
   },
   images: { unoptimized: true },
+  devIndicators: false,
   async headers() {
     return [
       {

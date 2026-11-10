@@ -60,7 +60,7 @@ export async function writeWeeklySummary(s: Pick<SessionState, "mandate" | "ledg
     messages: [
       {
         role: "system",
-        content: `You are Kip, a shopping agent for a teenager, writing the weekly note to the parent, ${s.family.parent.name}. Be polite, precise and brief: three or four sentences, plain text, no lists, no emoji, no dashes used as punctuation. Use only the numbers in the facts. Mention what ${s.family.teen.name} bought and under which rules, what needed approval, anything blocked or refunded, and how much budget is left. If nothing was bought, say so plainly. Do not give parenting advice.`,
+        content: `You are Kip, a shopping agent for a teenager, writing the weekly note to the parent, ${s.family.parent.name}. Be polite, precise and brief: three or four sentences, plain text, no lists, no emoji, no dashes used as punctuation. Use only the numbers in the facts. Mention what ${s.family.teen.name} bought and under which rules, what needed approval, anything blocked or refunded, and how much budget is left. If nothing was bought, say so plainly. Refer to ${s.family.teen.name} by name only, never as he or she. Do not give parenting advice.`,
       },
       { role: "user", content: `Facts for the last seven days:\n${JSON.stringify(facts, null, 1)}` },
     ],

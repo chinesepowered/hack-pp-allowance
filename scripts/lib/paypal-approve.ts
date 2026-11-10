@@ -10,7 +10,8 @@ export function launchOptions() {
   return {
     headless: process.env.HEADFUL ? false : true,
     // Cloud sandboxes route traffic through an egress proxy.
-    ...(proxy ? { proxy: { server: proxy } } : {}),
+    // Playwright sends localhost through the proxy too unless told not to.
+    ...(proxy ? { proxy: { server: proxy, bypass: "localhost,127.0.0.1" } } : {}),
     ...(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}),
   };
 }

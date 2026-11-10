@@ -137,8 +137,10 @@ export async function createClientToken(origin: string): Promise<{ clientToken: 
     const t0 = Date.now();
     const basic = Buffer.from(`${requireEnv("PAYPAL_CLIENT_ID")}:${requireEnv("PAYPAL_CLIENT_SECRET")}`).toString("base64");
     const form = new URLSearchParams({ grant_type: "client_credentials", response_type: "client_token", intent: "sdk_init" });
-    const host = origin.replace(/^https?:\/\//, "").replace(/\/.*$/, "");
-    if (host) form.append("domains[]", host);
+    // PayPal rejects "localhost" and ports here ("Domain format not valid"),
+    // so the token is bound to a domain only when the app runs on a real one.
+    const host = origin.replace(/^https?:\/\//, "").replace(/\/.*$/, "").replace(/:\d+$/, "");
+    if (/^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(host) && !/^\d+(\.\d+){3}$/.test(host)) form.append("domains[]", host);
     const r = await fetch(`${PAYPAL_BASE_URL}/v1/oauth2/token`, {
       method: "POST",
       headers: { Authorization: `Basic ${basic}`, "Content-Type": "application/x-www-form-urlencoded" },
