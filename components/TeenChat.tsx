@@ -170,7 +170,7 @@ function ReceiptBlock({ ledgerId, state }: { ledgerId: string; state: ClientStat
         <dd>
           {safeText(e.product.merchant)} <span className="rounded bg-white/70 px-1 font-semibold">retailer order simulated</span>
         </dd>
-        {e.retailerHandoff.buyUrl ? (
+        {e.retailerHandoff.buyUrl && e.retailerHandoff.buyUrl.startsWith("https://") ? (
           <>
             <dt>Handoff</dt>
             <dd>
@@ -374,6 +374,9 @@ export function TeenChat({ compact = false }: { compact?: boolean }) {
             <p className="font-display text-xl font-extrabold">Hey {teen}, I&apos;m Kip.</p>
             <p className="max-w-xs text-sm text-[var(--color-ink-2)]">
               Tell me what you need. I search real stores, compare a few options and pay with {parent}&apos;s saved PayPal when the rules allow it. If they don&apos;t, I ask {parent} for you.
+            </p>
+            <p className="mt-1 max-w-xs rounded-2xl bg-[var(--color-pond-soft)] px-3 py-2 text-[13px] text-[var(--color-pond-deep)]">
+              New here? Try the three requests below from left to right, then look at {parent}&apos;s side.
             </p>
           </div>
         ) : null}

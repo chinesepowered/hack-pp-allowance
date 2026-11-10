@@ -94,8 +94,8 @@ flowchart TB
 
 **The trust boundary.** The model can search, compare and ask to buy. It cannot pay.
 
-- Kip's `create_order` tool takes a product id and a sentence of reasoning. Nothing else. No amount, no store, no
-  payment detail.
+- Kip's `create_order` tool takes a product id, a sentence of reasoning and the ids of the options it compared.
+  Nothing else. No amount, no store, no payment detail.
 - The wrapper (`lib/agent/guard.ts`) requires the product to be one Channel3 returned in this session, re-reads its
   price from Channel3 product detail, classifies it, and runs `evaluatePurchase()` (`lib/mandate/policy.ts`), which is
   plain code with 89 unit and integration tests around it.

@@ -64,7 +64,7 @@ function clip(s: string, n: number): string {
  * Callers must have passed authorizePayment() first; see lib/agent/guard.ts.
  */
 export async function chargeVaultViaToolkit(input: ChargeInput): Promise<{ order: Order; via: "agent-toolkit" | "server-sdk"; result: PPResult<Order> }> {
-  if (!toolkitReady()) {
+  if (!(await toolkitReady())) {
     const result = await chargeVaultViaSdk(input);
     return { order: result.body, via: "server-sdk", result };
   }
@@ -124,7 +124,7 @@ export async function captureOrder(orderId: string, requestId: string): Promise<
 
 /** Re-reads an order through the Agent Toolkit's get_order tool. */
 export async function getOrder(orderId: string): Promise<Order> {
-  if (toolkitReady()) return (await toolkitRun<Order>("get_order", { id: orderId })).body;
+  if (await toolkitReady()) return (await toolkitRun<Order>("get_order", { id: orderId })).body;
   const res = await sdkCall<Order>({ op: "orders.get", method: "GET", path: `/v2/checkout/orders/${orderId}` }, () => new OrdersController(sdk()).getOrder({ id: orderId }));
   return res.body;
 }
@@ -136,7 +136,7 @@ export async function getCapture(captureId: string): Promise<Capture> {
 
 /** Full refund of a capture through the Agent Toolkit's create_refund tool. */
 export async function refundCapture(input: { captureId: string; requestId: string; note: string; invoiceId?: string | null }): Promise<{ refund: Refund; via: "agent-toolkit" | "server-sdk" }> {
-  if (toolkitReady()) {
+  if (await toolkitReady()) {
     const res = await toolkitRun<Refund>("create_refund", { capture_id: input.captureId, note_to_payer: clip(input.note, 250) }, { requestId: input.requestId, note: "parent Undo" });
     return { refund: res.body, via: "agent-toolkit" };
   }

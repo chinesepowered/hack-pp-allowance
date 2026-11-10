@@ -18,10 +18,10 @@ import { AsyncLocalStorage } from "node:async_hooks";
 import { randomUUID } from "node:crypto";
 import { createRequire } from "node:module";
 import path from "node:path";
-import { PayPalAgentToolkit } from "@paypal/agent-toolkit/openai";
+import type { PayPalAgentToolkit } from "@paypal/agent-toolkit/openai";
 import { assertSandbox, requireEnv } from "../env";
 import { logPayPalCall } from "../context";
-import { external } from "../replay/vcr";
+import { external, isReplay } from "../replay/vcr";
 import { PayPalError, PayPalUnknownOutcome, type PPResult } from "./core";
 
 type Captured = { method: string; path: string; status: number; debugId: string | null; ms: number; data: unknown; network: boolean };
@@ -117,10 +117,37 @@ function installInterceptors(): void {
   }
 }
 
-/** True when vault injection through the toolkit is possible in this runtime. */
-export function toolkitReady(): boolean {
-  installInterceptors();
-  return interceptorAvailable;
+type ToolkitClass = typeof PayPalAgentToolkit;
+let loading: Promise<ToolkitClass | null> | null = null;
+
+/**
+ * Loads the toolkit on first use. If the package or its axios cannot be
+ * loaded in this runtime, the app falls back to the PayPal Server SDK for
+ * the same calls instead of failing.
+ */
+function loadToolkit(): Promise<ToolkitClass | null> {
+  if (!loading) {
+    loading = (async () => {
+      try {
+        const mod = (await import("@paypal/agent-toolkit/openai")) as { PayPalAgentToolkit?: ToolkitClass; default?: { PayPalAgentToolkit?: ToolkitClass } };
+        const cls = mod.PayPalAgentToolkit ?? mod.default?.PayPalAgentToolkit ?? null;
+        if (!cls) throw new Error("PayPalAgentToolkit export not found");
+        installInterceptors();
+        return interceptorAvailable ? cls : null;
+      } catch (err) {
+        console.warn("[paypal] agent toolkit not available, using the Server SDK instead:", (err as Error).message);
+        return null;
+      }
+    })();
+  }
+  return loading;
+}
+
+/** True when the toolkit can be used with the vaulted payment source in this runtime. */
+export async function toolkitReady(): Promise<boolean> {
+  // Replay answers toolkit calls from the tape, so the package is not needed.
+  if (isReplay()) return true;
+  return (await loadToolkit()) !== null;
 }
 
 let kit: { instance: PayPalAgentToolkit; builtAt: number } | null = null;
@@ -128,13 +155,14 @@ let kit: { instance: PayPalAgentToolkit; builtAt: number } | null = null;
 // well inside the token lifetime.
 const KIT_MAX_AGE_MS = 4 * 60 * 60 * 1000;
 
-function toolkit(): PayPalAgentToolkit {
+async function toolkit(): Promise<PayPalAgentToolkit> {
   assertSandbox();
-  installInterceptors();
+  const Toolkit = await loadToolkit();
+  if (!Toolkit) throw new Error("The PayPal agent toolkit is not available in this runtime.");
   if (kit && Date.now() - kit.builtAt < KIT_MAX_AGE_MS) return kit.instance;
   kit = {
     builtAt: Date.now(),
-    instance: new PayPalAgentToolkit({
+    instance: new Toolkit({
       clientId: requireEnv("PAYPAL_CLIENT_ID"),
       clientSecret: requireEnv("PAYPAL_CLIENT_SECRET"),
       configuration: {
@@ -148,13 +176,6 @@ function toolkit(): PayPalAgentToolkit {
 }
 
 export type ToolkitTool = "create_order" | "get_order" | "create_refund";
-
-/** Names and JSON schemas of the toolkit tools in use, for the README and the drawer. */
-export function toolkitToolNames(): string[] {
-  return toolkit()
-    .getTools()
-    .map((t) => (t as { function: { name: string } }).function.name);
-}
 
 type RunOptions = {
   requestId?: string | null;
@@ -172,8 +193,9 @@ export async function toolkitRun<T = unknown>(tool: ToolkitTool, args: Record<st
   const rec = await external<Recorded<T>>("paypal", `toolkit.${tool}`, async () => {
     const s: Scope = { requestId: opts.requestId ?? null, inject: opts.inject ?? null, captured: [] };
     const t0 = Date.now();
+    const instance = await toolkit();
     const message = await scope.run(s, () =>
-      toolkit().handleToolCall({
+      instance.handleToolCall({
         id: "call_" + randomUUID().slice(0, 8),
         type: "function",
         function: { name: tool, arguments: JSON.stringify(args) },
