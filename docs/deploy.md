@@ -19,6 +19,9 @@ The hosted demo is https://hack-pp-allowance.vercel.app. Everything runs against
   undo, which is a PayPal refund.
 - A real PayPal webhook delivery, with its signature verified.
 - The parent setup from an empty family: PayPal's save window on the real domain, then drafting and signing a mandate.
+- The Agent Toolkit path: on the hosted demo a purchase and its undo show `create_order`, `get_order` and
+  `create_refund` as Agent Toolkit calls in the Under the hood drawer, and the ledger says "via PayPal Agent Toolkit".
+  The three seeded purchases were made with the Server SDK by the seed script and say so.
 
 ## Packaging check
 
