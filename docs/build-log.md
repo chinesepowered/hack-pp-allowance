@@ -106,3 +106,15 @@ Dated notes of what surprised us, what blocked us and how we got around it. PayP
   generated again; Kip's lines and the footage are the same. The new voice paces the opening differently, so the first
   card's length is now taken from the pauses in the audio instead of a fixed number, and the composer checks that every
   line is whole in the final mix (no overlap, nothing past the end of a scene, peak below 0 dB).
+
+## Wed Nov 11 2026
+
+### Hosted demo
+
+- On Vercel every purchase took the Server SDK fallback, with `Cannot find module '@paypal/agent-toolkit/openai'` in
+  the function log. The toolkit and its axios were in the function all along, and the import itself had worked. What
+  failed was the next step, which looked for the toolkit's axios starting from the project root. A serverless function
+  only holds the files the build traced, and there the toolkit is reached through the build's own link under
+  `.next/node_modules`, not as `node_modules/@paypal/agent-toolkit`. The lookup now starts from the toolkit file Node
+  loaded. Reproduced, and checked again after the change, by running a traced-files-only copy of the build outside the
+  project against the sandbox. `pnpm trace:check` repeats the packaging part of that check without keys.

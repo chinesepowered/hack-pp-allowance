@@ -16,13 +16,12 @@
  */
 import { AsyncLocalStorage } from "node:async_hooks";
 import { randomUUID } from "node:crypto";
-import { createRequire } from "node:module";
-import path from "node:path";
 import type { PayPalAgentToolkit } from "@paypal/agent-toolkit/openai";
 import { assertSandbox, requireEnv } from "../env";
 import { logPayPalCall } from "../context";
 import { external, isReplay } from "../replay/vcr";
 import { PayPalError, PayPalUnknownOutcome, type PPResult } from "./core";
+import { findToolkitAxios } from "./toolkit-axios";
 
 type Captured = { method: string; path: string; status: number; debugId: string | null; ms: number; data: unknown; network: boolean };
 
@@ -49,18 +48,14 @@ let installed = false;
 let interceptorAvailable = false;
 
 /**
- * The toolkit calls PayPal with the default axios instance of its own
- * dependency tree. Resolve that exact module so the interceptors land on
- * the instance the toolkit uses.
+ * Puts the interceptors on the axios instance the toolkit itself uses. See
+ * toolkit-axios.ts for how that instance is found.
  */
-function installInterceptors(): void {
+function installInterceptors(toolkitClass: unknown): void {
   if (installed) return;
   installed = true;
   try {
-    const rootRequire = createRequire(path.join(process.cwd(), "package.json"));
-    const toolkitEntry = rootRequire.resolve("@paypal/agent-toolkit/openai");
-    const mod = createRequire(toolkitEntry)("axios") as AxiosLike & { default?: AxiosLike };
-    const axios: AxiosLike = mod.default ?? mod;
+    const { axios } = findToolkitAxios<AxiosLike>(toolkitClass);
 
     axios.interceptors.request.use((config) => {
       const s = scope.getStore();
@@ -132,7 +127,7 @@ function loadToolkit(): Promise<ToolkitClass | null> {
         const mod = (await import("@paypal/agent-toolkit/openai")) as { PayPalAgentToolkit?: ToolkitClass; default?: { PayPalAgentToolkit?: ToolkitClass } };
         const cls = mod.PayPalAgentToolkit ?? mod.default?.PayPalAgentToolkit ?? null;
         if (!cls) throw new Error("PayPalAgentToolkit export not found");
-        installInterceptors();
+        installInterceptors(cls);
         return interceptorAvailable ? cls : null;
       } catch (err) {
         console.warn("[paypal] agent toolkit not available, using the Server SDK instead:", (err as Error).message);

@@ -20,10 +20,10 @@ The hosted demo is https://hack-pp-allowance.vercel.app. Everything runs against
 - A real PayPal webhook delivery, with its signature verified.
 - The parent setup from an empty family: PayPal's save window on the real domain, then drafting and signing a mandate.
 
-## Known gap
+## Packaging check
 
-The PayPal Agent Toolkit does not load in the Vercel function yet (`Cannot find module '@paypal/agent-toolkit/openai'`
-in the function logs), so hosted purchases take the Server SDK path behind the same mandate check.
+`pnpm build && pnpm trace:check` shows, without deploying, that the functions that pay or refund can load the PayPal
+Agent Toolkit from the files Next traced for them. It needs no keys and no network.
 
 ## Sandbox buyer login
 

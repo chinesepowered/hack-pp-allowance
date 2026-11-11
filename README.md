@@ -344,9 +344,6 @@ What was not checked: a screen reader pass with a person, and keyboard-only use 
 - **State is last writer wins across serverless instances.** PayPal ids and idempotent request ids keep money correct.
 - **Checked on the hosted demo after deploying:** Vercel Blob storage, real webhook deliveries with signature
   verification, and the save-PayPal window on the real domain. See [`docs/deploy.md`](docs/deploy.md).
-- **On the hosted demo the Agent Toolkit does not load yet** (a packaging issue on Vercel), so purchases there take the
-  Server SDK path behind the same mandate check, and the ledger says so. Locally and in the video they go through the
-  toolkit's wrapped `create_order`.
 - Catalog data is real retail data, so brand names, odd titles and the occasional non-English listing appear.
 
 ## What is next

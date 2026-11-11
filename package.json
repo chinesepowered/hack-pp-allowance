@@ -18,7 +18,8 @@
     "video": "pnpm video:record && pnpm video:cards && pnpm video:compose",
     "screenshots": "tsx scripts/screenshots.ts",
     "video:cards": "tsx scripts/video/cards.ts",
-    "a11y": "tsx scripts/a11y-check.ts"
+    "a11y": "tsx scripts/a11y-check.ts",
+    "trace:check": "tsx scripts/trace-check.ts"
   },
   "dependencies": {
     "@channel3/sdk": "^4.9.0",
